@@ -1,5 +1,6 @@
 <script>
   export let text = "Bouncing Text";
+  export let customStyles = "";
 
   let isHovered = false;
 
@@ -19,7 +20,7 @@
   on:mouseenter={handleMouseEnter}
   on:mouseleave={handleMouseLeave}
 >
-  <h1>
+  <h1 style={customStyles}>
     {text}
   </h1>
 </span>

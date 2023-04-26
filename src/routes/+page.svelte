@@ -5,6 +5,9 @@
 <main>
   <span class="sidebar-back" />
   <section id="section-home" class="section-home">
+    <p class="tag tag-one">&lt;/html&gt;</p>
+    <p class="tag tag-two">&lt;body&gt;</p>
+
     <div class="text-zone">
       <h1 aria-label="Hi, I'm Dante, web developer" class="bouncy-root">
         <Bounce text="H" />
@@ -12,9 +15,8 @@
         <Bounce text="," />
         <br />
         <Bounce text="I" />
-        <Bounce text="," />
+        <Bounce customStyles="position: relative; top: -6.7rem;" text="," />
         <Bounce text="m" />
-
         <span class="space">&nbsp</span>
         <span class="bouncy logo">
           <svg
@@ -58,15 +60,6 @@
 </main>
 
 <style lang="scss">
-  .container {
-    margin-left: 14rem;
-  }
-  .rubberband {
-    animation-name: rubberBand;
-    animation-duration: 1s;
-    animation-fill-mode: both;
-  }
-
   main {
     display: flex;
     flex-direction: row;
@@ -74,15 +67,32 @@
   }
 
   .sidebar-back {
-    height: 100vw;
+    height: 100vh;
     width: 13rem;
     background-color: #1d1d1d;
   }
 
   .section-home {
     position: relative;
+    left: 8rem;
+
+    .tag {
+      position: absolute;
+      color: #515152;
+      font-size: 1.8rem;
+      font-style: italic;
+      font-family: "La Belle Aurore", cursive;
+      &-one {
+        left: -3rem;
+      }
+      &-two {
+        left: -1rem;
+        top: 3rem;
+      }
+    }
 
     .text-zone {
+      height: 100vh;
       h1 {
         font-size: 10rem;
         line-height: 10rem;
@@ -97,16 +107,10 @@
 
   .bouncy-root {
     width: 100%;
-    padding-left: 8rem;
     color: white;
   }
 
   .bouncy:hover {
     color: #08fdd8;
-  }
-
-  .alt {
-    position: relative;
-    top: -6.7rem;
   }
 </style>

@@ -1,9 +1,12 @@
 <script>
   // import './styles.css';
   import Sidebar from "../components/Sidebar.svelte";
+
+  import Tendrils from "../components/Tendrils.svelte";
 </script>
 
 <div class="app">
+  <Tendrils />
   <aside>
     <Sidebar />
   </aside>
