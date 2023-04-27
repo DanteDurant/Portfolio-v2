@@ -1,5 +1,6 @@
 <script>
   import Bounce from "../components/Bounce.svelte";
+  import Button from "../components/Button.svelte";
 </script>
 
 <main>
@@ -9,7 +10,8 @@
     <p class="tag tag-two">&lt;body&gt;</p>
 
     <div class="text-zone">
-      <h1 aria-label="Hi, I'm Dante, web developer" class="bouncy-root">
+      <p class="tag" style="margin: 0 0 -1rem -1rem">&lt;h1&gt;</p>
+      <h1 aria-label="Hi, I'm Dante, web developer" class="bounce-root">
         <Bounce text="H" />
         <Bounce text="i" />
         <Bounce text="," />
@@ -18,7 +20,7 @@
         <Bounce customStyles="position: relative; top: -6.7rem;" text="," />
         <Bounce text="m" />
         <span class="space">&nbsp</span>
-        <span class="bouncy logo">
+        <span class="bounce logo">
           <svg
             width="72"
             viewBox="0 0 45 46"
@@ -55,9 +57,18 @@
         <Bounce text="e" />
         <Bounce text="r" />
       </h1>
+      <p class="tag" style="margin: -3rem -6rem 0 auto;">&lt;h1/&gt;</p>
+      <div>
+        <p class="tag" style="margin: 0 0 0 -1rem;">&lt;p&gt;</p>
+        <p class="text-zone_sub">Front End Developer / Designer</p>
+        <p class="tag" style="margin: 0 0 0 -1rem;">&lt;p/&gt;</p>
+      </div>
+      <Button />
     </div>
   </section>
 </main>
+
+<!--  -->
 
 <style lang="scss">
   main {
@@ -73,30 +84,46 @@
   }
 
   .section-home {
+    display: flex;
+    align-items: center;
     position: relative;
     left: 8rem;
 
     .tag {
-      position: absolute;
       color: #515152;
       font-size: 1.8rem;
       font-style: italic;
-      font-family: "La Belle Aurore", cursive;
+      font-family: "La Belle Aurore";
       &-one {
-        left: -3rem;
+        position: absolute;
+        left: -5rem;
+        top: 0;
       }
       &-two {
-        left: -1rem;
+        position: absolute;
+        left: -3rem;
         top: 3rem;
       }
     }
 
     .text-zone {
-      height: 100vh;
+      margin-top: 7.8rem;
+      display: flex;
+      flex-direction: column;
+
+      // height: 100vh;
       h1 {
         font-size: 10rem;
         line-height: 10rem;
         letter-spacing: -0.16em;
+      }
+
+      &_sub {
+        font-size: 1.6rem;
+        letter-spacing: 4px;
+        display: block;
+        color: #8d8d8d;
+        margin: 0;
       }
     }
   }
@@ -105,12 +132,13 @@
     margin-right: -1.3rem;
   }
 
-  .bouncy-root {
+  .bounce-root {
     width: 100%;
     color: white;
+    margin: 0 0 0 0;
   }
 
-  .bouncy:hover {
+  .bounce:hover {
     color: #08fdd8;
   }
 </style>
