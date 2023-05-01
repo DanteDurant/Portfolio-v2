@@ -1,6 +1,12 @@
 <script>
+  import sharedStyles from "../utility/sharedStyles.css";
+  import PopUpText from "./PopUpText.svelte";
+
+  const primary = "var(--primary)";
+
   export let text = "Bouncing Text";
   export let customStyles = "";
+  export let delay = 0;
 
   let isHovered = false;
 
@@ -21,7 +27,7 @@
   on:mouseleave={handleMouseLeave}
 >
   <h1 style={customStyles}>
-    {text}
+    <PopUpText {delay} content={text} />
   </h1>
 </span>
 

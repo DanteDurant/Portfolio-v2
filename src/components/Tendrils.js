@@ -234,7 +234,7 @@ export default function initOciliator(remove, canvasElement) {
       }
 
       function mousemove(event) {
-        var offsetX = 30; // Adjust this value to control the offset to the right
+        var offsetX = 130; // Adjust this value to control the offset to the right
       
         if (event.touches) {
           target.x = event.touches[0].pageX + offsetX;
