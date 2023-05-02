@@ -1,9 +1,19 @@
 <script>
   import Bounce from "../components/Bounce.svelte";
   import Button from "../components/Button.svelte";
-  import PopUpText from "../components/PopUpText.svelte";
   import LogoAnimation from "../lib/images/LogoAnimation.svelte";
-  let src = "../../static/logo.png";
+
+  function generateNumbers() {
+    const numbers = [];
+    const start = 30;
+    const increment = 50;
+    const count = 23;
+    for (let i = 0; i < count; i++) {
+      numbers.push(start + i * increment);
+    }
+    return numbers;
+  }
+  const r = generateNumbers();
 </script>
 
 <main>
@@ -16,40 +26,39 @@
       <p class="tag" style="margin: 0 0 -1rem -1rem">&lt;h1&gt;</p>
       <h1 aria-label="Hi, I'm Dante, web developer" class="bounce-root">
         <Bounce text="H" />
-        <Bounce delay={30} text="i" />
-        <Bounce delay={60} text="," />
+        <Bounce delay={r[0]} text="i" />
+        <Bounce delay={r[1]} text="," />
         <br />
-        <Bounce delay={90} text="I" />
+        <Bounce delay={r[2]} text="I" />
         <Bounce
-          delay={120}
+          delay={r[3]}
           customStyles="position: relative; top: -6.7rem;"
           text=","
         />
-        <Bounce delay={150} text="m" />
+        <Bounce delay={r[4]} text="m" />
         <span class="space">&nbsp</span>
         <span class="logo">
-          <LogoAnimation delay={180} />
+          <LogoAnimation delay={r[5]} />
         </span>
-        <!-- <img {src} alt="logo" /> -->
-        <Bounce delay={210} text="a" />
-        <Bounce delay={240} text="n" />
-        <Bounce delay={270} text="t" />
-        <Bounce delay={300} text="e" />
-        <Bounce delay={330} text="," />
+        <Bounce delay={r[6]} text="a" />
+        <Bounce delay={r[7]} text="n" />
+        <Bounce delay={r[8]} text="t" />
+        <Bounce delay={r[9]} text="e" />
+        <Bounce delay={r[10]} text="," />
         <br />
-        <Bounce delay={360} text="w" />
-        <Bounce delay={390} text="e" />
-        <Bounce delay={420} text="b" />
+        <Bounce delay={r[11]} text="w" />
+        <Bounce delay={r[12]} text="e" />
+        <Bounce delay={r[13]} text="b" />
         <span class="space">&nbsp</span>
-        <Bounce delay={450} text="d" />
-        <Bounce delay={470} text="e" />
-        <Bounce delay={600} text="v" />
-        <Bounce delay={630} text="e" />
-        <Bounce delay={660} text="l" />
-        <Bounce delay={690} text="o" />
-        <Bounce delay={720} text="p" />
-        <Bounce delay={750} text="e" />
-        <Bounce delay={780} text="r" />
+        <Bounce delay={r[14]} text="d" />
+        <Bounce delay={r[15]} text="e" />
+        <Bounce delay={r[16]} text="v" />
+        <Bounce delay={r[17]} text="e" />
+        <Bounce delay={r[18]} text="l" />
+        <Bounce delay={r[19]} text="o" />
+        <Bounce delay={r[20]} text="p" />
+        <Bounce delay={r[21]} text="e" />
+        <Bounce delay={r[22]} text="r" />
       </h1>
       <p class="tag" style="margin: -3rem -6rem 0 auto;">&lt;h1/&gt;</p>
       <div>
@@ -104,8 +113,8 @@
       margin-top: 7.8rem;
       display: flex;
       flex-direction: column;
+      width: 63rem;
 
-      // height: 100vh;
       h1 {
         font-size: 10rem;
         line-height: 10rem;
