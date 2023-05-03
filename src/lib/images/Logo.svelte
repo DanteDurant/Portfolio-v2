@@ -1,9 +1,5 @@
 <svelte:options tag="animated-svg" />
 
-<script>
-  import { onMount } from "svelte";
-</script>
-
 <span>
   <svg
     style="logo"
