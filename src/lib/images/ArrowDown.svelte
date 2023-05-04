@@ -1,6 +1,6 @@
 <svelte:options tag="animated-svg" />
 
-<div>
+<span>
   <svg
     width="1rem"
     aria-hidden="true"
@@ -17,4 +17,4 @@
       class=""
     /></svg
   >
-</div>
+</span>

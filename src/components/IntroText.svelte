@@ -1,5 +1,5 @@
 <script>
-  import Bounce from "../components/Bounce.svelte";
+  import Bounce from "./Bounce.svelte";
   import LogoAnimation from "../lib/images/LogoAnimation.svelte";
 
   function generateNumbers() {
