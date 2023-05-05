@@ -12,60 +12,79 @@
     }
     return numbers;
   }
-  const r = generateNumbers();
+  const d = generateNumbers();
 </script>
 
-<h1 aria-label="Hi, I'm Dante, web developer" class="bounce-root">
-  <Bounce text="H" />
-  <Bounce delay={r[0]} text="i" />
-  <Bounce delay={r[1]} text="," />
+<div aria-label="Hi, I'm Dante, web developer" class="bounce-root">
+  <span style="position: relative; left: -0.1rem; bottom: 0.05rem;">
+    <Bounce text="H" />
+    <Bounce
+      delay={d[0]}
+      customStyles="position: relative; left: -0.4rem;"
+      text="i"
+    />
+    <Bounce
+      delay={d[1]}
+      customStyles="position: relative; left: -0.8rem;"
+      text=","
+    />
+  </span>
   <br />
-  <Bounce delay={r[2]} text="I" />
+  <Bounce delay={d[2]} text="I" />
   <Bounce
-    delay={r[3]}
-    customStyles="position: relative; top: -6.7rem;"
+    delay={d[3]}
+    customStyles="position: relative; left: -0.3rem; top: -5.7rem;"
     text=","
   />
-  <Bounce delay={r[4]} text="m" />
+  <Bounce
+    delay={d[4]}
+    customStyles="position: relative; left: -0.9rem;"
+    text="m"
+  />
+  <!-- <span>&nbsp</span> -->
+  <span>&nbsp</span>
   <span>&nbsp</span>
   <span class="logo">
-    <LogoAnimation delay={r[5]} />
+    <LogoAnimation delay={d[5]} />
   </span>
-  <Bounce delay={r[6]} text="a" />
-  <Bounce delay={r[7]} text="n" />
-  <Bounce delay={r[8]} text="t" />
-  <Bounce delay={r[9]} text="e" />
-  <Bounce delay={r[10]} text="," />
+  <Bounce delay={d[6]} text="a" />
+  <Bounce delay={d[7]} text="n" />
+  <Bounce delay={d[8]} text="t" />
+  <Bounce delay={d[9]} text="e" />
+  <Bounce
+    delay={d[10]}
+    customStyles="position: relative; top: -0.06rem; left: -0.05rem;"
+    text=","
+  />
   <br />
-  <Bounce delay={r[11]} text="w" />
-  <Bounce delay={r[12]} text="e" />
-  <Bounce delay={r[13]} text="b" />
+  <span style="position: relative; right: -0.5rem; ">
+    <Bounce delay={d[11]} text="w" />
+    <Bounce delay={d[12]} text="e" />
+    <Bounce delay={d[13]} text="b" />
+  </span>
   <span>&nbsp</span>
-  <Bounce delay={r[14]} text="d" />
-  <Bounce delay={r[15]} text="e" />
-  <Bounce delay={r[16]} text="v" />
-  <Bounce delay={r[17]} text="e" />
-  <Bounce delay={r[18]} text="l" />
-  <Bounce delay={r[19]} text="o" />
-  <Bounce delay={r[20]} text="p" />
-  <Bounce delay={r[21]} text="e" />
-  <Bounce delay={r[22]} text="r" />
-</h1>
+  <span>&nbsp</span>
+  <span>&nbsp</span>
+  <Bounce delay={d[14]} text="d" />
+  <Bounce delay={d[15]} text="e" />
+  <Bounce delay={d[16]} text="v" />
+  <Bounce delay={d[17]} text="e" />
+  <Bounce delay={d[18]} text="l" />
+  <Bounce delay={d[19]} text="o" />
+  <Bounce delay={d[20]} text="p" />
+  <Bounce delay={d[21]} text="e" />
+  <Bounce delay={d[22]} text="r" />
+</div>
 
 <style>
-  h1 {
-    font-size: 10rem;
-    line-height: 10rem;
-    letter-spacing: -0.16em;
-  }
-
   .logo {
-    margin-right: -1.3rem;
+    margin-right: -0.3rem;
+    margin-left: 0.25rem;
   }
 
   .bounce-root {
-    width: 100%;
+    width: 60.8rem;
+    height: 27rem;
     color: white;
-    margin: 0 0 0 0;
   }
 </style>

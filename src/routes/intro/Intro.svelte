@@ -19,7 +19,7 @@
 
 <svelte:head>
   <title>Intro</title>
-  <meta name="my introduction" content="introdictory information" />
+  <meta name="my introduction" content="introductory information" />
 </svelte:head>
 
 <main>
@@ -34,7 +34,7 @@
     <div class="text-zone">
       <p class="tag" style="margin: 0 0 -1rem -1rem">&lt;h1&gt;</p>
       <IntroText />
-      <p class="tag" style="margin: -3rem -6rem 0 auto;">&lt;h1/&gt;</p>
+      <p class="tag" style="margin: -3.7rem -6rem 0 62rem;">&lt;h1/&gt;</p>
       <div
         class="sub"
         class:fadeIn={subVisible}
@@ -72,24 +72,22 @@
   }
 
   .downer {
-    width: 0;
+    width: 2.7rem;
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    // background-color: darkgreen;
     z-index: 0;
 
     span {
-      position: relative;
-      top: 86vh;
-      left: 1rem;
       writing-mode: vertical-lr;
       font-size: 1.4rem;
       color: white;
       animation: moveUpDown 1s ease-in-out infinite;
     }
     div {
-      position: relative;
-      top: 87vh;
-      left: 1.1rem;
+      padding: 0.7rem 0.5rem 2rem 0;
     }
   }
 
@@ -97,7 +95,7 @@
     display: flex;
     align-items: center;
     position: relative;
-    left: 8rem;
+    left: 6rem;
     margin-bottom: 10rem;
 
     .tag {
@@ -121,7 +119,6 @@
       margin-top: 7.8rem;
       display: flex;
       flex-direction: column;
-      width: 63rem;
     }
 
     .sub-head {
