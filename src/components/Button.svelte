@@ -1,6 +1,4 @@
 <script>
-  import sharedStyles from "../utility/sharedStyles.css";
-
   let isHovered = false;
   let firstLoad = true;
 

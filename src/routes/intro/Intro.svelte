@@ -3,6 +3,7 @@
   import IntroText from "../../components/IntroText.svelte";
   import Button from "../../components/Button.svelte";
   import ArrowDown from "$lib/images/ArrowDown.svelte";
+  import sharedStyles from "../../utility/sharedStyles.css";
 
   let subVisible = false;
   let buttonVisible = false;
@@ -28,7 +29,7 @@
     <span>scroll down</span>
     <div><ArrowDown /></div>
   </div>
-  <section id="section-home" class="section-home">
+  <section id="section-intro" class="section-intro">
     <p class="tag tag-one">&lt;/html&gt;</p>
     <p class="tag tag-two">&lt;body&gt;</p>
     <div class="text-zone">
@@ -65,12 +66,6 @@
     width: 100vw;
   }
 
-  .sidebar-back {
-    height: 100vh;
-    width: 13rem;
-    background-color: #1d1d1d;
-  }
-
   .downer {
     width: 2.7rem;
     display: flex;
@@ -91,7 +86,7 @@
     }
   }
 
-  .section-home {
+  .section-intro {
     display: flex;
     align-items: center;
     position: relative;

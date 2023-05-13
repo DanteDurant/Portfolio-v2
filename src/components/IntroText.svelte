@@ -41,7 +41,6 @@
     customStyles="position: relative; left: -0.9rem;"
     text="m"
   />
-  <!-- <span>&nbsp</span> -->
   <span>&nbsp</span>
   <span>&nbsp</span>
   <span class="logo">

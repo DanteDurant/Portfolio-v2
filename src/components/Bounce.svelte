@@ -1,12 +1,11 @@
 <script>
-  import sharedStyles from "../utility/sharedStyles.css";
+  import sharedStyles from "../utility/sharedStyles.css?inline";
   import PopUpText from "./PopUpText.svelte";
-
-  const primary = "var(--primary)";
 
   export let text = "Bouncing Text";
   export let customStyles = "";
   export let delay = 0;
+  export let size = "9.3rem";
 
   let isHovered = false;
 
@@ -17,7 +16,7 @@
   function handleMouseLeave() {
     setTimeout(() => {
       isHovered = false;
-    }, 1000); // Animation duration (1s)
+    }, 1000);
   }
 </script>
 
@@ -26,7 +25,7 @@
   on:mouseenter={handleMouseEnter}
   on:mouseleave={handleMouseLeave}
 >
-  <h1 style={customStyles}>
+  <h1 style={`font-size: ${size}; ${customStyles}`}>
     <PopUpText {delay} content={text} />
   </h1>
 </span>
@@ -44,12 +43,11 @@
   h1 {
     transition: color 250ms;
     margin: 0;
-    font-size: 9.3rem;
     line-height: 8.6rem;
     letter-spacing: -0.5rem;
 
     &:hover {
-      color: #08fdd8;
+      color: var(--primary);
     }
   }
 
