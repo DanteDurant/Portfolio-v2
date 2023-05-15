@@ -6,6 +6,7 @@
   export let customStyles = "";
   export let delay = 0;
   export let size = "9.3rem";
+  export let spacing = "-0.5rem";
 
   let isHovered = false;
 
@@ -25,7 +26,7 @@
   on:mouseenter={handleMouseEnter}
   on:mouseleave={handleMouseLeave}
 >
-  <h1 style={`font-size: ${size}; ${customStyles}`}>
+  <h1 style={`font-size: ${size}; ${customStyles}; letter-spacing: ${spacing}`}>
     <PopUpText {delay} content={text} />
   </h1>
 </span>
@@ -44,7 +45,6 @@
     transition: color 250ms;
     margin: 0;
     line-height: 8.6rem;
-    letter-spacing: -0.5rem;
 
     &:hover {
       color: var(--primary);

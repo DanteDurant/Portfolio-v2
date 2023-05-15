@@ -3,29 +3,33 @@
   import Bounce from "../../components/Bounce.svelte";
   import ImageGrid from "../../components/ImageGrid.svelte";
   const s = "6rem";
+  const sp = "-0.25rem";
 </script>
 
 <main>
-  <span class="sidebar-back" />
+  <!-- <span class="sidebar-back" /> -->
 
   <div class="container">
     <p class="tag" style="margin: 0 0 0 -1rem;">&lt;h2&gt;</p>
     <span class="text-area">
-      <Bounce size={s} text="M" />
-      <Bounce size={s} text="y" />
+      <Bounce size={s} spacing={sp} text="M" />
+      <Bounce size={s} spacing={sp} text="y" />
       <span>&nbsp</span>
       <span>&nbsp</span>
-      <Bounce size={s} text="P" />
-      <Bounce size={s} text="o" />
-      <Bounce size={s} text="r" />
-      <Bounce size={s} text="t" />
-      <Bounce size={s} text="f" />
-      <Bounce size={s} text="o" />
-      <Bounce size={s} text="l" />
-      <Bounce size={s} text="i" />
-      <Bounce size={s} text="o" />
+      <Bounce size={s} spacing={sp} text="P" />
+      <Bounce size={s} spacing={sp} text="o" />
+      <Bounce size={s} spacing={sp} text="r" />
+      <Bounce size={s} spacing={sp} text="t" />
+      <Bounce size={s} spacing={sp} text="f" />
+      <Bounce size={s} spacing={sp} text="o" />
+      <Bounce size={s} spacing={sp} text="l" />
+      <Bounce size={s} spacing={sp} text="i" />
+      <Bounce size={s} spacing={sp} text="o" />
     </span>
     <p class="tag" style="margin: 0 0 0 -1rem;">&lt;h2/&gt;</p>
+
+    <!-- <TagCloud /> -->
+
     <p class="tag" style="margin: -1rem 0 0 -1rem;">&lt;p&gt;</p>
     <span class="text-area_alt">
       A small gallery of recent projects chosen by me. I've done them all
@@ -36,6 +40,7 @@
     <p class="tag" style="margin: 0 0 4rem -1rem;">&lt;p/&gt;</p>
     <p class="tag" style="margin: 0 0 1rem -4rem;">&lt;section&gt;</p>
     <ImageGrid />
+    <p class="tag" style="margin: 1.5rem 0 0 -4rem;">&lt;section/&gt;</p>
   </div>
 </main>
 
@@ -43,7 +48,8 @@
   main {
     display: flex;
     flex-direction: row;
-    width: calc(100% - 13rem);
+    width: calc(100vw - 20.5rem);
+    margin-left: 20.5rem;
   }
 
   .container {
@@ -52,7 +58,7 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    left: 8.7rem;
+    // left: 8.7rem;
   }
 
   .text-area {

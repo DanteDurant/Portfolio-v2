@@ -1,32 +1,12 @@
 <script>
-  function getRandomColor() {
-    const letters = "0123456789ABCDEF";
-    let color = "#";
-    for (let i = 0; i < 6; i++) {
-      color += letters[Math.floor(Math.random() * 16)];
-    }
-    return color;
-  }
+  import { onMount } from "svelte";
 
   import Sanlam from "../lib/images/sanlam.png";
   import Design from "../lib/images/design.png";
   import Rocket from "../lib/images/rocket.svg";
   import Wine from "../lib/images/wwf-wine.png";
   import Stile from "../lib/images/Stile.jpeg";
-
-  window.addEventListener("DOMContentLoaded", () => {
-    const imageBoxes = document.querySelectorAll(".image-box");
-
-    imageBoxes.forEach((box) => {
-      box.addEventListener("mouseover", () => {
-        box.classList.add("brighten");
-      });
-
-      box.addEventListener("mouseout", () => {
-        box.classList.remove("brighten");
-      });
-    });
-  });
+  import Circle from "../lib/images/circle.png";
 </script>
 
 <div class="image-grid">
@@ -35,17 +15,17 @@
       href="https://storybook.sanlam.design/react-ui-next/index.html?path=/story/docs-introduction--page"
       target="_blank"
       class="image-box"
-      style="background-color: {getRandomColor()}"
     >
-      <img src={Sanlam} alt="Sanlam storybook" />
-      <span class="popup center-parent">View<br />Project</span>
+      <img class="image" src={Sanlam} alt="Sanlam storybook" />
+      <img src={Circle} class="popup" alt="view project" />
     </a>
   </span>
 
   <span>
-    <div class="image-box" style="background-color: {getRandomColor()}">
-      <img src={Design} alt="Sanlam design system" />
-    </div>
+    <a href="#" class="image-box">
+      <img class="image" src={Design} alt="Sanlam design system" />
+      <img src={Circle} class="popup" alt="view project" />
+    </a>
   </span>
 
   <span>
@@ -61,6 +41,7 @@
         aria-label="retail rocket logo"
         class="rocket"
       />
+      <img src={Circle} class="popup" alt="view project" />
     </a>
   </span>
 
@@ -69,9 +50,9 @@
       href="https://play.google.com/store/apps/details?id=com.wwfconservationchampions&gl=US"
       target="_blank"
       class="image-box scale"
-      style="background-color: {getRandomColor()}"
     >
-      <img src={Wine} alt="wwf wine logo" />
+      <img class="image" src={Wine} alt="wwf wine logo" />
+      <img src={Circle} class="popup" alt="view project" />
     </a>
   </span>
 
@@ -80,27 +61,11 @@
       href="https://stile-aluminium.netlify.app"
       target="_blank"
       class="image-box"
-      style="background-color: {getRandomColor()}"
     >
-      <img src={Stile} alt="Stile" />
+      <img class="image" src={Stile} alt="Stile" />
+      <img src={Circle} class="popup" alt="view project" />
     </a>
   </span>
-
-  <div class="image-box" style="background-color: {getRandomColor()}">
-    <!-- <img src="path_to_image6" alt="Image 6" /> -->
-  </div>
-  <div class="image-box" style="background-color: {getRandomColor()}">
-    <!-- <img src="path_to_image7" alt="Image 7" /> -->
-  </div>
-  <div class="image-box" style="background-color: {getRandomColor()}">
-    <!-- <img src="path_to_image8" alt="Image 8" /> -->
-  </div>
-  <div class="image-box" style="background-color: {getRandomColor()}">
-    <!-- <img src="path_to_image9" alt="Image 9" /> -->
-  </div>
-  <div class="image-box" style="background-color: {getRandomColor()}">
-    <!-- <img src="path_to_image10" alt="Image 10" /> -->
-  </div>
 </div>
 
 <style lang="scss">
@@ -108,14 +73,28 @@
     overflow: hidden;
   }
 
+  a {
+    text-decoration: none;
+  }
+
   .image-grid {
     margin: 0 -4rem 0 -7.5rem;
-    height: min-content;
+    width: calc(100vw - 13rem);
+    // height: min-content;
     z-index: 1;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 0;
     grid-auto-rows: 1fr;
+  }
+
+  .popup {
+    transition: all 200ms ease;
+    width: 9rem;
+    height: auto;
+    opacity: 0;
+    scale: 0.3;
+    filter: brightness(0.5);
   }
 
   .image-box {
@@ -124,8 +103,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    width: 100%;
     aspect-ratio: 1/1;
     transition: all 300ms ease;
     filter: brightness(0.5);
@@ -134,33 +111,22 @@
       filter: brightness(1);
       transform: scale(1.1);
 
-      & .popup {
-        // visibility: visible;
-        // opacity: 1;
-        width: 7rem;
-        height: 7rem;
-        border-radius: 5rem;
-        // text-decoration: none;
+      .popup {
         z-index: 1;
-        background-color: var(--primary);
-        text-align: center;
-        color: #000;
+        opacity: 1;
+        scale: 1;
+        filter: brightness(1);
       }
     }
   }
 
-  .popup::after {
-    content: "";
+  .image-box .image {
     position: absolute;
-    top: -30px; /* Adjust this value to position the popup correctly */
-    left: 50%; /* Adjust this value to position the popup correctly */
-    transform: translateX(-50%);
-    border-radius: 50%;
-    padding: 10px;
-    font-size: 14px;
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0s, opacity 0.2s;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   .rocket-box {
@@ -173,14 +139,5 @@
       left: 50%;
       transform: translate(-50%, -50%);
     }
-  }
-
-  .image-box img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
   }
 </style>

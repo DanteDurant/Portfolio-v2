@@ -63,6 +63,7 @@
     bottom: 0;
     justify-content: space-between;
     align-items: center;
+    z-index: 999;
 
     &_top {
       display: flex;
