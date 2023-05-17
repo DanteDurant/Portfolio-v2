@@ -3,7 +3,6 @@
 <span>
   <svg
     style="logo"
-    width="72"
     viewBox="0 0 45 46"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -18,3 +17,9 @@
     />
   </svg>
 </span>
+
+<style>
+  svg {
+    width: 7.2rem;
+  }
+</style>

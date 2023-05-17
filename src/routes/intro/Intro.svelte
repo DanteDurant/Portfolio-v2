@@ -18,12 +18,7 @@
   });
 </script>
 
-<svelte:head>
-  <title>Intro</title>
-  <meta name="my introduction" content="introductory information" />
-</svelte:head>
-
-<main>
+<main id="Home">
   <span class="sidebar-back" />
   <div class="downer">
     <span>scroll down</span>
@@ -50,7 +45,9 @@
         class:fadeIn={buttonVisible}
         class:slideInFromBottom={buttonVisible}
       >
-        <Button />
+        <a href="#Contact">
+          <Button />
+        </a>
       </div>
     </div>
   </section>
@@ -64,6 +61,10 @@
     display: flex;
     flex-direction: row;
     width: 100vw;
+  }
+
+  a {
+    text-decoration: none;
   }
 
   .downer {

@@ -6,9 +6,7 @@
   const sp = "-0.25rem";
 </script>
 
-<main>
-  <!-- <span class="sidebar-back" /> -->
-
+<main id="Work">
   <div class="container">
     <p class="tag" style="margin: 0 0 0 -1rem;">&lt;h2&gt;</p>
     <span class="text-area">
@@ -48,17 +46,17 @@
   main {
     display: flex;
     flex-direction: row;
-    width: calc(100vw - 20.5rem);
-    margin-left: 20.5rem;
+    width: calc(100vw - 20.5rem); //offset to accommodate side bar
+    // margin-left: 20.5rem;
+    margin: 0 0 10rem 20.5rem; // compensation for offset
   }
 
   .container {
-    // height: 200rem;
     width: 100%;
     display: flex;
     flex-direction: column;
     position: relative;
-    // left: 8.7rem;
+    margin-top: 8rem;
   }
 
   .text-area {

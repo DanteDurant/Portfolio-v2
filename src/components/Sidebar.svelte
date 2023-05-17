@@ -14,20 +14,20 @@
 
 <menu class="main-menu">
   <div class="main-menu_top">
-    <a href="http://127.0.0.1:5173/">
+    <a href="#Home">
       <Logo />
     </a>
-    <a href="http://127.0.0.1:5173/">
+    <a href="#Home">
       <span>Dante</span>
     </a>
     <div>Web Developer</div>
   </div>
 
   <nav class="main-menu_nav">
-    <a href="http://127.0.0.1:5173/">About</a>
-    <a href="http://127.0.0.1:5173/">My Skills</a>
-    <a href="http://127.0.0.1:5173/">Work</a>
-    <a href="http://127.0.0.1:5173/">Contact</a>
+    <a href="#About">About</a>
+    <a href="#Work">Work</a>
+    <a href="#Skills">Skills</a>
+    <a href="#Contact">Contact</a>
   </nav>
 
   <ul class="social">

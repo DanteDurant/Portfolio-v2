@@ -1,12 +1,17 @@
 <script>
-  import TagCloud from "../components/TagCloud.svelte";
-  import About from "./about/About.svelte";
   import Intro from "./intro/Intro.svelte";
-  import Portfolio from "./portfolio/Portfolio.svelte";
+  import About from "./about/About.svelte";
+  import Portfolio from "./work/Work.svelte";
+  import Skills from "./skills/Skills.svelte";
+  import Contact from "./contact/Contact.svelte";
 </script>
 
 <Intro />
 
+<About />
+
 <Portfolio />
 
-<About />
+<Skills />
+
+<Contact />

@@ -15,22 +15,19 @@
     "C++",
     "React",
     "React Native",
+    "Expo",
     "Python",
-    "git",
+    "Git",
     "AJAX",
     "Node.js",
     "Svelte",
     "jQuery",
     "Axios",
     "REST",
-    "SQL",
-    "MongoDB",
     "BEM",
     "JSON",
+    "Tailwind",
   ];
-
-  const colors = ["#08fdd8", "#FD2055"];
-  let randomColor = colors[Math.floor(Math.random() * colors.length)];
 
   onMount(() => {
     const script = document.createElement("script");
@@ -41,7 +38,7 @@
 
   function initializeTagCloud() {
     tagCloud = TagCloud(".content", myTags, {
-      radius: 300,
+      radius: 350,
       maxSpeed: "fast",
       initSpeed: "slow",
       direction: 235,
@@ -52,20 +49,14 @@
   }
 </script>
 
-<span class="container">
-  <div class="content tagcloud" style="color: {randomColor}" />
-</span>
+<div class="content tagcloud" />
 
 <style>
-  .container {
-    /* margin: 10rem 0 0 40rem; */
-  }
-
   .tagcloud {
     /* font-family: "coolvetica"; */
+    color: #08fdd8;
     font-size: 2rem;
     font-weight: 400;
-    margin-left: 30%;
   }
 
   .tagcloud--item {

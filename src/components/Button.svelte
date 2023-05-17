@@ -10,6 +10,8 @@
   function handleMouseLeave() {
     isHovered = false;
   }
+
+  export let text = "Contact me!";
 </script>
 
 <div
@@ -17,7 +19,7 @@
   on:mouseenter={handleMouseEnter}
   on:mouseleave={handleMouseLeave}
 >
-  <span class:isHovered>Contact me!</span>
+  <span class:isHovered>{text}</span>
   <div
     class:animate-in-bg={isHovered && !firstLoad}
     class:animate-out-bg={!isHovered && !firstLoad}
@@ -39,7 +41,7 @@
     border-bottom-width: 2px;
     color: var(--primary);
     letter-spacing: 4px;
-    font-size: 16px;
+    font-size: 1.6rem;
     cursor: pointer;
     overflow: hidden;
   }
