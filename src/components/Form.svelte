@@ -70,9 +70,9 @@
 
   .message {
     height: 20rem;
-    font-family: "Open Sans", sans-serif;
 
     & > textarea {
+      padding-top: 1.5rem;
       font-family: "Open Sans", sans-serif;
     }
   }
