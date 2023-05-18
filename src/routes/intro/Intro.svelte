@@ -24,7 +24,7 @@
     <span>scroll down</span>
     <div><ArrowDown /></div>
   </div>
-  <section id="section-intro" class="section-intro">
+  <section id="Home" class="section-intro">
     <p class="tag tag-one">&lt;/html&gt;</p>
     <p class="tag tag-two">&lt;body&gt;</p>
     <div class="text-zone">
