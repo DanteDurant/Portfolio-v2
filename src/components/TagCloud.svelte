@@ -58,8 +58,4 @@
     font-size: 2rem;
     font-weight: 400;
   }
-
-  .tagcloud--item {
-    color: #36454f;
-  }
 </style>

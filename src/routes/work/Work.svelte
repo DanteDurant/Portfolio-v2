@@ -33,7 +33,8 @@
       A small gallery of recent projects chosen by me. I've done them all
       together with amazing people from companies <br />
       around the country. the list is a work in progress and there is more to come.<br
-      />Interested to see some more? Visit my <a href="#">GitHub</a> page.
+      />Interested to see some more? Visit my
+      <a href="https://github.com/DanteDurant?tab=repositories">GitHub</a> page.
     </span>
     <p class="tag" style="margin: 0 0 4rem -1rem;">&lt;p/&gt;</p>
     <p class="tag" style="margin: 0 0 1rem -4rem;">&lt;section&gt;</p>

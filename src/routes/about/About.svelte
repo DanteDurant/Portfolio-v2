@@ -82,11 +82,6 @@
       color: white;
       font-size: 1.6rem;
       line-height: 1.5;
-
-      a {
-        text-decoration: none;
-        color: var(--primary);
-      }
     }
   }
   p {

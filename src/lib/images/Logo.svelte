@@ -1,4 +1,4 @@
-<svelte:options tag="animated-svg" />
+<!-- <svelte:options tag="animated-svg" /> -->
 
 <span>
   <svg
