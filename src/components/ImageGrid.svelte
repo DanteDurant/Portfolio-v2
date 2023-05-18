@@ -22,7 +22,10 @@
   </span>
 
   <span>
-    <a href="#" class="image-box">
+    <a
+      href="https://storybook.sanlam.design/react-ui-next/index.html?path=/story/docs-introduction--page"
+      class="image-box"
+    >
       <img class="image" src={Design} alt="Sanlam design system" />
       <img src={Circle} class="popup" alt="view project" />
     </a>
