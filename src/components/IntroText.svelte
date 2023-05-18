@@ -1,6 +1,6 @@
 <script>
   import Bounce from "./Bounce.svelte";
-  import LogoAnimation from "../lib/images/LogoAnimation.svelte";
+  import LogoAnimation from "./LogoAnimation.svelte";
 
   function generateNumbers() {
     const numbers = [];
