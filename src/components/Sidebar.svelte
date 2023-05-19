@@ -32,17 +32,17 @@
 
   <ul class="social">
     <li>
-      <a href="https://www.linkedin.com/in/dantedurant/">
+      <a href="https://www.linkedin.com/in/dantedurant/" target="_blank">
         <LinkedIn />
       </a>
     </li>
     <li>
-      <a href="https://github.com/DanteDurant?tab=repositories">
+      <a href="https://github.com/DanteDurant?tab=repositories" target="_blank">
         <Github />
       </a>
     </li>
     <li>
-      <a href="https://www.youtube.com/@dantedurant3412">
+      <a href="https://www.youtube.com/@dantedurant3412" target="_blank">
         <YouTube />
       </a>
     </li>

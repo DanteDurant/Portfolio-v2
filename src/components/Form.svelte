@@ -5,7 +5,7 @@
 <main>
   <p class="tag" style="margin: 0 0 1rem -4rem;">&lt;form&gt;</p>
   <span>
-    <form>
+    <form action="https://formspree.io/f/xayzkgwq" method="POST">
       <div>
         <input
           type="text"
@@ -13,6 +13,7 @@
           placeholder="Name"
           name="name"
           value=""
+          required
         />
         <input
           type="text"
@@ -20,17 +21,26 @@
           placeholder="Email"
           name="email"
           value=""
+          required
         />
       </div>
 
       <div class="message">
-        <textarea placeholder="Message" name="message" value="" rows="10" />
+        <textarea
+          placeholder="Message"
+          name="message"
+          value=""
+          autocomplete="off"
+          rows="10"
+          cols="60"
+          required
+        />
       </div>
-    </form>
 
-    <span class="button">
-      <Button text="Send Message!" />
-    </span>
+      <button class="button">
+        <Button text="Send Message!" />
+      </button>
+    </form>
   </span>
   <p class="tag" style="margin: 1.5rem 0 0 -4rem;">&lt;form/&gt;</p>
 </main>
@@ -55,6 +65,16 @@
     border-radius: 0;
     border: none;
     padding-left: 1rem;
+    resize: none;
+
+    &:focus-within {
+      outline: none;
+      border: var(--primary) solid 1px;
+    }
+
+    &:invalid {
+      border-color: var(--secondary);
+    }
   }
 
   form > div {
@@ -80,5 +100,10 @@
   .button {
     margin-top: 2rem;
     display: flex;
+    padding: 0;
+    width: min-content;
+    width: min-content;
+    background-color: transparent;
+    border: none;
   }
 </style>
