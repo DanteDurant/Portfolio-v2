@@ -16,7 +16,7 @@
           required
         />
         <input
-          type="text"
+          type="email"
           class="email"
           placeholder="Email"
           name="email"
@@ -69,11 +69,11 @@
 
     &:focus-within {
       outline: none;
-      border: var(--primary) solid 1px;
+      border: var(--pri) solid 1px;
     }
 
     &:invalid {
-      border-color: var(--secondary);
+      border-color: var(--sec);
     }
   }
 

@@ -1,5 +1,6 @@
 <script>
-  import sharedStyles from "../utility/sharedStyles.css?inline";
+  import sharedStyles from "../../utility/sharedStyles.scss?inline";
+  import keyFrames from "../../utility/keyFrames.css?inline";
   import PopUpText from "./PopUpText.svelte";
 
   export let text = "Bouncing Text";
@@ -52,31 +53,7 @@
     // line-height: 8.6rem;
 
     &:hover {
-      color: var(--primary);
-    }
-  }
-
-  @keyframes rubberBand {
-    0% {
-      transform: scale(1);
-    }
-    30% {
-      transform: scaleY(1.25) scaleX(0.75);
-    }
-    40% {
-      transform: scaleY(0.75) scaleX(1.25);
-    }
-    50% {
-      transform: scaleY(1.15) scaleX(0.85);
-    }
-    65% {
-      transform: scaleY(0.95) scaleX(1.05);
-    }
-    75% {
-      transform: scaleY(1.05) scaleX(0.95);
-    }
-    100% {
-      transform: scaleY(1) scaleX(1);
+      color: var(--pri);
     }
   }
 </style>

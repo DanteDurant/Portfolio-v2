@@ -1,7 +1,7 @@
 <script lang="ts">
   import type { TransitionConfig } from "svelte/types/runtime/transition";
   import { onMount } from "svelte";
-  import Logo from "../lib/images/logo.png";
+  import Logo from "../../lib/images/logo.png";
 
   function popUp(
     node: HTMLElement,

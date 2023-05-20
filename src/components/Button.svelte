@@ -37,9 +37,9 @@
     position: relative;
     height: 5rem;
     width: 22rem;
-    border: var(--primary) 1px solid;
+    border: var(--pri) 1px solid;
     border-bottom-width: 2px;
-    color: var(--primary);
+    color: var(--pri);
     letter-spacing: 4px;
     font-size: 1.6rem;
     cursor: pointer;
@@ -63,7 +63,7 @@
     right: 0;
     bottom: 0;
     width: 108%;
-    background: linear-gradient(120deg, var(--primary) 90%, transparent 90.1%);
+    background: linear-gradient(120deg, var(--pri) 90%, transparent 90.1%);
     transform: translateX(-100%);
   }
 
@@ -75,7 +75,7 @@
     height: 1.6rem;
     background-image: linear-gradient(
       to top left,
-      var(--secondary) 50%,
+      var(--sec) 50%,
       #00ff0000 50%
     );
     transform: translateY(100%);

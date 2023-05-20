@@ -56,7 +56,7 @@
     flex-direction: column;
     position: fixed;
     height: 100vh;
-    background-color: #181818;
+    background-color: var(--bg-alt);
     left: 0;
     top: 0;
     right: auto;

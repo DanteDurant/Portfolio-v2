@@ -4,7 +4,7 @@
 
 <svelte:head>
   <title>Work</title>
-  <meta name="Work section" content="A portfolio of work" />
+  <meta name="Work section" content="A portfolio of my work" />
 </svelte:head>
 
 <Work />

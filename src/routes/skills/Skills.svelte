@@ -1,14 +1,14 @@
 <script>
-  import Bounce from "../../components/Bounce.svelte";
+  import Bounce from "../../components/text/Bounce.svelte";
   const s = "6rem";
   const sp = "-0.5rem";
   const h = "5.5rem";
 </script>
 
-<main id="Skills">
+<main id="Skills" class="main">
   <div class="container">
     <p class="tag" style="margin: 0 0 1.5rem -1rem;">&lt;h2&gt;</p>
-    <span class="text-area">
+    <span class="head">
       <Bounce size={s} spacing={sp} height={h} text="S" />
       <Bounce size={s} spacing={sp} height={h} text="k" />
       <Bounce size={s} spacing={sp} height={h} text="i" />
@@ -34,7 +34,7 @@
     </span>
     <p class="tag" style="margin: 1.5rem 0 0 -1rem;">&lt;h2/&gt;</p>
     <p class="tag" style="margin: -1rem 0 0 -1rem;">&lt;p&gt;</p>
-    <span class="text-area_alt">
+    <span class="head_alt">
       With expertise in modern programming languages and technologies like
       JavaScript, HTML5, CSS3, Sass, JSON, jQuery, AJAX, REST, React, React
       Native, Expo, Svelte, Sveltekit, Tailwind, Python, C#, C++, and Git, I am
@@ -56,49 +56,12 @@
     </span>
     <p class="tag" style="margin: 0 0 4rem -1rem;">&lt;p/&gt;</p>
   </div>
-  <span class="tagcloud center-parent" />
 </main>
 
 <style lang="scss">
   main {
-    display: flex;
-    flex-direction: row;
-    width: calc(100vw - 20.5rem);
-    // margin-left: 20.5rem;
-    // margin-bottom: 11rem;
-    margin: 0 0 12rem 20.5rem;
   }
-
   .container {
-    // height: 200rem;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    margin-top: 8rem;
-  }
-  .text-area {
-    margin: -1.5rem 0 -1rem 0;
-    color: var(--primary);
-    background-color: transparent;
-
-    &_alt {
-      color: white;
-      font-size: 1.6rem;
-      line-height: 1.5;
-
-      a {
-        text-decoration: none;
-        color: var(--primary);
-      }
-    }
-  }
-  p {
-    margin: 0;
-  }
-
-  .tagcloud {
-    margin-top: 8rem;
-    width: 60%;
+    width: 65%;
   }
 </style>

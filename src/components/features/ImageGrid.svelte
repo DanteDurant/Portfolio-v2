@@ -1,12 +1,12 @@
 <script>
   import { onMount } from "svelte";
 
-  import Sanlam from "../lib/images/sanlam.png";
-  import Design from "../lib/images/design.png";
-  import Rocket from "../lib/images/rocket.svg";
-  import Wine from "../lib/images/wwf-wine.png";
-  import Stile from "../lib/images/Stile.jpeg";
-  import Circle from "../lib/images/circle.png";
+  import Sanlam from "../../lib/images/sanlam.png";
+  import Design from "../../lib/images/design.png";
+  import Rocket from "../../lib/images/rocket.svg";
+  import Wine from "../../lib/images/wwf-wine.png";
+  import Stile from "../../lib/images/Stile.jpeg";
+  import Circle from "../../lib/images/circle.png";
 </script>
 
 <div class="image-grid">

@@ -1,9 +1,10 @@
 <script>
   import { onMount } from "svelte";
-  import IntroText from "../../components/IntroText.svelte";
+  import IntroText from "../../components/text/IntroText.svelte";
   import Button from "../../components/Button.svelte";
   import ArrowDown from "$lib/images/ArrowDown.svelte";
-  import sharedStyles from "../../utility/sharedStyles.css";
+  import sharedStyles from "../../utility/sharedStyles.scss";
+  import keyFrames from "../../utility/keyFrames.css";
 
   let subVisible = false;
   let buttonVisible = false;
@@ -18,16 +19,15 @@
   });
 </script>
 
-<main id="Home">
-  <span class="sidebar-back" />
-  <div class="downer">
+<main id="Home" class="main">
+  <div class="down">
     <span>scroll down</span>
     <div><ArrowDown /></div>
   </div>
-  <section id="Home" class="home">
+  <section class="container">
     <p class="tag tag-one">&lt;/html&gt;</p>
     <p class="tag tag-two">&lt;body&gt;</p>
-    <div class="text-zone">
+    <div class="head">
       <p class="tag" style="margin: 0 0 -1rem -1rem">&lt;h1&gt;</p>
       <IntroText />
       <p class="tag" style="margin: -3.7rem -6rem 0 62rem;">&lt;h1/&gt;</p>
@@ -58,22 +58,23 @@
 
 <style lang="scss">
   main {
-    display: flex;
-    flex-direction: row;
-    width: 100vw;
+    margin-left: 13rem;
   }
 
-  a {
-    text-decoration: none;
+  .container {
+    justify-content: center;
+    height: 100vh;
+    left: 6rem;
+
+    margin: 1rem 0 0 0;
   }
 
-  .downer {
+  .down {
     width: 2.7rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
-    // background-color: darkgreen;
     z-index: 0;
 
     span {
@@ -87,49 +88,35 @@
     }
   }
 
-  .home {
+  .tag {
+    &-one {
+      position: absolute;
+      left: -5rem;
+      top: 1rem;
+    }
+    &-two {
+      position: absolute;
+      left: -3rem;
+      top: 4rem;
+    }
+  }
+
+  .text {
+    margin-top: 7.8rem;
     display: flex;
-    align-items: center;
-    position: relative;
-    left: 6rem;
-    margin-bottom: 10rem;
-
-    .tag {
-      color: #515152;
-      font-size: 1.8rem;
-      font-style: italic;
-      font-family: "La Belle Aurore";
-      &-one {
-        position: absolute;
-        left: -5rem;
-        top: 0;
-      }
-      &-two {
-        position: absolute;
-        left: -3rem;
-        top: 3rem;
-      }
-    }
-
-    .text-zone {
-      margin-top: 7.8rem;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .sub-head {
-      font-size: 1.6rem;
-      letter-spacing: 4px;
-      display: block;
-      color: #8d8d8d;
-      margin: 0;
-    }
+    flex-direction: column;
   }
 
   .sub {
     opacity: 0;
     &:global(.fadeIn) {
       opacity: 1;
+    }
+
+    &-head {
+      font-size: 1.6rem;
+      letter-spacing: 4px;
+      color: var(--text-alt);
     }
   }
 
@@ -146,36 +133,5 @@
 
   .slideInFromBottom {
     animation: slideInFromBottom 0.5s ease-in-out forwards;
-  }
-
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  @keyframes slideInFromBottom {
-    0% {
-      transform: translateY(20%);
-      opacity: 0;
-    }
-    100% {
-      transform: translateY(0%);
-      opacity: 1;
-    }
-  }
-
-  @keyframes moveUpDown {
-    0% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-1rem);
-    }
-    100% {
-      transform: translateY(0);
-    }
   }
 </style>

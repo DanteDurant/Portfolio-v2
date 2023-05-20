@@ -1,14 +1,14 @@
 <script>
-  import Bounce from "../../components/Bounce.svelte";
-  import TagCloud from "../../components/TagCloud.svelte";
+  import Bounce from "../../components/text/Bounce.svelte";
+  import TagCloud from "../../components/features/TagCloud.svelte";
   const s = "6rem";
   const sp = "-0.5rem";
 </script>
 
-<main id="About">
+<main id="About" class="main">
   <div class="container">
     <p class="tag" style="margin: 0 0 0 -1rem;">&lt;h2&gt;</p>
-    <span class="text-area">
+    <span class="head">
       <Bounce size={s} spacing={sp} text="M" />
       <Bounce size={s} spacing={sp} text="e" />
       <Bounce size={s} spacing={sp} text="," />
@@ -31,7 +31,7 @@
     </span>
     <p class="tag" style="margin: 0 0 0 -1rem;">&lt;h2/&gt;</p>
     <p class="tag" style="margin: -1rem 0 0 -1rem;">&lt;p&gt;</p>
-    <span class="text-area_alt">
+    <span class="head_alt">
       Dedicated, disciplined, and dependable professional with an unwavering
       commitment to excellence. I possess a diplomatic and solution-oriented
       mindset, always going above and beyond to achieve remarkable results. As a
@@ -58,34 +58,8 @@
 </main>
 
 <style lang="scss">
-  main {
-    display: flex;
-    flex-direction: row;
-    width: calc(100vw - 20.5rem);
-    margin-left: 20.5rem;
-  }
-
   .container {
-    // height: 200rem;
     width: 40%;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    margin-top: 8rem;
-  }
-  .text-area {
-    margin: -1.5rem 0 -1rem 0;
-    color: var(--primary);
-    background-color: transparent;
-
-    &_alt {
-      color: white;
-      font-size: 1.6rem;
-      line-height: 1.5;
-    }
-  }
-  p {
-    margin: 0;
   }
 
   .tagcloud {
