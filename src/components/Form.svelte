@@ -46,10 +46,6 @@
 </main>
 
 <style lang="scss">
-  main {
-    padding-right: 2.5rem;
-  }
-
   form {
     display: flex;
     flex-direction: column;

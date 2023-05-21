@@ -27,10 +27,21 @@
   }
 
   main {
-    flex: 1;
+    /* flex: 1; */
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    width: 100%;
     box-sizing: border-box;
+  }
+
+  @media (min-width: 3840px) {
+    main {
+      margin-bottom: -10rem;
+    }
+  }
+
+  div {
+    margin: 0;
   }
 </style>

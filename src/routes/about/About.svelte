@@ -63,7 +63,6 @@
   }
 
   .tagcloud {
-    margin-top: 8rem;
     width: 60%;
   }
 </style>

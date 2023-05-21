@@ -3,7 +3,7 @@
 
   import Sanlam from "../../lib/images/sanlam.png";
   import Design from "../../lib/images/design.png";
-  import Rocket from "../../lib/images/rocket.svg";
+  import Rocket from "../../lib/images/rocket.png";
   import Wine from "../../lib/images/wwf-wine.png";
   import Stile from "../../lib/images/Stile.jpeg";
   import Circle from "../../lib/images/circle.png";
@@ -32,18 +32,8 @@
   </span>
 
   <span>
-    <a
-      href="https://takealot.retailrockit.co.za/"
-      target="_blank"
-      class="image-box rocket-box"
-      style="background-color: #fff"
-    >
-      <object
-        data={Rocket}
-        type="image/svg+xml"
-        aria-label="retail rocket logo"
-        class="rocket"
-      />
+    <a href="https://takealot.retailrockit.co.za/" class="image-box">
+      <img class="image" src={Rocket} alt="retail rocket logo" />
       <img src={Circle} class="popup" alt="view project" />
     </a>
   </span>

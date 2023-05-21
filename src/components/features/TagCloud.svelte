@@ -1,10 +1,13 @@
 <script>
-  import { onMount } from "svelte";
+  import { onMount, afterUpdate } from "svelte";
+  import { onDestroy } from "svelte";
 
   const CDN_URL =
     "https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js";
 
   let tagCloud;
+  let radius = 350;
+  let screenWidth;
 
   const myTags = [
     "JavaScript",
@@ -30,22 +33,33 @@
   ];
 
   onMount(() => {
+    screenWidth = window.innerWidth;
+    window.addEventListener("resize", handleResize);
+
     const script = document.createElement("script");
     script.src = CDN_URL;
     script.onload = initializeTagCloud;
     document.body.appendChild(script);
   });
 
+  afterUpdate(() => {
+    const screenWidth = window.innerWidth;
+    radius = screenWidth <= 2500 ? 380 : screenWidth <= 3800 ? 550 : 800;
+  });
+
+  function handleResize() {
+    screenWidth = window.innerWidth;
+    console.log(screenWidth);
+  }
+
   function initializeTagCloud() {
     tagCloud = TagCloud(".content", myTags, {
-      radius: 350,
-      maxSpeed: "fast",
+      radius,
+      maxSpeed: "normal",
       initSpeed: "slow",
       direction: 235,
-      keep: false,
+      keep: true,
     });
-
-    randomColor = colors[Math.floor(Math.random() * colors.length)];
   }
 </script>
 
@@ -53,9 +67,14 @@
 
 <style>
   .tagcloud {
-    /* font-family: "coolvetica"; */
-    color: #08fdd8;
+    color: var(--pri);
     font-size: 2rem;
     font-weight: 400;
+  }
+
+  @media (min-width: 2560px) {
+    .tagcloud {
+      font-size: 2.5rem;
+    }
   }
 </style>

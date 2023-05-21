@@ -46,7 +46,6 @@
 
 <style lang="scss">
   main {
-    height: 100vh;
     padding-left: 7.5rem;
     margin-left: 13rem;
     background-color: var(--bg);
@@ -59,7 +58,8 @@
     height: 2.5rem;
     z-index: 1;
     background-color: var(--bg);
-    box-shadow: 0px -40px 200px 0px rgba(255, 255, 255, 0.157);
+    box-shadow: 0px -40px 200px 0px #000;
+    // box-shadow: 0px -40px 200px 0px rgba(255, 255, 255, 0.157);
 
     &_alt {
       position: absolute;
@@ -75,6 +75,7 @@
   .container {
     width: 45%;
     margin-top: 2rem;
+    padding-right: 7.5rem;
   }
 
   .map {

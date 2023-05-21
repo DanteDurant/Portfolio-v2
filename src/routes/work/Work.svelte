@@ -8,6 +8,7 @@
 
 <main id="Work" class="main">
   <div class="container">
+    <p class="bg-text">work</p>
     <p class="tag" style="margin: 0 0 0 -1rem;">&lt;h2&gt;</p>
 
     <span class="head">
@@ -47,3 +48,31 @@
     <p class="tag" style="margin: 1.5rem 0 0 -4rem;">&lt;section/&gt;</p>
   </div>
 </main>
+
+<style>
+  .container {
+    /* background-color: red; */
+    /* overflow: hidden; */
+    /* background-color: var(--bg-alt); */
+  }
+
+  .bg-text {
+    position: absolute;
+    right: -5rem;
+    top: -25.1rem;
+    font-size: 64.3rem;
+    font-weight: 900;
+    z-index: 1;
+    letter-spacing: -4rem;
+
+    /* color: #000; */
+    /* color: rgba(0, 0, 0, 0.5); */
+    color: rgba(0, 0, 0, 0.25);
+  }
+
+  @media (min-width: 2560px) {
+    .bg-text {
+      right: -5rem;
+    }
+  }
+</style>

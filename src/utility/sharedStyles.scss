@@ -5,6 +5,7 @@
   --bg-alt: #181818;
   --text: #d9d9d9;
   --text-alt: #8d8d8d;
+  --tag: #515151;
 }
 
 .main {
@@ -16,6 +17,7 @@
 
 .container {
   width: 100%;
+  height: min-content;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -23,7 +25,7 @@
 }
 
 .tag {
-  color: #515152;
+  color: var(--tag);
   font-size: 1.8rem;
   font-style: italic;
   font-family: "La Belle Aurore";
@@ -32,11 +34,14 @@
 .head {
   margin: -1.5rem 0 -1rem 0;
   color: var(--pri);
+  z-index: 2;
+
 
   &_alt {
     color: var(--text);
     font-size: 1.6rem;
     line-height: 1.5;
+    z-index: 2;
   }
 }
 

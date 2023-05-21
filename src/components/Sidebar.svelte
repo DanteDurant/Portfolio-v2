@@ -55,7 +55,7 @@
     width: 13rem;
     flex-direction: column;
     position: fixed;
-    height: 100vh;
+    height: 100%;
     background-color: var(--bg-alt);
     left: 0;
     top: 0;
