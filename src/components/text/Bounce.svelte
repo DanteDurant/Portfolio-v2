@@ -7,7 +7,7 @@
   export let customStyles = "";
   export let delay = 0;
   export let size = "9.3rem";
-  export let spacing = "-0.5rem";
+  export let spacing = "-0.3rem";
   export let height = "8.6rem";
 
   let isHovered = false;
@@ -48,6 +48,8 @@
   }
 
   h1 {
+    font-family: "coolvetica", sans-serif;
+    font-weight: 500;
     transition: all 250ms;
     margin: 0;
     // line-height: 8.6rem;

@@ -1,13 +1,13 @@
 <script>
   import Bounce from "../../components/text/Bounce.svelte";
   const s = "6rem";
-  const sp = "-0.5rem";
+  const sp = "-0.2rem";
   const h = "5.5rem";
 </script>
 
 <main id="Skills" class="main">
   <div class="container">
-    <p class="tag" style="margin: 0 0 1.5rem -1rem;">&lt;h2&gt;</p>
+    <p class="tag" style="margin: 0 0 1rem -1rem;">&lt;h2&gt;</p>
     <span class="head">
       <Bounce size={s} spacing={sp} height={h} text="S" />
       <Bounce size={s} spacing={sp} height={h} text="k" />
@@ -36,9 +36,9 @@
     <p class="tag" style="margin: -1rem 0 0 -1rem;">&lt;p&gt;</p>
     <span class="head_alt">
       With expertise in modern programming languages and technologies like
-      JavaScript, HTML5, CSS3, Sass, JSON, jQuery, AJAX, REST, React, React
-      Native, Expo, Svelte, Sveltekit, Tailwind, Python, C#, C++, and Git, I am
-      able to develop professional web and mobile applications.
+      JavaScript, HTML5, CSS3, Sass, Axios, jQuery, AJAX, REST, React, React
+      Native, Svelte, Tailwind, Python, C#, C++, and Git, I am able to develop
+      professional web and mobile applications.
       <br />
       <br />
       In mobile app development, I created the WWF Wine Farm Guide app using React
@@ -59,8 +59,6 @@
 </main>
 
 <style lang="scss">
-  main {
-  }
   .container {
     width: 65%;
   }

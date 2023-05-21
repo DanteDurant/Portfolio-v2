@@ -3,13 +3,13 @@
   import Bounce from "../../components/text/Bounce.svelte";
   import ImageGrid from "../../components/features/ImageGrid.svelte";
   const s = "6rem";
-  const sp = "-0.25rem";
+  const sp = "-0.2rem";
 </script>
 
 <main id="Work" class="main">
   <div class="container">
-    <p class="bg-text">work</p>
-    <p class="tag" style="margin: 0 0 0 -1rem;">&lt;h2&gt;</p>
+    <p class="bg-text">Work</p>
+    <p class="tag" style="margin: 0 0 -0.5rem -1rem;">&lt;h2&gt;</p>
 
     <span class="head">
       <Bounce size={s} spacing={sp} text="M" />
@@ -50,23 +50,17 @@
 </main>
 
 <style>
-  .container {
-    /* background-color: red; */
-    /* overflow: hidden; */
-    /* background-color: var(--bg-alt); */
-  }
-
   .bg-text {
     position: absolute;
-    right: -5rem;
-    top: -25.1rem;
-    font-size: 64.3rem;
-    font-weight: 900;
+    right: -8rem;
+    /* top: -28.5rem; */
+    top: -15rem;
+    /* font-size: 64.3rem; */
+    font-size: 50rem;
+    font-family: "coolvetica";
+    font-weight: 400;
     z-index: 1;
-    letter-spacing: -4rem;
-
-    /* color: #000; */
-    /* color: rgba(0, 0, 0, 0.5); */
+    letter-spacing: -1rem;
     color: rgba(0, 0, 0, 0.25);
   }
 

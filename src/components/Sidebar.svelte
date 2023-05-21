@@ -57,13 +57,13 @@
     position: fixed;
     height: 100%;
     background-color: var(--bg-alt);
-    left: 0;
-    top: 0;
-    right: auto;
-    bottom: 0;
+    // left: 0;
+    // top: 0;
+    // right: auto;
+    // bottom: 0;
     justify-content: space-between;
     align-items: center;
-    z-index: 999;
+    // z-index: 999;
 
     &_top {
       display: flex;
@@ -76,11 +76,6 @@
 
       a {
         text-decoration: none;
-      }
-
-      &_logo {
-        height: auto;
-        width: 7.2rem;
       }
 
       // name

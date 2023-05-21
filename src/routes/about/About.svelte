@@ -2,12 +2,12 @@
   import Bounce from "../../components/text/Bounce.svelte";
   import TagCloud from "../../components/features/TagCloud.svelte";
   const s = "6rem";
-  const sp = "-0.5rem";
+  const sp = "-0.2rem";
 </script>
 
 <main id="About" class="main">
   <div class="container">
-    <p class="tag" style="margin: 0 0 0 -1rem;">&lt;h2&gt;</p>
+    <p class="tag" style="margin: 0 0 -0.5rem -1rem;">&lt;h2&gt;</p>
     <span class="head">
       <Bounce size={s} spacing={sp} text="M" />
       <Bounce size={s} spacing={sp} text="e" />

@@ -3,7 +3,7 @@
 </script>
 
 <main>
-  <p class="tag" style="margin: 0 0 1rem -4rem;">&lt;form&gt;</p>
+  <p class="tag" style="margin: 0 0 1rem -1rem;">&lt;form&gt;</p>
   <span>
     <form action="https://formspree.io/f/xayzkgwq" method="POST">
       <div>
@@ -42,7 +42,7 @@
       </button>
     </form>
   </span>
-  <p class="tag" style="margin: 1.5rem 0 0 -4rem;">&lt;form/&gt;</p>
+  <p class="tag" style="margin: 1.5rem 0 0 -1rem;">&lt;/form&gt;</p>
 </main>
 
 <style lang="scss">

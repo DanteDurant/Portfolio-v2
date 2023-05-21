@@ -30,7 +30,7 @@
     <div class="head">
       <p class="tag" style="margin: 0 0 -1rem -1rem">&lt;h1&gt;</p>
       <IntroText />
-      <p class="tag" style="margin: -3.7rem -6rem 0 62rem;">&lt;h1/&gt;</p>
+      <p class="tag" style="margin: -3.7rem -6rem 0 56.5rem;">&lt;h1/&gt;</p>
       <div
         class="sub"
         class:fadeIn={subVisible}
