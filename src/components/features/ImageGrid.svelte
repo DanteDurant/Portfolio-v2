@@ -1,63 +1,100 @@
 <script>
-  import { onMount } from "svelte";
+  import { onMount, afterUpdate } from "svelte";
+  import { createEventDispatcher } from "svelte";
 
   import Sanlam from "../../lib/images/sanlam.png";
   import Design from "../../lib/images/design.png";
   import Rocket from "../../lib/images/rocket.png";
   import Wine from "../../lib/images/wwf-wine.png";
-  import Stile from "../../lib/images/Stile.jpeg";
+  import Stile from "../../lib/images/stile.jpeg";
   import Circle from "../../lib/images/circle.png";
+
+  import Modal from "../modals/Modal.svelte";
+  import SanlamStory from "../modals/SanlamStory.svelte";
+  import SanlamDS from "../modals/SanlamDS.svelte";
+  import RetailRocket from "../modals/RetailRocket.svelte";
+  import WineChampion from "../modals/WineChampion.svelte";
+  import StileAlu from "../modals/StileAlu.svelte";
+
+  let isModalOpen = false;
+  let currentModal = null; // Track the current modal component
+
+  const dispatch = createEventDispatcher();
+
+  const openModal = (modal) => {
+    currentModal = modal; // Set the current modal component
+    isModalOpen = true;
+    document.body.style.overflow = "hidden";
+  };
+
+  const closeModal = () => {
+    isModalOpen = false;
+    document.body.style.overflow = "auto";
+  };
+
+  // Custom event listener to close the modal
+  const handleModalClose = () => {
+    closeModal();
+  };
+
+  // Fire the custom event when the modal closes
+  onMount(() => {
+    dispatch("modalclose", handleModalClose);
+  });
 </script>
 
 <div class="image-grid">
+  <Modal isOpen={isModalOpen} onClose={closeModal}>
+    {#if currentModal === SanlamStory}
+      <SanlamStory on:modalclose={handleModalClose} />
+    {/if}
+    {#if currentModal === SanlamDS}
+      <SanlamDS on:modalclose={handleModalClose} />
+    {/if}
+    {#if currentModal === RetailRocket}
+      <RetailRocket on:modalclose={handleModalClose} />
+    {/if}
+    {#if currentModal === WineChampion}
+      <WineChampion on:modalclose={handleModalClose} />
+    {/if}
+    {#if currentModal === StileAlu}
+      <StileAlu on:modalclose={handleModalClose} />
+    {/if}
+  </Modal>
+
   <span>
-    <a
-      href="https://storybook.sanlam.design/react-ui-next/index.html?path=/story/docs-introduction--page"
-      target="_blank"
-      class="image-box"
-    >
+    <button on:click={() => openModal(SanlamStory)} class="image-box">
       <img class="image" src={Sanlam} alt="Sanlam storybook" />
       <img src={Circle} class="popup" alt="view project" />
-    </a>
+    </button>
   </span>
 
   <span>
-    <a
-      href="https://storybook.sanlam.design/react-ui-next/index.html?path=/story/docs-introduction--page"
-      class="image-box"
-    >
+    <button on:click={() => openModal(SanlamDS)} class="image-box">
       <img class="image" src={Design} alt="Sanlam design system" />
       <img src={Circle} class="popup" alt="view project" />
-    </a>
+    </button>
   </span>
 
   <span>
-    <a href="https://takealot.retailrockit.co.za/" class="image-box">
-      <img class="image" src={Rocket} alt="retail rocket logo" />
+    <button on:click={() => openModal(RetailRocket)} class="image-box">
+      <img class="image" src={Rocket} alt="Retail Rocket logo" />
       <img src={Circle} class="popup" alt="view project" />
-    </a>
+    </button>
   </span>
 
   <span>
-    <a
-      href="https://play.google.com/store/apps/details?id=com.wwfconservationchampions&gl=US"
-      target="_blank"
-      class="image-box scale"
-    >
+    <button on:click={() => openModal(WineChampion)} class="image-box">
       <img class="image" src={Wine} alt="wwf wine logo" />
       <img src={Circle} class="popup" alt="view project" />
-    </a>
+    </button>
   </span>
 
   <span>
-    <a
-      href="https://stile-aluminium.netlify.app"
-      target="_blank"
-      class="image-box"
-    >
-      <img class="image" src={Stile} alt="Stile" />
+    <button on:click={() => openModal(StileAlu)} class="image-box">
+      <img class="image" src={Stile} alt="Stile Aluminium logo " />
       <img src={Circle} class="popup" alt="view project" />
-    </a>
+    </button>
   </span>
 </div>
 
@@ -66,14 +103,15 @@
     overflow: hidden;
   }
 
-  a {
-    text-decoration: none;
+  button {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
   }
 
   .image-grid {
     margin: 0 -4rem 0 -7.5rem;
     width: calc(100vw - 13rem);
-    // height: min-content;
     z-index: 1;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -83,16 +121,13 @@
 
   .popup {
     transition: all 200ms ease;
-    width: 9rem;
-    height: auto;
+    width: 11rem;
     opacity: 0;
     scale: 0.3;
     filter: brightness(0.5);
   }
 
   .image-box {
-    position: relative;
-    display: inline-block;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -115,10 +150,8 @@
 
   .image-box .image {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    width: 102%;
+    height: 102%;
     object-fit: cover;
   }
 </style>
