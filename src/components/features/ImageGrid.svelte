@@ -1,5 +1,5 @@
 <script>
-  import { onMount, afterUpdate } from "svelte";
+  import { onMount } from "svelte";
   import { createEventDispatcher } from "svelte";
 
   import Sanlam from "../../lib/images/sanlam.png";
