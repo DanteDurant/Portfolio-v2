@@ -6,8 +6,8 @@
   export let onClose;
 </script>
 
-<div class="container" class:open={isOpen}>
-  <div class="modal-content center-parent">
+<div class="fullscreen" class:open={isOpen}>
+  <div class="modal-outer">
     <slot />
     <button class="close-button" on:click={onClose}>
       <Button text="Return" />
@@ -16,7 +16,7 @@
 </div>
 
 <style>
-  .container {
+  .fullscreen {
     position: fixed;
     top: 0;
     left: 0;
@@ -38,7 +38,8 @@
     pointer-events: auto;
   }
 
-  .modal-content {
+  .modal-outer {
+    position: relative;
     color: #fff;
     background-color: var(--bg);
     height: calc(100vh - 13rem);
@@ -50,8 +51,8 @@
 
   .close-button {
     position: absolute;
-    right: 8.5rem;
-    bottom: 8.5rem;
+    right: 5rem;
+    bottom: 3.5rem;
     background-color: transparent;
     padding: 0;
   }

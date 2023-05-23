@@ -30,7 +30,7 @@
     <p class="tag" style="margin: 0 0 0 -1rem;">&lt;h2/&gt;</p>
     <p class="tag" style="margin: -1rem 0 0 -1rem;">&lt;p&gt;</p>
 
-    <span class="head_alt">
+    <p class="head_alt">
       A small gallery of recent projects chosen by me. I've done them all
       together with amazing people from companies <br />
       around the country. the list is a work in progress and there is more to come.<br
@@ -38,7 +38,7 @@
       <a href="https://github.com/DanteDurant?tab=repositories" target="_blank"
         >GitHub</a
       > page.
-    </span>
+    </p>
 
     <p class="tag" style="margin: 0 0 4rem -1rem;">&lt;p/&gt;</p>
     <p class="tag" style="margin: 0 0 1rem -4rem;">&lt;section&gt;</p>
@@ -50,16 +50,16 @@
 </main>
 
 <style>
+  .head_alt {
+    z-index: 1;
+  }
   .bg-text {
     position: absolute;
     right: -8rem;
-    /* top: -28.5rem; */
     top: -15rem;
-    /* font-size: 64.3rem; */
     font-size: 50rem;
     font-family: "coolvetica";
     font-weight: 400;
-    /* z-index: 0; */
     letter-spacing: -1rem;
     color: rgba(0, 0, 0, 0.25);
   }
