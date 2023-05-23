@@ -16,7 +16,7 @@
   import WineChampion from "../modals/WineChampion.svelte";
   import StileAlu from "../modals/StileAlu.svelte";
 
-  let isModalOpen = false;
+  export let isModalOpen = false;
   let currentModal = null; // Track the current modal component
 
   const dispatch = createEventDispatcher();

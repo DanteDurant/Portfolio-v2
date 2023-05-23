@@ -59,7 +59,7 @@
     font-size: 50rem;
     font-family: "coolvetica";
     font-weight: 400;
-    z-index: 1;
+    /* z-index: 0; */
     letter-spacing: -1rem;
     color: rgba(0, 0, 0, 0.25);
   }

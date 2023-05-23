@@ -9,7 +9,7 @@
   </a>
 </section>
 
-<style lang="scss">
+<!-- <style lang="scss">
   .modal {
     width: 100%;
     height: 100%;
@@ -27,4 +27,4 @@
       font-size: 1.6rem;
     }
   }
-</style>
+</style> -->

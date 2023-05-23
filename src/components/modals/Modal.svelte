@@ -6,10 +6,9 @@
   export let onClose;
 </script>
 
-<div class="modal" class:open={isOpen}>
+<div class="container" class:open={isOpen}>
   <div class="modal-content center-parent">
     <slot />
-    <!-- <button class="close-button" on:click={onClose}>Close</button> -->
     <button class="close-button" on:click={onClose}>
       <Button text="Return" />
     </button>
@@ -17,7 +16,7 @@
 </div>
 
 <style>
-  .modal {
+  .container {
     position: fixed;
     top: 0;
     left: 0;
@@ -42,20 +41,17 @@
   .modal-content {
     color: #fff;
     background-color: var(--bg);
-    /* padding: 20px; */
     height: calc(100vh - 13rem);
     width: calc(100vw - 26em);
-    /* width: 100%; */
     margin-left: 13rem;
-    /* box-shadow: 40px 40px 40px 40px rgba(0, 0, 0, 0.5); */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.2),
       0 0 30px rgba(0, 0, 0, 0.2), 0 0 40px rgba(0, 0, 0, 0.2);
   }
 
   .close-button {
     position: absolute;
-    right: 11rem;
-    bottom: 11rem;
+    right: 8.5rem;
+    bottom: 8.5rem;
     background-color: transparent;
     padding: 0;
   }

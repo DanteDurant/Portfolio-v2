@@ -5,11 +5,3 @@
     RetailRockit
   </a>
 </section>
-
-<style lang="scss">
-  .modal {
-    & h1 {
-      font-size: 11rem;
-    }
-  }
-</style>
