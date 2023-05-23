@@ -20,8 +20,8 @@
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: start;
-    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(2px);
     z-index: 10;
     opacity: 0;
@@ -38,13 +38,15 @@
     color: #fff;
     background-color: var(--bg);
     /* padding: 20px; */
-    height: calc(100vh - 26rem);
-    width: calc(100vw - 26rem);
-    margin-left: calc(13rem + (13rem * 0.618));
+    height: calc(100vh - 13rem);
+    width: calc(100vw - 26em);
+    /* width: 100%; */
+    margin-left: 13rem;
     /* box-shadow: 40px 40px 40px 40px rgba(0, 0, 0, 0.5); */
   }
 
   .close-button {
-    margin-top: 10px;
+    /* margin-top: 10px; */
+    padding: 5rem;
   }
 </style>
