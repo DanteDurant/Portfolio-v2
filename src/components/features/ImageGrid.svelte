@@ -6,7 +6,7 @@
   import Design from "../../lib/images/design.png";
   import Rocket from "../../lib/images/rocket.png";
   import Wine from "../../lib/images/wwf-wine.png";
-  import Stile from "../../lib/images/stile.jpeg";
+  import Stile from "../../lib/images/Stile.jpeg";
   import Circle from "../../lib/images/circle.png";
 
   import Modal from "../modals/Modal.svelte";
