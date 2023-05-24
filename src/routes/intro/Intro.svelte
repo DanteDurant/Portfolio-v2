@@ -1,6 +1,6 @@
 <script>
   import { onMount } from "svelte";
-  import IntroText from "../../components/text/IntroText.svelte";
+  import IntroText from "../../components/text/IntroHeading.svelte";
   import Button from "../../components/Button.svelte";
   import ArrowDown from "$lib/images/ArrowDown.svelte";
   import sharedStyles from "../../utility/sharedStyles.scss";
@@ -12,10 +12,10 @@
   onMount(() => {
     setTimeout(() => {
       subVisible = true;
-    }, 400);
+    }, 4200);
     setTimeout(() => {
       buttonVisible = true;
-    }, 1000);
+    }, 4700);
   });
 </script>
 
