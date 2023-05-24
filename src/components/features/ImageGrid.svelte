@@ -2,11 +2,11 @@
   import { onMount } from "svelte";
   import { createEventDispatcher } from "svelte";
 
-  import Sanlam from "../../lib/images/sanlam.png";
-  import Design from "../../lib/images/design.png";
-  import Rocket from "../../lib/images/rocket.png";
-  import Wine from "../../lib/images/wwf-wine.png";
-  import Stile from "../../lib/images/Stile.jpeg";
+  import Sanlam from "../../lib/images/sanlam.webp";
+  import Design from "../../lib/images/design.webp";
+  import Rocket from "../../lib/images/rocket.webp";
+  import Wine from "../../lib/images/wwf-wine.webp";
+  import Stile from "../../lib/images/Stile.webp";
   import Circle from "../../lib/images/circle.png";
 
   import Modal from "../modals/Modal.svelte";
