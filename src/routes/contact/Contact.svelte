@@ -9,7 +9,7 @@
 <main id="Contact" class="main">
   <span class="parent">
     <div>
-      <p class="tag" style="margin: 0 0 -1.5rem -1rem;">&lt;h2&gt;</p>
+      <p class="tag" style="margin: 0 0 -1.5rem -1rem;">&lt;h1&gt;</p>
       <span class="head">
         <Bounce size={s} spacing={sp} text="C" />
         <Bounce size={s} spacing={sp} text="o" />
@@ -23,7 +23,7 @@
         <Bounce size={s} spacing={sp} text="m" />
         <Bounce size={s} spacing={sp} text="e" />
       </span>
-      <p class="tag" style="margin: 0 0 0 -1rem;">&lt;h2/&gt;</p>
+      <p class="tag" style="margin: 0 0 0 -1rem;">&lt;h1/&gt;</p>
       <p class="tag" style="margin: -1rem 0 0 -1rem;">&lt;p&gt;</p>
       <span class="head_alt">
         I’m interested in working as a front-end developer, especially ambitious

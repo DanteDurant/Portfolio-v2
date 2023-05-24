@@ -45,13 +45,14 @@
     height: calc(100vh - 13rem);
     width: calc(100vw - 26em);
     margin-left: 13rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.2),
-      0 0 30px rgba(0, 0, 0, 0.2), 0 0 40px rgba(0, 0, 0, 0.2);
+    box-shadow: 1px -2px 31px 2px rgb(0, 0, 0, 0.2);
+    -webkit-box-shadow: 1px -2px 31px 2px rgb(00, 0, 0, 0.2);
+    -moz-box-shadow: 1px -2px 31px 2px rgb(0, 0, 0, 0.2);
   }
 
   .close-button {
     position: absolute;
-    right: 5rem;
+    left: 5rem;
     bottom: 3.5rem;
     background-color: transparent;
     padding: 0;
