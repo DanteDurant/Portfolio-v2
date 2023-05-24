@@ -17,12 +17,12 @@
   import StileAlu from "../modals/StileAlu.svelte";
 
   export let isModalOpen = false;
-  let currentModal = null; // Track the current modal component
+  let currentModal = null;
 
   const dispatch = createEventDispatcher();
 
   const openModal = (modal) => {
-    currentModal = modal; // Set the current modal component
+    currentModal = modal;
     isModalOpen = true;
     document.body.style.overflow = "hidden";
   };
@@ -32,12 +32,10 @@
     document.body.style.overflow = "auto";
   };
 
-  // Custom event listener to close the modal
   const handleModalClose = () => {
     closeModal();
   };
 
-  // Fire the custom event when the modal closes
   onMount(() => {
     dispatch("modalclose", handleModalClose);
   });

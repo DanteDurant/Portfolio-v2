@@ -14,15 +14,23 @@
     <div style="display: contents">%sveltekit.body%</div>
 
     <style>
+      @font-face {
+        font-family: 'coolvetica';
+        src: url('%sveltekit.assets%/coolvetica-rg.woff2') format('woff2');
+      }
+
       
       html {
         font-size: 62.5%;
-        font-family: "Open Sans", sans-serif;
         scroll-behavior: smooth;
       }
 
       h1 {
         font-family: "coolvetica", sans-serif;
+      }
+
+      body {
+        font-family: "Open Sans", sans-serif
       }
 
       @media (min-width: 2560px) {
@@ -54,10 +62,6 @@
         padding-inline-start: 0px;
       }
 
-      @font-face {
-          font-family: 'coolvetica';
-          src: url('%sveltekit.assets%/coolvetica-rg.woff2') format('woff2');
-      }
 
     </style>
   </body>
