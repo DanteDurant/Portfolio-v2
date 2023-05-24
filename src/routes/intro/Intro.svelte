@@ -15,7 +15,7 @@
     }, 3000);
     setTimeout(() => {
       buttonVisible = true;
-    }, 3700);
+    }, 3500);
   });
 </script>
 
