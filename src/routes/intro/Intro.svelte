@@ -12,10 +12,10 @@
   onMount(() => {
     setTimeout(() => {
       subVisible = true;
-    }, 3300);
+    }, 3000);
     setTimeout(() => {
       buttonVisible = true;
-    }, 4000);
+    }, 3700);
   });
 </script>
 
