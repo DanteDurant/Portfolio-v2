@@ -26,7 +26,7 @@
         <Bounce delay={300} size={s} spacing={sp} text="I" />
         <Bounce delay={330} size={s} spacing={sp} text="T" />
       </span>
-      <p class="tag" style="margin: -2.3rem -6rem 0 22.5rem;">&lt;h2/&gt;</p>
+      <p class="tag" style="margin: -2.3rem -6rem 0 39rem;">&lt;h2/&gt;</p>
       <p class="tag" style="margin: 0.5rem 0 -2rem -1rem;">&lt;h3&gt;</p>
       <h2>Supply Chain Finance Platform</h2>
       <p class="tag" style="margin: -1.3rem 0 0 -1rem;">&lt;h3/&gt;</p>
