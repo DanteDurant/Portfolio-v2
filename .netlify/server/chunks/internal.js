@@ -108,7 +108,57 @@ const options = {
   root: Root,
   service_worker: false,
   templates: {
-    app: ({ head, body, assets: assets2, nonce, env }) => '<!DOCTYPE html>\n<html lang="en">\n  <head>\n    <meta charset="utf-8" />\n    <link rel="icon" href="' + assets2 + '/favicon.png" />\n    <meta name="viewport" content="width=device-width" />\n    ' + head + '\n    <link rel="preconnect" href="https://fonts.googleapis.com">\n    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n    <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">\n\n  </head> \n  <body data-sveltekit-preload-data="hover">\n    <div style="display: contents">' + body + '</div>\n\n    <style>\n      html {\n        font-size: 62.5%;\n        font-family: "Open Sans", sans-serif;\n        scroll-behavior: smooth;\n      }\n\n      @media (min-width: 2560px) {\n        html {\n          font-size: 72.5%;\n        }\n      }\n\n      @media (min-width: 3840px) {\n        html {\n          font-size: 122.5%;\n        }\n      }\n\n      menu {\n        margin-block-start: 0em;\n        margin-block-end: 0em;\n        margin-inline-start: 0px;\n        margin-inline-end: 0px;\n        padding-inline-start: 0px;\n      }\n      body {\n\n        background-color: #1d1d1d;\n        margin-block-start: 0em;\n        margin-block-end: 0em;\n        margin-inline-start: 0rem;\n        margin-inline-end: 0px;\n        padding-inline-start: 0px;\n      }\n    </style>\n  </body>\n</html>\n',
+    app: ({ head, body, assets: assets2, nonce, env }) => '<!DOCTYPE html>\n<html lang="en">\n  <head>\n    <meta charset="utf-8" />\n    <link rel="icon" href="' + assets2 + '/favicon.png" />\n    <meta name="viewport" content="width=device-width" />\n    ' + head + '\n    <link rel="preconnect" href="https://fonts.googleapis.com">\n    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n    <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">\n\n  </head> \n  <body data-sveltekit-preload-data="hover">\n    <div style="display: contents">' + body + "</div>\n\n    <style>\n      @font-face {\n        font-family: 'coolvetica';\n        src: url('" + assets2 + `/coolvetica-rg.woff2') format('woff2');
+      }
+
+      
+      html {
+        font-size: 62.5%;
+        scroll-behavior: smooth;
+      }
+
+      h1 {
+        font-family: "coolvetica", sans-serif;
+      }
+
+      body {
+        font-family: "Open Sans", sans-serif
+      }
+      /* 1440p */
+      @media (min-width: 2560px) { 
+        html {
+          font-size: 72.5%;
+        }
+      }
+      /* 4k */
+      @media (min-width: 3840px) {
+        html {
+          font-size: 122.5%;
+        }
+      }
+
+      menu {
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 0px;
+      }
+      body {
+
+        background-color: #1d1d1d;
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+        margin-inline-start: 0rem;
+        margin-inline-end: 0px;
+        padding-inline-start: 0px;
+      }
+
+
+    </style>
+  </body>
+</html>
+`,
     error: ({ status, message }) => '<!DOCTYPE html>\n<html lang="en">\n	<head>\n		<meta charset="utf-8" />\n		<title>' + message + `</title>
 
 		<style>
@@ -169,7 +219,7 @@ const options = {
 		<div class="error">
 			<span class="status">` + status + '</span>\n			<div class="message">\n				<h1>' + message + "</h1>\n			</div>\n		</div>\n	</body>\n</html>\n"
   },
-  version_hash: "ujb1ww"
+  version_hash: "1yhu2u5"
 };
 function get_hooks() {
   return {};

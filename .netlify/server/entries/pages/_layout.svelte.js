@@ -1,4 +1,5 @@
 import { c as create_ssr_component, v as validate_component, a as add_attribute } from "../../chunks/index2.js";
+import { I as ImageGrid } from "../../chunks/ImageGrid.js";
 const Logo_svelte_svelte_type_style_lang = "";
 const css$2 = {
   code: "svg.svelte-npph1p{width:7.2rem}",
@@ -52,7 +53,7 @@ const css = {
 };
 const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css);
-  return `<div class="app svelte-1po14tn">${validate_component(Tendrils, "Tendrils").$$render($$result, {}, {}, {})}
+  return `<div class="app svelte-1po14tn">${ImageGrid ? `${validate_component(Tendrils, "Tendrils").$$render($$result, {}, {}, {})}` : `&quot;&quot;`}
 
   <aside class="svelte-1po14tn">${validate_component(Sidebar, "Sidebar").$$render($$result, {}, {}, {})}</aside>
 

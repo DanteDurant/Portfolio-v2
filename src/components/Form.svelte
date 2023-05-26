@@ -54,7 +54,7 @@
 
   input,
   textarea {
-    background-color: #3c3c3c;
+    background-color: var(--bg-form);
     color: white;
     width: 100%;
     font-size: 1.8rem;

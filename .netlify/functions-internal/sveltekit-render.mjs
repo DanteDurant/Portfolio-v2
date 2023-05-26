@@ -3,10 +3,10 @@ import { init } from '../serverless.js';
 export const handler = init({
 	appDir: "_app",
 	appPath: "_app",
-	assets: new Set([".DS_Store","coolvetica/.DS_Store","coolvetica/Typodermic Desktop EULA 2023.pdf","coolvetica compressed hv.otf","coolvetica condensed rg.otf","coolvetica crammed rg.otf","coolvetica rg it.otf","coolvetica-rg.otf","coolvetica.rg-regular.otf","coolvetica.zip","favicon.png","geoparody.otf"]),
-	mimeTypes: {".pdf":"application/pdf",".otf":"font/otf",".zip":"application/zip",".png":"image/png"},
+	assets: new Set([".DS_Store","coolvetica-rg.woff2","favicon.png","geoparody.otf"]),
+	mimeTypes: {".woff2":"font/woff2",".png":"image/png",".otf":"font/otf"},
 	_: {
-		client: {"start":"_app/immutable/entry/start.bec25e6d.js","app":"_app/immutable/entry/app.b6b72265.js","imports":["_app/immutable/entry/start.bec25e6d.js","_app/immutable/chunks/index.bb440570.js","_app/immutable/chunks/singletons.450781fa.js","_app/immutable/entry/app.b6b72265.js","_app/immutable/chunks/index.bb440570.js"],"stylesheets":[],"fonts":[]},
+		client: {"start":"_app/immutable/entry/start.8092284b.js","app":"_app/immutable/entry/app.c190479a.js","imports":["_app/immutable/entry/start.8092284b.js","_app/immutable/chunks/index.163151cb.js","_app/immutable/chunks/singletons.0aabd740.js","_app/immutable/entry/app.c190479a.js","_app/immutable/chunks/index.163151cb.js"],"stylesheets":[],"fonts":[]},
 		nodes: [
 			() => import('../server/nodes/0.js'),
 			() => import('../server/nodes/1.js'),

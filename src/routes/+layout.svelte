@@ -1,16 +1,12 @@
 <script>
   import Sidebar from "../components/Sidebar.svelte";
-  import isModalOpen from "../components/features/ImageGrid.svelte";
   import Tendrils from "../components/features/Tendrils.svelte";
-
-  // let tendrilsToggle = true;
+  import { modalState } from "../components/features/store";
 </script>
 
 <div class="app">
-  {#if isModalOpen}
+  {#if !$modalState}
     <Tendrils />
-  {:else}
-    ""
   {/if}
 
   <aside>
@@ -46,9 +42,5 @@
     main {
       margin-bottom: -10rem;
     }
-  }
-
-  div {
-    margin: 0;
   }
 </style>

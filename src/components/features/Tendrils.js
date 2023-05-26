@@ -1,5 +1,10 @@
 export default function initOciliator(remove, canvasElement) {
 
+    let resize;
+    let start;
+    let stop;
+    let mousemove;
+    let touchstart;
 
   if(!remove) {
 

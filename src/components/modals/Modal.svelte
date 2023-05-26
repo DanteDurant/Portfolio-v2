@@ -1,12 +1,12 @@
-<!-- Modal.svelte -->
 <script>
+  import { onMount } from "svelte";
   import Button from "../Button.svelte";
 
   export let isOpen;
   export let onClose;
 </script>
 
-<div class="fullscreen" class:open={isOpen}>
+<div class={isOpen ? "fullscreen open" : "fullscreen"}>
   <div class="modal-outer">
     <slot />
     <button class="close-button" on:click={onClose}>

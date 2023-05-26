@@ -101,12 +101,6 @@
     }
   }
 
-  .text {
-    margin-top: 7.8rem;
-    display: flex;
-    flex-direction: column;
-  }
-
   .sub {
     opacity: 0;
     &:global(.fadeIn) {

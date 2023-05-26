@@ -15,10 +15,10 @@ const css = {
   map: null
 };
 const s = "6rem";
-const sp = "-0.5rem";
+const sp = "-0.2rem";
 const About = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css);
-  return `<main id="About" class="main"><div class="container svelte-pkk03x"><p class="tag" style="margin: 0 0 0 -1rem;">&lt;h2&gt;</p>
+  return `<main id="About" class="main"><div class="container svelte-pkk03x"><p class="tag" style="margin: 0 0 -0.5rem -1rem;">&lt;h2&gt;</p>
     <span class="head">${validate_component(Bounce, "Bounce").$$render($$result, { size: s, spacing: sp, text: "M" }, {}, {})}
       ${validate_component(Bounce, "Bounce").$$render($$result, { size: s, spacing: sp, text: "e" }, {}, {})}
       ${validate_component(Bounce, "Bounce").$$render($$result, { size: s, spacing: sp, text: "," }, {}, {})}

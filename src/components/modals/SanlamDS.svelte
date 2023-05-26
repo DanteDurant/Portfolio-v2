@@ -2,6 +2,7 @@
   import "./styles.scss";
   import Sanlam from "$lib/images/modals/sanlam.webp";
   import Bounce from "../text/Bounce.svelte";
+  import Clipboard from "../text/Clipboard.svelte";
 
   const s = "7rem";
   const sp = "-0.1rem";
@@ -9,7 +10,7 @@
 
 <section class="modal-inner">
   <span class="modal-inner">
-    <div class="con con-text">
+    <div class="con-text">
       <p class="tag" style="margin: 0 0 1rem -3rem;">&lt;section&gt;</p>
       <p class="tag" style="margin: 0 0 -0.5rem -1rem;">&lt;h2&gt;</p>
       <span class="head">
@@ -45,7 +46,7 @@
       </span>
       <p class="tag" style="margin: 1rem 0 0 -3rem;">&lt;section/&gt;</p>
     </div>
-    <div class="con con-img">
+    <div class="con-img">
       <div>
         <a href="http://sanlam-dsm.mlab.cx/ " target="_blank">
           <img src={Sanlam} alt="Sanlam DSM landing page" />
@@ -54,11 +55,11 @@
           <a class="link" href="http://sanlam-dsm.mlab.cx/ " target="_blank"
             >http://sanlam-dsm.mlab.cx
           </a>
+          <Clipboard text="sanlam" />
+          <div style="height: 1rem;" />
+          <Clipboard text="q)gdLtP*gt8zpJKD" />
         </span>
       </div>
     </div>
   </span>
 </section>
-
-<style lang="scss">
-</style>

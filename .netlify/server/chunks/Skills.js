@@ -6,11 +6,11 @@ const css = {
   map: null
 };
 const s = "6rem";
-const sp = "-0.5rem";
+const sp = "-0.2rem";
 const h = "5.5rem";
 const Skills = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css);
-  return `<main id="Skills" class="main"><div class="container svelte-rehsqd"><p class="tag" style="margin: 0 0 1.5rem -1rem;">&lt;h2&gt;</p>
+  return `<main id="Skills" class="main"><div class="container svelte-rehsqd"><p class="tag" style="margin: 0 0 1rem -1rem;">&lt;h2&gt;</p>
     <span class="head">${validate_component(Bounce, "Bounce").$$render(
     $$result,
     {
@@ -204,18 +204,20 @@ const Skills = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     <p class="tag" style="margin: 1.5rem 0 0 -1rem;">&lt;h2/&gt;</p>
     <p class="tag" style="margin: -1rem 0 0 -1rem;">&lt;p&gt;</p>
     <span class="head_alt">With expertise in modern programming languages and technologies like
-      JavaScript, HTML5, CSS3, Sass, JSON, jQuery, AJAX, REST, React, React
-      Native, Expo, Svelte, Sveltekit, Tailwind, Python, C#, C++, and Git, I am
-      able to develop professional web and mobile applications.
+      JavaScript, HTML5, CSS3, Sass, Axios, jQuery, AJAX, REST, React, React
+      Native, Svelte, Tailwind, Python, C#, C++, and Git, I am able to develop
+      professional web and mobile applications.
       <br>
       <br>
       In mobile app development, I created the WWF Wine Farm Guide app using React
       Native and Expo, delivering an intuitive user experience. I also contributed
       to large-scale projects, updating and maintaining design systems and component
-      libraries for Sanlam. Additionally, I excelled in backend development and API
-      integration, streamlining processes and enhancing user experience for a Takealot
-      service website, RetailRockit.
+      libraries for Sanlam. Additionallhttp://sanlam-dsm.mlab.cx/y, I excelled in
+      backend development and API integration, streamlining processes and enhancing
+      user experience for a Takealot service website, RetailRockit.
       <br>
+
+      talk about design software, figma, illustrator, fusion360
       <br>
       With a blend of artistic and technical skills, I consistently deliver visually
       stunning and functional solutions, staying updated with industry trends to

@@ -1,6 +1,7 @@
 <script>
   import { onMount } from "svelte";
   import { createEventDispatcher } from "svelte";
+  import { modalState } from "./store";
 
   import Sanlam from "../../lib/images/sanlam.webp";
   import Design from "../../lib/images/design.webp";
@@ -16,20 +17,24 @@
   import WineChampion from "../modals/WineChampion.svelte";
   import StileAlu from "../modals/StileAlu.svelte";
 
-  export let isModalOpen = false;
   let currentModal = null;
+
+  const setModalState = (state) => {
+    modalState.set(state);
+  };
 
   const dispatch = createEventDispatcher();
 
   const openModal = (modal) => {
     currentModal = modal;
-    isModalOpen = true;
+    setModalState(true);
     document.body.style.overflow = "hidden";
   };
 
   const closeModal = () => {
-    isModalOpen = false;
+    setModalState(false);
     document.body.style.overflow = "auto";
+    console.log("Close modal function called");
   };
 
   const handleModalClose = () => {
@@ -42,7 +47,7 @@
 </script>
 
 <div class="image-grid">
-  <Modal isOpen={isModalOpen} onClose={closeModal}>
+  <Modal isOpen={$modalState} onClose={closeModal}>
     {#if currentModal === SanlamStory}
       <SanlamStory on:modalclose={handleModalClose} />
     {/if}

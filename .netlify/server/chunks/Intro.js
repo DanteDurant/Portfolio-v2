@@ -13,7 +13,7 @@ const LogoAnimation = create_ssr_component(($$result, $$props, $$bindings, slots
   $$result.css.add(css$2);
   return `${``}`;
 });
-const IntroText_svelte_svelte_type_style_lang = "";
+const IntroHeading_svelte_svelte_type_style_lang = "";
 const css$1 = {
   code: ".logo.svelte-t4z5ha{margin-right:-0.3rem;margin-left:0.25rem}.bounce-root.svelte-t4z5ha{width:60.8rem;height:27rem;color:white}",
   map: null
@@ -21,44 +21,26 @@ const css$1 = {
 function generateNumbers() {
   const numbers = [];
   const start = 30;
-  const increment = 50;
-  const count = 23;
+  const increment = 40;
+  const count = 41;
   for (let i = 0; i < count; i++) {
     numbers.push(start + i * increment);
   }
   return numbers;
 }
-const IntroText = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+const IntroHeading = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   const d = generateNumbers();
   $$result.css.add(css$1);
-  return `<div aria-label="Hi, I'm Dante, web developer" class="bounce-root svelte-t4z5ha"><span style="position: relative; left: -0.1rem; bottom: 0.05rem;">${validate_component(Bounce, "Bounce").$$render($$result, { text: "H" }, {}, {})}
-    ${validate_component(Bounce, "Bounce").$$render(
-    $$result,
-    {
-      delay: d[0],
-      customStyles: "position: relative; left: -0.4rem;",
-      text: "i"
-    },
-    {},
-    {}
-  )}
-    ${validate_component(Bounce, "Bounce").$$render(
-    $$result,
-    {
-      delay: d[1],
-      customStyles: "position: relative; left: -0.8rem;",
-      text: ","
-    },
-    {},
-    {}
-  )}</span>
+  return `<div aria-label="Hi, I'm Dante, web developer" class="bounce-root svelte-t4z5ha"><span style="position: relative; left: -0.1rem; bottom: 0.05rem;">${validate_component(Bounce, "Bounce").$$render($$result, { delay: d[3], text: "H" }, {}, {})}
+    ${validate_component(Bounce, "Bounce").$$render($$result, { delay: d[4], text: "i" }, {}, {})}
+    ${validate_component(Bounce, "Bounce").$$render($$result, { delay: d[5], text: "," }, {}, {})}</span>
   <br>
-  ${validate_component(Bounce, "Bounce").$$render($$result, { delay: d[2], text: "I" }, {}, {})}
+  ${validate_component(Bounce, "Bounce").$$render($$result, { delay: d[9], text: "I" }, {}, {})}
   ${validate_component(Bounce, "Bounce").$$render(
     $$result,
     {
-      delay: d[3],
-      customStyles: "position: relative; left: -0.3rem; top: -5.7rem;",
+      delay: d[10],
+      customStyles: "position: relative; top: -5.7rem;",
       text: ","
     },
     {},
@@ -67,8 +49,8 @@ const IntroText = create_ssr_component(($$result, $$props, $$bindings, slots) =>
   ${validate_component(Bounce, "Bounce").$$render(
     $$result,
     {
-      delay: d[4],
-      customStyles: "position: relative; left: -0.9rem;",
+      delay: d[12],
+      customStyles: "position: relative; left: -0.3rem;",
       text: "m"
     },
     {},
@@ -76,37 +58,38 @@ const IntroText = create_ssr_component(($$result, $$props, $$bindings, slots) =>
   )}
   <span> </span>
   <span> </span>
-  <span class="logo svelte-t4z5ha">${validate_component(LogoAnimation, "LogoAnimation").$$render($$result, { delay: d[5] }, {}, {})}</span>
-  ${validate_component(Bounce, "Bounce").$$render($$result, { delay: d[6], text: "a" }, {}, {})}
-  ${validate_component(Bounce, "Bounce").$$render($$result, { delay: d[7], text: "n" }, {}, {})}
-  ${validate_component(Bounce, "Bounce").$$render($$result, { delay: d[8], text: "t" }, {}, {})}
-  ${validate_component(Bounce, "Bounce").$$render($$result, { delay: d[9], text: "e" }, {}, {})}
+  <span class="logo svelte-t4z5ha">${validate_component(LogoAnimation, "LogoAnimation").$$render($$result, { delay: d[14] }, {}, {})}</span>
+  ${validate_component(Bounce, "Bounce").$$render($$result, { delay: d[15], text: "a" }, {}, {})}
+  ${validate_component(Bounce, "Bounce").$$render($$result, { delay: d[16], text: "n" }, {}, {})}
+  ${validate_component(Bounce, "Bounce").$$render($$result, { delay: d[17], text: "t" }, {}, {})}
+  ${validate_component(Bounce, "Bounce").$$render($$result, { delay: d[18], text: "e" }, {}, {})}
   ${validate_component(Bounce, "Bounce").$$render(
     $$result,
     {
-      delay: d[10],
-      customStyles: "position: relative; top: -0.06rem; left: -0.05rem;",
+      delay: d[19],
+      customStyles: "position: relative; top: -0.06rem; left: -0.2rem;",
       text: ","
     },
     {},
     {}
   )}
   <br>
-  <span style="position: relative; right: -0.5rem; ">${validate_component(Bounce, "Bounce").$$render($$result, { delay: d[11], text: "w" }, {}, {})}
-    ${validate_component(Bounce, "Bounce").$$render($$result, { delay: d[12], text: "e" }, {}, {})}
-    ${validate_component(Bounce, "Bounce").$$render($$result, { delay: d[13], text: "b" }, {}, {})}</span>
+
+  ${validate_component(Bounce, "Bounce").$$render($$result, { delay: d[22], text: "w" }, {}, {})}
+  ${validate_component(Bounce, "Bounce").$$render($$result, { delay: d[23], text: "e" }, {}, {})}
+  ${validate_component(Bounce, "Bounce").$$render($$result, { delay: d[24], text: "b" }, {}, {})}
   <span> </span>
   <span> </span>
   <span> </span>
-  ${validate_component(Bounce, "Bounce").$$render($$result, { delay: d[14], text: "d" }, {}, {})}
-  ${validate_component(Bounce, "Bounce").$$render($$result, { delay: d[15], text: "e" }, {}, {})}
-  ${validate_component(Bounce, "Bounce").$$render($$result, { delay: d[16], text: "v" }, {}, {})}
-  ${validate_component(Bounce, "Bounce").$$render($$result, { delay: d[17], text: "e" }, {}, {})}
-  ${validate_component(Bounce, "Bounce").$$render($$result, { delay: d[18], text: "l" }, {}, {})}
-  ${validate_component(Bounce, "Bounce").$$render($$result, { delay: d[19], text: "o" }, {}, {})}
-  ${validate_component(Bounce, "Bounce").$$render($$result, { delay: d[20], text: "p" }, {}, {})}
-  ${validate_component(Bounce, "Bounce").$$render($$result, { delay: d[21], text: "e" }, {}, {})}
-  ${validate_component(Bounce, "Bounce").$$render($$result, { delay: d[22], text: "r" }, {}, {})}
+  <span style="position: relative; left: 0.13rem;">${validate_component(Bounce, "Bounce").$$render($$result, { delay: d[26], text: "d" }, {}, {})}
+    ${validate_component(Bounce, "Bounce").$$render($$result, { delay: d[27], text: "e" }, {}, {})}
+    ${validate_component(Bounce, "Bounce").$$render($$result, { delay: d[28], text: "v" }, {}, {})}
+    ${validate_component(Bounce, "Bounce").$$render($$result, { delay: d[29], text: "e" }, {}, {})}
+    ${validate_component(Bounce, "Bounce").$$render($$result, { delay: d[30], text: "l" }, {}, {})}
+    ${validate_component(Bounce, "Bounce").$$render($$result, { delay: d[31], text: "o" }, {}, {})}
+    ${validate_component(Bounce, "Bounce").$$render($$result, { delay: d[32], text: "p" }, {}, {})}
+    ${validate_component(Bounce, "Bounce").$$render($$result, { delay: d[33], text: "e" }, {}, {})}
+    ${validate_component(Bounce, "Bounce").$$render($$result, { delay: d[34], text: "r" }, {}, {})}</span>
 </div>`;
 });
 const ArrowDown = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -114,7 +97,7 @@ const ArrowDown = create_ssr_component(($$result, $$props, $$bindings, slots) =>
 
 <span><svg width="1rem" aria-hidden="true" focusable="false" data-prefix="fal" data-icon="arrow-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-arrow-down fa-w-14 fa-5x"><path fill="#fff" d="M443.5 248.5l-7.1-7.1c-4.7-4.7-12.3-4.7-17 0L241 419.9V44c0-6.6-5.4-12-12-12h-10c-6.6 0-12 5.4-12 12v375.9L28.5 241.4c-4.7-4.7-12.3-4.7-17 0l-7.1 7.1c-4.7 4.7-4.7 12.3 0 17l211 211.1c4.7 4.7 12.3 4.7 17 0l211-211.1c4.8-4.8 4.8-12.3.1-17z" class=""></path></svg></span>`;
 });
-const sharedStyles = ":root{--pri: #08fdd8;--sec: #fd2055;--bg: #1d1d1d;--bg-alt: #181818;--text: #d9d9d9;--text-alt: #8d8d8d;--tag: #515151}.main{display:flex;width:calc(100vw - 20.5rem);margin-left:20.5rem;height:100vh}.container{width:100%;height:min-content;display:flex;flex-direction:column;position:relative;align-self:center}.tag{color:var(--tag);font-size:1.8rem;font-style:italic;font-family:La Belle Aurore}.head{margin:-1.5rem 0 -1rem;color:var(--pri);z-index:2}.head_alt{color:var(--text);font-size:1.6rem;line-height:1.5;z-index:2}.center-parent{display:flex;justify-content:center;align-items:center}.center-child{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%)}p{margin:0}a{text-decoration:none;color:var(--pri)}\n";
+const sharedStyles = ":root{--pri: #08fdd8;--sec: #fd2055;--bg: #1d1d1d;--bg-alt: #181818;--text: #d9d9d9;--text-alt: #8d8d8d;--tag: #515151}.main{display:flex;width:calc(100vw - 20.5rem);margin-left:20.5rem;height:100vh}.container{width:100%;height:min-content;display:flex;flex-direction:column;position:relative;align-self:center}.tag{color:var(--tag);font-size:1.8rem;font-style:italic;font-family:La Belle Aurore}.head{margin:-1.5rem 0 -1rem;color:var(--pri);z-index:1}.head_alt{color:var(--text);font-size:1.6rem;line-height:1.5}.center-parent{display:flex;justify-content:center;align-items:center}.center-child{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%)}p{margin:0}a{text-decoration:none;color:var(--pri)}\n";
 const keyFrames = "@keyframes fadeIn{0%{opacity:0}to{opacity:1}}@keyframes slideInFromBottom{0%{transform:translateY(20%);opacity:0}to{transform:translateY(0);opacity:1}}@keyframes moveUpDown{0%{transform:translateY(0)}50%{transform:translateY(-1rem)}to{transform:translateY(0)}}@keyframes rubberBand{0%{transform:scale(1)}30%{transform:scaleY(1.25) scaleX(.75)}40%{transform:scaleY(.75) scaleX(1.25)}50%{transform:scaleY(1.15) scaleX(.85)}65%{transform:scaleY(.95) scaleX(1.05)}75%{transform:scaleY(1.05) scaleX(.95)}to{transform:scaleY(1) scaleX(1)}}\n";
 const Intro_svelte_svelte_type_style_lang = "";
 const css = {
@@ -128,8 +111,8 @@ const Intro = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   <section class="container svelte-87ajao"><p class="tag tag-one svelte-87ajao">&lt;/html&gt;</p>
     <p class="tag tag-two svelte-87ajao">&lt;body&gt;</p>
     <div class="head"><p class="tag" style="margin: 0 0 -1rem -1rem">&lt;h1&gt;</p>
-      ${validate_component(IntroText, "IntroText").$$render($$result, {}, {}, {})}
-      <p class="tag" style="margin: -3.7rem -6rem 0 62rem;">&lt;h1/&gt;</p>
+      ${validate_component(IntroHeading, "IntroText").$$render($$result, {}, {}, {})}
+      <p class="tag" style="margin: -3.7rem -6rem 0 56.5rem;">&lt;h1/&gt;</p>
       <div class="${[
     "sub svelte-87ajao",
     " "
