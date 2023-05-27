@@ -49,7 +49,6 @@
 
   function handleResize() {
     screenWidth = window.innerWidth;
-    console.log(screenWidth);
   }
 
   function initializeTagCloud() {

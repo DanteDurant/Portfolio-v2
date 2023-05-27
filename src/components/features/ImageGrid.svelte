@@ -34,7 +34,6 @@
   const closeModal = () => {
     setModalState(false);
     document.body.style.overflow = "auto";
-    console.log("Close modal function called");
   };
 
   const handleModalClose = () => {

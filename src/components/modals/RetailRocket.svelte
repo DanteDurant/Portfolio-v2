@@ -55,11 +55,11 @@
     </div>
     <div class="con con-img">
       <div>
-        <a href="http://sanlam-dsm.mlab.cx/ " target="_blank">
+        <a href="https://retailrockit.co.za/" target="_blank">
           <img src={Rocket} alt="Sanlam DSM landing page" />
         </a>
         <span>
-          <a class="link" href="https://retailrockit.co.za/ " target="_blank"
+          <a class="link" href="https://retailrockit.co.za/" target="_blank"
             >https://retailrockit.co.za/
           </a>
         </span>
