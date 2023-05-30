@@ -63,19 +63,14 @@
     <div class="con-img-alt">
       <div>
         <div>
-          <a
-            class=""
-            href={Link}
-            target="_blank"
-            style="background-image: {Guide};"
-          >
-            <img src={Guide} alt="Sanlam DSM landing page" />
+          <a class="" href={Link} target="_blank">
+            <img src={Guide} alt="Guide screen of mobile app" />
           </a>
           <a class="" href={Link} target="_blank">
-            <img src={Farm} alt="Sanlam DSM landing page" />
+            <img src={Farm} alt="Farm modal screen of mobile app" />
           </a>
           <a class="" href={Link} target="_blank">
-            <img src={Map} alt="Sanlam DSM landing page" />
+            <img src={Map} alt="Map screen of mobile app" />
           </a>
         </div>
       </div>

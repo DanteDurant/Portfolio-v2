@@ -7,7 +7,7 @@
   import Design from "../../lib/images/design.webp";
   import Rocket from "../../lib/images/rocket.webp";
   import Wine from "../../lib/images/wwf-wine.webp";
-  import Stile from "../../lib/images/Stile.webp";
+  import Woolies from "../../lib/images/woolies.webp";
   import Circle from "../../lib/images/circle.png";
 
   import Modal from "../modals/Modal.svelte";
@@ -15,7 +15,7 @@
   import SanlamDS from "../modals/SanlamDS.svelte";
   import RetailRocket from "../modals/RetailRocket.svelte";
   import WineChampion from "../modals/WineChampion.svelte";
-  import StileAlu from "../modals/StileAlu.svelte";
+  import WooliesMTD from "../modals/Woolies.svelte";
 
   let currentModal = null;
 
@@ -59,8 +59,8 @@
     {#if currentModal === WineChampion}
       <WineChampion on:modalclose={handleModalClose} />
     {/if}
-    {#if currentModal === StileAlu}
-      <StileAlu on:modalclose={handleModalClose} />
+    {#if currentModal === WooliesMTD}
+      <WooliesMTD on:modalclose={handleModalClose} />
     {/if}
   </Modal>
 
@@ -93,8 +93,8 @@
   </span>
 
   <span>
-    <button on:click={() => openModal(StileAlu)} class="image-box">
-      <img class="image" src={Stile} alt="Stile Aluminium logo " />
+    <button on:click={() => openModal(WooliesMTD)} class="image-box">
+      <img class="image" src={Woolies} alt="Stile Aluminium logo " />
       <img src={Circle} class="popup" alt="view project" />
     </button>
   </span>

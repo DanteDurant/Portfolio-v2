@@ -48,7 +48,7 @@
     <div class="con con-img">
       <div>
         <a href="http://sanlam-dsm.mlab.cx/ " target="_blank">
-          <img src={Sanlam} alt="Sanlam DSM landing page" />
+          <img src={Sanlam} alt="Sanlam storybook landing page" />
         </a>
         <span>
           <a class="link" href="http://sanlam-dsm.mlab.cx/ " target="_blank"
