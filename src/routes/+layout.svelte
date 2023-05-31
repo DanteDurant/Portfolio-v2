@@ -1,13 +1,13 @@
 <script>
   import Sidebar from "../components/Sidebar.svelte";
   import Tendrils from "../components/features/Tendrils.svelte";
-  import { modalState } from "../components/features/store";
+  // import { modalState } from "../components/features/store";
 </script>
 
 <div class="app">
-  {#if !$modalState}
-    <Tendrils />
-  {/if}
+  <!-- {#if !$modalState} -->
+  <Tendrils />
+  <!-- {/if} -->
 
   <aside>
     <Sidebar />
