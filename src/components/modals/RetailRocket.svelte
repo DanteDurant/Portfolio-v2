@@ -2,6 +2,7 @@
   import "./styles.scss";
   import Rocket from "$lib/images/modals/rocket.webp";
   import Bounce from "../text/Bounce.svelte";
+  import ImageLoader from "$lib/images/ImageLoader.svelte";
 
   const s = "7rem";
   const sp = "-0.1rem";
@@ -56,7 +57,7 @@
     <div class="con con-img">
       <div>
         <a href="https://retailrockit.co.za/" target="_blank">
-          <img src={Rocket} alt="Retail rocket landing page" />
+          <ImageLoader src={Rocket} alt="Retail rocket landing page" />
         </a>
         <span>
           <a class="link" href="https://retailrockit.co.za/" target="_blank"

@@ -1,10 +1,10 @@
 <script>
   import "./styles.scss";
   import Guide from "$lib/images/modals/wwf-guide.webp";
-  import Filter from "$lib/images/modals/wwf-filter.webp";
   import Farm from "$lib/images/modals/wwf-farm.webp";
   import Map from "$lib/images/modals/wwf-map.webp";
   import Bounce from "../text/Bounce.svelte";
+  import ImageLoader from "$lib/images/ImageLoader.svelte";
 
   const Link =
     "https://play.google.com/store/apps/details?id=com.wwfconservationchampions&gl=US";
@@ -63,14 +63,14 @@
     <div class="con-img-alt">
       <div>
         <div>
-          <a class="" href={Link} target="_blank">
-            <img src={Guide} alt="Guide screen of mobile app" />
+          <a href={Link} target="_blank">
+            <ImageLoader src={Guide} alt="Guide screen of mobile app" />
           </a>
-          <a class="" href={Link} target="_blank">
-            <img src={Farm} alt="Farm modal screen of mobile app" />
+          <a href={Link} target="_blank">
+            <ImageLoader src={Farm} alt="Farm modal screen of mobile app" />
           </a>
-          <a class="" href={Link} target="_blank">
-            <img src={Map} alt="Map screen of mobile app" />
+          <a class="map" href={Link} target="_blank">
+            <ImageLoader src={Map} alt="Map screen of mobile app" />
           </a>
         </div>
       </div>
@@ -82,3 +82,10 @@
     </div>
   </span>
 </section>
+
+<style>
+  a {
+    height: 100%;
+    width: 100%;
+  }
+</style>

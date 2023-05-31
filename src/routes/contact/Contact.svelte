@@ -64,7 +64,6 @@
     z-index: 1;
     background-color: var(--bg);
     box-shadow: 0px -40px 200px 0px #000;
-
     &_alt {
       position: absolute;
       bottom: 0;
@@ -77,14 +76,13 @@
   }
 
   .parent {
+    display: flex;
+    align-items: center;
     position: relative;
-    // display: flex;
-    // flex-direction: column;
-    // flex-grow: 1;
-    // justify-content: space-between;
+
     width: 45%;
     padding-right: 7.5rem;
-    margin-top: 2rem;
+    margin-top: -5rem;
   }
 
   .tag {

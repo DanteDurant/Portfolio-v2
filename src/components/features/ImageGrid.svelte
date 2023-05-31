@@ -3,12 +3,12 @@
   import { createEventDispatcher } from "svelte";
   import { modalState } from "./store";
 
-  import Sanlam from "../../lib/images/sanlam.webp";
-  import Design from "../../lib/images/design.webp";
-  import Rocket from "../../lib/images/rocket.webp";
-  import Wine from "../../lib/images/wwf-wine.webp";
-  import Woolies from "../../lib/images/woolies.webp";
-  import Circle from "../../lib/images/circle.png";
+  import Sanlam from "../../lib/images/thumbs/sanlam.webp";
+  import Design from "../../lib/images/thumbs/design.webp";
+  import Rocket from "../../lib/images/thumbs/rocket.webp";
+  import Wine from "../../lib/images/thumbs/wwf-wine.webp";
+  import Woolies from "../../lib/images/thumbs/woolies.webp";
+  import Circle from "../../lib/images/logos/circle.png";
 
   import Modal from "../modals/Modal.svelte";
   import SanlamStory from "../modals/SanlamStory.svelte";
@@ -16,6 +16,7 @@
   import RetailRocket from "../modals/RetailRocket.svelte";
   import WineChampion from "../modals/WineChampion.svelte";
   import WooliesMTD from "../modals/Woolies.svelte";
+  import ImageLoader from "$lib/images/ImageLoader.svelte";
 
   let currentModal = null;
 
@@ -66,35 +67,45 @@
 
   <span>
     <button on:click={() => openModal(SanlamStory)} class="image-box">
-      <img class="image" src={Sanlam} alt="Sanlam storybook" />
+      <span class="image">
+        <ImageLoader src={Sanlam} alt="Sanlam storybook" />
+      </span>
       <img src={Circle} class="popup" alt="view project" />
     </button>
   </span>
 
   <span>
     <button on:click={() => openModal(SanlamDS)} class="image-box">
-      <img class="image" src={Design} alt="Sanlam design system" />
+      <span class="image">
+        <ImageLoader src={Design} alt="Sanlam design system" />
+      </span>
       <img src={Circle} class="popup" alt="view project" />
     </button>
   </span>
 
   <span>
     <button on:click={() => openModal(RetailRocket)} class="image-box">
-      <img class="image" src={Rocket} alt="Retail Rocket logo" />
+      <span class="image">
+        <ImageLoader src={Rocket} alt="Retail Rocket logo" />
+      </span>
       <img src={Circle} class="popup" alt="view project" />
     </button>
   </span>
 
   <span>
     <button on:click={() => openModal(WineChampion)} class="image-box">
-      <img class="image" src={Wine} alt="wwf wine logo" />
+      <span class="image">
+        <ImageLoader src={Wine} alt="wwf wine logo" />
+      </span>
       <img src={Circle} class="popup" alt="view project" />
     </button>
   </span>
 
   <span>
     <button on:click={() => openModal(WooliesMTD)} class="image-box">
-      <img class="image" src={Woolies} alt="Stile Aluminium logo " />
+      <span class="image">
+        <ImageLoader src={Woolies} alt="Woolworths MTD logo" />
+      </span>
       <img src={Circle} class="popup" alt="view project" />
     </button>
   </span>
@@ -140,7 +151,7 @@ x
 
     &:hover {
       filter: brightness(1);
-      transform: scale(1.1);
+      transform: scale(1.05);
 
       .popup {
         z-index: 1;

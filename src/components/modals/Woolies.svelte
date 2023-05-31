@@ -2,8 +2,10 @@
   import "./styles.scss";
   import Woolies from "$lib/images/modals/woolies.webp";
   import Bounce from "../text/Bounce.svelte";
+  import ImageLoader from "$lib/images/ImageLoader.svelte";
 
   const s = "6.5rem";
+  ``;
   const sp = "-0.1rem";
 </script>
 
@@ -54,7 +56,7 @@
     <div class="con con-img">
       <div>
         <a href="https://mtd.woolworths.co.za/ " target="_blank">
-          <img src={Woolies} alt="Woolworth MTD landing page" />
+          <ImageLoader src={Woolies} alt="Woolworth MTD landing page" />
         </a>
         <span>
           <a class="link" href="https://mtd.woolworths.co.za/" target="_blank"

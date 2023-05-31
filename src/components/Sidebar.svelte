@@ -1,8 +1,8 @@
 <script>
-  import Logo from "$lib/images/Logo.svelte";
-  import LinkedIn from "$lib/images/LinkedIn.svelte";
-  import Github from "$lib/images/Github.svelte";
-  import YouTube from "$lib/images/YouTube.svelte";
+  import Logo from "$lib/images/logos/Logo.svelte";
+  import LinkedIn from "$lib/images/logos/LinkedIn.svelte";
+  import Github from "$lib/images/logos/Github.svelte";
+  import YouTube from "$lib/images/logos/YouTube.svelte";
 
   let items = [
     { label: "About", link: "/item1" },

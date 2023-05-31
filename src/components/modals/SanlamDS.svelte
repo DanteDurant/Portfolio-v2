@@ -3,6 +3,7 @@
   import Sanlam from "$lib/images/modals/sanlam.webp";
   import Bounce from "../text/Bounce.svelte";
   import Clipboard from "../text/Clipboard.svelte";
+  import ImageLoader from "$lib/images/ImageLoader.svelte";
 
   const s = "7rem";
   const sp = "-0.1rem";
@@ -49,7 +50,7 @@
     <div class="con-img">
       <div>
         <a href="http://sanlam-dsm.mlab.cx/ " target="_blank">
-          <img src={Sanlam} alt="Sanlam DSM landing page" />
+          <ImageLoader src={Sanlam} alt="Sanlam DSM landing page" />
         </a>
         <span>
           <a class="link" href="http://sanlam-dsm.mlab.cx/ " target="_blank"
