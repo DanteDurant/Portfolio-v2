@@ -1,6 +1,9 @@
 <script>
   import { onMount, onDestroy } from "svelte";
   import initOciliator from "./Tendrils";
+  import { modalState } from "../../components/features/store";
+
+  $: modalState;
 
   let canvas;
 
@@ -15,5 +18,16 @@
 <canvas
   bind:this={canvas}
   id="canvas"
-  style="position: fixed; top: 0; left: 0;"
+  style="top: 0; left: 0; position: fixed;"
+  class={$modalState ? "hide" : "show"}
 />
+
+<style>
+  .show {
+    opacity: 1;
+  }
+
+  .hide {
+    opacity: 0;
+  }
+</style>
