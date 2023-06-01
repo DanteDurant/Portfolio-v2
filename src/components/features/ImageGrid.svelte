@@ -66,15 +66,6 @@
   </Modal>
 
   <span>
-    <button on:click={() => openModal(SanlamStory)} class="image-box">
-      <span class="image">
-        <ImageLoader src={Sanlam} alt="Sanlam storybook" />
-      </span>
-      <img src={Circle} class="popup" alt="view project" />
-    </button>
-  </span>
-
-  <span>
     <button on:click={() => openModal(SanlamDS)} class="image-box">
       <span class="image">
         <ImageLoader src={Design} alt="Sanlam design system" />
@@ -84,9 +75,9 @@
   </span>
 
   <span>
-    <button on:click={() => openModal(RetailRocket)} class="image-box">
+    <button on:click={() => openModal(SanlamStory)} class="image-box">
       <span class="image">
-        <ImageLoader src={Rocket} alt="Retail Rocket logo" />
+        <ImageLoader src={Sanlam} alt="Sanlam storybook" />
       </span>
       <img src={Circle} class="popup" alt="view project" />
     </button>
@@ -96,6 +87,15 @@
     <button on:click={() => openModal(WineChampion)} class="image-box">
       <span class="image">
         <ImageLoader src={Wine} alt="wwf wine logo" />
+      </span>
+      <img src={Circle} class="popup" alt="view project" />
+    </button>
+  </span>
+
+  <span>
+    <button on:click={() => openModal(RetailRocket)} class="image-box">
+      <span class="image">
+        <ImageLoader src={Rocket} alt="Retail Rocket logo" />
       </span>
       <img src={Circle} class="popup" alt="view project" />
     </button>

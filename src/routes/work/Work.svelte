@@ -67,10 +67,4 @@
     letter-spacing: -1rem;
     color: rgba(0, 0, 0, 0.25);
   }
-
-  @media (min-width: 2560px) {
-    .bg-text {
-      right: -5rem;
-    }
-  }
 </style>

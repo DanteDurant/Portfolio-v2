@@ -17,22 +17,11 @@
 
 <style>
   .app {
-    display: flex;
-    min-height: 100vh;
     background-color: #1d1d1d;
   }
 
   aside {
     position: sticky;
-  }
-
-  main {
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-
-    width: 100%;
-    height: 100%;
   }
 
   @media (min-width: 3840px) {

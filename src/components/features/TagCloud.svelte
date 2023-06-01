@@ -70,10 +70,4 @@
     font-size: 2rem;
     font-weight: 400;
   }
-
-  @media (min-width: 2560px) {
-    .tagcloud {
-      font-size: 2.5rem;
-    }
-  }
 </style>

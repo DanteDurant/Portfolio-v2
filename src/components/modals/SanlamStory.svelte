@@ -23,24 +23,23 @@
       </span>
       <p class="tag" style="margin: -2.3rem -6rem 0 22.5rem;">&lt;h2/&gt;</p>
       <p class="tag" style="margin: 0.5rem 0 -2rem -1rem;">&lt;h3&gt;</p>
-      <h2>Design System Manager</h2>
+      <h2>Storybook</h2>
       <p class="tag" style="margin: -1.3rem 0 0 -1rem;">&lt;h3/&gt;</p>
 
       <span class="head_alt">
         <p class="tag" style="margin: 0 0 0 -1rem;">&lt;p&gt;</p>
         <p>
-          As a key contributor to the Sanlam DSM project, I undertook various
-          duties and responsibilities to enhance its functionality and visual
-          appeal of the site, including adding documentation, rebuilding the
-          landing page interface, replacing images, creating new components and
-          the styling of the documentation sections. I focused on enhancing the
-          visual appeal and usability of the design system, particularly by
-          restructuring the text and improving the user interface of the landing
-          page.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+          distinctio, ipsam corrupti fugiat nam voluptatem optio porro, soluta
+          fugit odio accusamus deleniti pariatur vero laudantium velit.
+          Corporis, suscipit soluta. Voluptatem, Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Esse aliquam nobis expedita! Quis, nihil
+          tenetur fuga sunt praesentium quaerat nostrum aliquid eius iste
+          architecto animi dolorum ullam voluptatum atque voluptates.
           <br />
           <br />
-          The project incorporated a diverse set of advanced technologies, including
-          Node.js, React, Docusaurus, and Axios.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam necessitatibus
+          velit ab, itaque ipsum voluptatem aliquam quis nihil.
         </p>
         <p class="tag" style="margin: .5rem 0 0 -1rem;">&lt;p/&gt;</p>
       </span>
@@ -48,12 +47,17 @@
     </div>
     <div class="con con-img">
       <div>
-        <a href="http://sanlam-dsm.mlab.cx/ " target="_blank">
+        <!-- <a href="http://sanlam-dsm.mlab.cx/ " target="_blank">
           <ImageLoader src={Sanlam} alt="Sanlam storybook landing page" />
-        </a>
+        </a> -->
         <span>
-          <a class="link" href="http://sanlam-dsm.mlab.cx/ " target="_blank"
-            >http://sanlam-dsm.mlab.cx
+          <a
+            style="font-size: 5rem; text-align:center; line-height:5rem;"
+            class="link center-parent"
+            href="https://storybook.sanlam.design/react-ui-next/index.html?path=/story/docs-introduction--page"
+            target="_blank"
+          >
+            website is down<br /> temporarily
           </a>
         </span>
       </div>
