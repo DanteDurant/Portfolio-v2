@@ -34,7 +34,7 @@
       <div
         class="sub"
         class:fadeIn={subVisible}
-        class:slideInFromBottom={subVisible}
+        class:slideInFromBottomText={subVisible}
       >
         <p class="tag" style="margin: 0 0 0 -1rem;">&lt;p&gt;</p>
         <p class="sub-head">Front End Developer / Designer</p>
@@ -43,7 +43,7 @@
       <div
         class="button-con"
         class:fadeIn={buttonVisible}
-        class:slideInFromBottom={buttonVisible}
+        class:slideInFromBottomText={buttonVisible}
       >
         <a href="#Contact">
           <Button />
@@ -59,6 +59,7 @@
 <style lang="scss">
   main {
     margin-left: 13rem;
+    width: calc(100vw - 20.5rem - 13rem);
   }
 
   .container {
@@ -125,7 +126,7 @@
     animation: fadeIn 0.5s ease-in-out forwards;
   }
 
-  .slideInFromBottom {
-    animation: slideInFromBottom 0.5s ease-in-out forwards;
+  .slideInFromBottomText {
+    animation: slideInFromBottomText 0.5s ease-in-out forwards;
   }
 </style>

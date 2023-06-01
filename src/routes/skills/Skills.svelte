@@ -44,12 +44,10 @@
       In mobile app development, I created the WWF Wine Farm Guide app using React
       Native and Expo, delivering an intuitive user experience. I also contributed
       to large-scale projects, updating and maintaining design systems and component
-      libraries for Sanlam. Additionallhttp://sanlam-dsm.mlab.cx/y, I excelled in
-      backend development and API integration, streamlining processes and enhancing
-      user experience for a Takealot service website, RetailRockit.
+      libraries for Sanlam. Additionally, I excelled in backend development and API
+      integration, streamlining processes and enhancing user experience for a Takealot
+      service website, RetailRockit.
       <br />
-
-      talk about design software, figma, illustrator, fusion360
       <br />
       With a blend of artistic and technical skills, I consistently deliver visually
       stunning and functional solutions, staying updated with industry trends to

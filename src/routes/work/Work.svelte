@@ -50,6 +50,10 @@
 </main>
 
 <style>
+  .main {
+    width: calc(100vw - 20.5rem - 13rem);
+  }
+
   .head_alt {
     z-index: 1;
   }

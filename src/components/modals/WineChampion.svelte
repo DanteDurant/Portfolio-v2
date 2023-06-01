@@ -1,5 +1,5 @@
 <script>
-  import "./styles.scss";
+  import "./ModalStyles.scss";
   import Guide from "$lib/images/modals/wwf-guide.webp";
   import Farm from "$lib/images/modals/wwf-farm.webp";
   import Map from "$lib/images/modals/wwf-map.webp";
@@ -18,7 +18,7 @@
     <div class="con-text" style="transform: translateY(-4%);">
       <p class="tag" style="margin: 0 0 1rem -3rem;">&lt;section&gt;</p>
       <p class="tag" style="margin: 0 0 -0.5rem -1rem;">&lt;h2&gt;</p>
-      <span class="head">
+      <span class="modal-head">
         <Bounce delay={0} size={s} spacing={sp} text="W" />
         <Bounce delay={30} size={s} spacing={sp} text="W" />
         <Bounce delay={60} size={s} spacing={sp} text="F" />
@@ -82,10 +82,3 @@
     </div>
   </span>
 </section>
-
-<style>
-  a {
-    height: 100%;
-    width: 100%;
-  }
-</style>

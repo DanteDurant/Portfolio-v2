@@ -1,68 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%sveltekit.assets%/favicon.png" />
-    <meta name="viewport" content="width=device-width" />
-    %sveltekit.head%
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">
 
-  </head> 
-  <body data-sveltekit-preload-data="hover">
-    <div style="display: contents">%sveltekit.body%</div>
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%sveltekit.assets%/favicon.png" />
+  <meta name="viewport" content="width=device-width" />
+  %sveltekit.head%
+  <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">
+</head>
 
-    <style>
-      @font-face {
-        font-family: 'coolvetica';
-        src: url('%sveltekit.assets%/coolvetica-rg.woff2') format('woff2');
-      }
+<body data-sveltekit-preload-data="hover">
+  <div style="display: contents">%sveltekit.body%</div>
+</body>
 
-      
-      html {
-        font-size: 62.5%;
-        scroll-behavior: smooth;
-      }
-
-      h1 {
-        font-family: "coolvetica", sans-serif;
-      }
-
-      body {
-        font-family: "Open Sans", sans-serif
-      }
-      /* 1440p */
-      @media (min-width: 2560px) { 
-        html {
-          font-size: 72.5%;
-        }
-      }
-      /* 4k */
-      @media (min-width: 3840px) {
-        html {
-          font-size: 122.5%;
-        }
-      }
-
-      menu {
-        margin-block-start: 0em;
-        margin-block-end: 0em;
-        margin-inline-start: 0px;
-        margin-inline-end: 0px;
-        padding-inline-start: 0px;
-      }
-      body {
-
-        background-color: #1d1d1d;
-        margin-block-start: 0em;
-        margin-block-end: 0em;
-        margin-inline-start: 0rem;
-        margin-inline-end: 0px;
-        padding-inline-start: 0px;
-      }
-
-
-    </style>
-  </body>
 </html>

@@ -1,5 +1,5 @@
 :root {
---pri: #08fdd8;
+  --pri: #08fdd8;
   --sec: #fd2055;
   --bg: #1d1d1d;
   --bg-alt: #181818;
@@ -9,7 +9,14 @@
   --tag: #515151;
 }
 
+@font-face {
+  font-family: 'coolvetica';
+  src: url('%sveltekit.assets%/coolvetica-rg.woff2') format('woff2');
+}
+
 .main {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
   display: flex;
   width: calc(100vw - 20.5rem);
   margin-left: 20.5rem;
@@ -35,7 +42,7 @@
 .head {
   margin: -1.5rem 0 -1rem 0;
   color: var(--pri);
-  z-index: 1;
+  z-index: 0;
 
 
   &_alt {
@@ -44,6 +51,8 @@
     line-height: 1.5;
   }
 }
+
+// utility
 
 .center-parent {
   display: flex;
@@ -58,6 +67,22 @@
   transform: translate(-50%, -50%);
 }
 
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+//  tags
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  -webkit-overflow-scrolling: touch;
+  overflow-y: scroll;
+}
+
 p {
   margin: 0;
 }
@@ -65,5 +90,47 @@ p {
 a {
   text-decoration: none;
   color: var(--pri);
+  font-size: 1.6rem;
 }
 
+h1 {
+  font-family: "coolvetica", sans-serif;
+}
+
+body {
+  font-family: "Open Sans", sans-serif
+}
+
+menu {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+}
+
+body {
+
+  background-color: #1d1d1d;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0rem;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+}
+
+// media queries 
+
+/* 1440p */
+@media (min-width: 2560px) {
+  html {
+    font-size: 72.5%;
+  }
+}
+
+/* 4k */
+@media (min-width: 3840px) {
+  html {
+    font-size: 122.5%;
+  }
+}

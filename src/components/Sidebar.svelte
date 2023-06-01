@@ -3,34 +3,27 @@
   import LinkedIn from "$lib/images/logos/LinkedIn.svelte";
   import Github from "$lib/images/logos/Github.svelte";
   import YouTube from "$lib/images/logos/YouTube.svelte";
-
-  let items = [
-    { label: "About", link: "/item1" },
-    { label: "My Skills", link: "/item2" },
-    { label: "Work", link: "/item3" },
-    { label: "Contact", link: "/item3" },
-  ];
 </script>
 
-<menu class="main-menu">
-  <div class="main-menu_top">
+<menu class="main-menu column">
+  <div class="main-menu_top center-parent column">
     <a href="#Home">
       <Logo />
     </a>
     <a href="#Home">
-      <span>Dante</span>
+      <span class="name">Dante</span>
     </a>
-    <div>Web Developer</div>
+    <p class="job">Web Developer</p>
   </div>
 
-  <nav class="main-menu_nav">
+  <nav class="main-menu_nav column">
     <a href="#About">About</a>
     <a href="#Work">Work</a>
     <a href="#Skills">Skills</a>
     <a href="#Contact">Contact</a>
   </nav>
 
-  <ul class="social">
+  <ul class="socials">
     <li>
       <a href="https://www.linkedin.com/in/dantedurant/" target="_blank">
         <LinkedIn />
@@ -51,98 +44,67 @@
 
 <style lang="scss">
   .main-menu {
-    display: flex;
-    width: 13rem;
-    flex-direction: column;
     position: fixed;
     height: 100%;
+    width: 13rem;
     background-color: var(--bg-alt);
     justify-content: space-between;
     align-items: center;
-
     &_top {
-      display: flex;
       width: 100%;
       min-height: 21rem;
       background-color: #000;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-
-      a {
-        text-decoration: none;
-      }
-
-      // name
-      span {
-        color: #fff;
+      .name {
         font-size: 2.7rem;
-        line-height: 2;
         font-weight: 900;
-      }
-
-      // job
-      div {
-        padding-top: 1rem;
+        line-height: 2;
         color: #fff;
+      }
+      .job {
         font-family: serif;
-        color: #a5a5a5;
         font-size: 1.2rem;
+        padding-top: 1rem;
+        color: #a5a5a5;
       }
     }
-
     &_nav {
-      display: flex;
       width: 100%;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
       border-top: 1px solid #282828;
-
       a {
-        display: block;
-        width: 100%;
         text-align: center;
-        border-bottom: 1px solid #282828;
         justify-self: center;
+        border-bottom: 1px solid #282828;
         color: #909090;
-        text-decoration: none;
-        font-size: 1.6rem;
         line-height: 5rem;
-      }
-
-      a:last-child {
-        color: #08fdd8;
-      }
-    }
-  }
-
-  .social {
-    display: flex;
-    margin-top: 2rem;
-    list-style: none;
-    justify-content: space-between;
-    height: 20rem;
-    width: 56%;
-
-    li {
-      a {
-        color: #909096;
+        transition: all 300ms;
         &:hover {
-          color: #08fdd8;
+          color: var(--pri);
+        }
+        &:last-child {
+          color: var(--pri);
+          &:hover {
+            color: #fff;
+          }
         }
       }
     }
   }
 
-  ul {
-    list-style: none;
+  .socials {
+    display: flex;
+    margin-top: 2rem;
     padding: 0;
-    margin: 0;
-    width: 100%;
-  }
-
-  a:hover {
-    color: #08fdd8;
+    justify-content: space-between;
+    height: 20rem;
+    width: 56%;
+    li {
+      a {
+        transition: all 300ms;
+        color: #909096;
+        &:hover {
+          color: var(--pri);
+        }
+      }
+    }
   }
 </style>

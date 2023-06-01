@@ -37,34 +37,33 @@
     position: relative;
     height: 5rem;
     width: 22rem;
+    font-size: 1.6rem;
+    letter-spacing: 4px;
+    cursor: pointer;
+    overflow: hidden;
     border: var(--pri) 1px solid;
     border-bottom-width: 2px;
     color: var(--pri);
-    letter-spacing: 4px;
-    font-size: 1.6rem;
-    cursor: pointer;
-    overflow: hidden;
   }
 
   span {
-    position: relative;
     z-index: 1;
     transition: color 500ms;
   }
 
   .isHovered {
-    color: #000000;
+    color: #000;
   }
 
   .background {
     position: absolute;
+    width: 108%;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    width: 108%;
-    background: linear-gradient(120deg, var(--pri) 90%, transparent 90.1%);
     transform: translateX(-100%);
+    background: linear-gradient(120deg, var(--pri) 90%, transparent 90.1%);
   }
 
   .inlet {
@@ -73,12 +72,12 @@
     bottom: 0;
     width: 0.9rem;
     height: 1.6rem;
+    transform: translateY(100%);
     background-image: linear-gradient(
       to top left,
       var(--sec) 50%,
       #00ff0000 50%
     );
-    transform: translateY(100%);
   }
 
   .background.animate-in-bg {
@@ -92,38 +91,5 @@
   }
   .inlet.animate-out-inlet {
     animation: slideOutFromTop 700ms forwards;
-  }
-
-  @keyframes slideInFromLeft {
-    0% {
-      transform: translateX(-100%);
-    }
-    100% {
-      transform: translateX(0%);
-    }
-  }
-  @keyframes slideOutFromRight {
-    0% {
-      transform: translateX(0%);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
-  }
-  @keyframes slideInFromBottom {
-    0% {
-      transform: translateY(100%);
-    }
-    100% {
-      transform: translateY(0%);
-    }
-  }
-  @keyframes slideOutFromTop {
-    0% {
-      transform: translateY(0%);
-    }
-    100% {
-      transform: translateY(100%);
-    }
   }
 </style>
