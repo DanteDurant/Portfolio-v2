@@ -1,6 +1,9 @@
 <script>
   import Sidebar from "../components/Sidebar.svelte";
   import Tendrils from "../components/features/Tendrils.svelte";
+  import "../utility/SharedStyles.scss";
+  import "../utility/KeyFrames.css";
+  import "../utility/MediaQueries.scss";
 </script>
 
 <div class="app">
@@ -21,12 +24,11 @@
   }
 
   aside {
-    position: sticky;
-  }
-
-  @media (min-width: 3840px) {
-    main {
-      margin-bottom: -10rem;
-    }
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 13rem;
+    overflow: auto;
   }
 </style>

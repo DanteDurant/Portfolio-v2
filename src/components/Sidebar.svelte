@@ -20,7 +20,7 @@
     <a href="#About">About</a>
     <a href="#Work">Work</a>
     <a href="#Skills">Skills</a>
-    <a href="#Contact">Contact</a>
+    <a href="#Contact">Contact</a>a
   </nav>
 
   <ul class="socials">
@@ -44,7 +44,6 @@
 
 <style lang="scss">
   .main-menu {
-    position: fixed;
     height: 100%;
     width: 13rem;
     background-color: var(--bg-alt);

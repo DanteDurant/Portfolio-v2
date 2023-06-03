@@ -1,5 +1,4 @@
 <script>
-  import sharedStyles from "../../utility/sharedStyles.scss?inline";
   import Bounce from "../../components/text/Bounce.svelte";
   import ImageGrid from "../../components/features/ImageGrid.svelte";
   const s = "6rem";
@@ -89,7 +88,7 @@
 
   .bg-text {
     position: absolute;
-    right: -5rem;
+    right: -6rem;
     bottom: 18rem;
     font-size: 50rem;
     font-family: "coolvetica";

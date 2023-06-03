@@ -29,12 +29,17 @@
   const openModal = (modal) => {
     currentModal = modal;
     setModalState(true);
-    document.body.style.overflow = "hidden";
+    let scrollPosition = window.pageYOffset;
+    document.body.style.position = "fixed";
+    document.body.style.top = `-${scrollPosition}px`;
   };
 
   const closeModal = () => {
     setModalState(false);
-    document.body.style.overflow = "auto";
+    const scrollPosition = Math.abs(parseInt(document.body.style.top));
+    document.body.style.position = "";
+    document.body.style.top = "";
+    window.scrollTo(0, scrollPosition);
   };
 
   const handleModalClose = () => {

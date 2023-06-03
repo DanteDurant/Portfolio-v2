@@ -1,8 +1,5 @@
 <script>
-  import sharedStyles from "../../utility/sharedStyles.scss?inline";
-  import keyFrames from "../../utility/keyFrames.css?inline";
   import PopUpText from "./PopUpText.svelte";
-
   export let text = "Bouncing Text";
   export let customStyles = "";
   export let delay = 0;

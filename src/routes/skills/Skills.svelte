@@ -5,7 +5,7 @@
   const h = "5.5rem";
 </script>
 
-<main id="Skills" class="main">
+<main id="Skills" class="main skills">
   <div class="container">
     <p class="tag" style="margin: 0 0 1rem -1rem;">&lt;h2&gt;</p>
     <span class="head">
@@ -60,6 +60,6 @@
 
 <style lang="scss">
   .container {
-    width: 65%;
+    width: 55%;
   }
 </style>

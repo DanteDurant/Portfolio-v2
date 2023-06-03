@@ -5,7 +5,7 @@
   const sp = "-0.2rem";
 </script>
 
-<main id="About" class="main">
+<main id="About" class="main about">
   <div class="container">
     <p class="tag" style="margin: 0 0 -0.5rem -1rem;">&lt;h2&gt;</p>
     <span class="head">

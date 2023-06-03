@@ -18,7 +18,7 @@
 <canvas
   bind:this={canvas}
   id="canvas"
-  style="top: 0; left: 0; position: fixed;"
+  style="top: 0; left: 0; position: fixed;  "
   class={$modalState ? "hide" : "show"}
 />
 

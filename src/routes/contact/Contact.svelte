@@ -1,13 +1,13 @@
 <script>
   import Bounce from "../../components/text/Bounce.svelte";
-  import Form from "../../components/Form.svelte";
+  import Form from "../../components/text/Form.svelte";
   const s = "8rem";
   const sp = "-0.2rem";
 </script>
 
 <div class="fill" />
 <main id="Contact" class="main">
-  <span class="parent">
+  <span class="con-form">
     <div>
       <p class="tag" style="margin: 0 0 -1.5rem -1rem;">&lt;h1&gt;</p>
       <span class="head">
@@ -37,7 +37,7 @@
     <p class="tag tag-one">&lt;/body&gt;</p>
   </span>
 
-  <div class="map">
+  <div class="con-map">
     <iframe
       title="map"
       src="https://snazzymaps.com/embed/491438"
@@ -50,8 +50,9 @@
 </main>
 
 <style lang="scss">
-  main {
+  .main {
     margin-left: 13rem;
+    width: calc(100vw - 13rem);
     background-color: var(--bg);
     z-index: 1;
   }
@@ -74,14 +75,13 @@
     }
   }
 
-  .parent {
+  .con-form {
     display: flex;
     align-items: center;
     position: relative;
     width: 45%;
     padding-right: 7.5rem;
     padding-left: 7.5rem;
-
     margin-top: -5rem;
     background-color: var(--bg);
   }
@@ -99,7 +99,7 @@
     }
   }
 
-  .map {
+  .con-map {
     position: relative;
     height: 100%;
     width: 55%;

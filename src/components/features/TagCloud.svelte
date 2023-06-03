@@ -44,7 +44,16 @@
 
   afterUpdate(() => {
     const screenWidth = window.innerWidth;
-    radius = screenWidth <= 2500 ? 380 : screenWidth <= 3800 ? 550 : 800;
+    radius =
+      screenWidth <= 1000
+        ? 150
+        : screenWidth <= 1400
+        ? 200
+        : screenWidth <= 2500
+        ? 380
+        : screenWidth <= 3800
+        ? 550
+        : 800;
   });
 
   function handleResize() {
