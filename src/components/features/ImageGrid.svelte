@@ -109,8 +109,10 @@
       <img src={Circle} class="popup" alt="view project" />
     </button>
   </span>
+
+  <p class="tag" style="top: -4rem">&lt;section&gt;</p>
+  <p class="tag" style="bottom: -4.5rem">&lt;section/&gt;</p>
 </div>
-x
 
 <style lang="scss">
   span {
@@ -123,9 +125,15 @@ x
     cursor: pointer;
   }
 
+  .tag {
+    position: absolute;
+    left: 2rem;
+  }
+
   .image-grid {
-    margin: 0 -4rem 0 -7.5rem;
-    width: calc(100vw - 13rem);
+    position: relative;
+    margin: 0;
+    width: 100%;
     z-index: 1;
     display: grid;
     grid-template-columns: repeat(5, 1fr);

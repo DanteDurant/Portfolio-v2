@@ -27,7 +27,7 @@
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(2px);
-    z-index: 10;
+    z-index: 99;
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.3s ease;

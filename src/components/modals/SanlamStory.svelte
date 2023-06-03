@@ -12,7 +12,7 @@
   <span class="modal-inner">
     <div class="con con-text">
       <p class="tag" style="margin: 0 0 1rem -3rem;">&lt;section&gt;</p>
-      <p class="tag" style="margin: 0 0 -0.5rem -1rem;">&lt;h2&gt;</p>
+      <p class="tag" style="margin: 0 0 -2rem -1rem;">&lt;h2&gt;</p>
       <span class="modal-head">
         <Bounce delay={0} size={s} spacing={sp} text="S" />
         <Bounce delay={30} size={s} spacing={sp} text="a" />
@@ -21,7 +21,7 @@
         <Bounce delay={120} size={s} spacing={sp} text="a" />
         <Bounce delay={150} size={s} spacing={sp} text="m" />
       </span>
-      <p class="tag" style="margin: -2.3rem -6rem 0 22.5rem;">&lt;h2/&gt;</p>
+      <p class="tag" style="margin: -3.3rem -6rem 0 22.5rem;">&lt;h2/&gt;</p>
       <p class="tag" style="margin: 0.5rem 0 -2rem -1rem;">&lt;h3&gt;</p>
       <h2>Storybook</h2>
       <p class="tag" style="margin: -1.3rem 0 0 -1rem;">&lt;h3/&gt;</p>
