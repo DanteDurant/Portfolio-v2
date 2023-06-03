@@ -13,7 +13,7 @@
   <span class="modal-inner">
     <div class="con con-text">
       <p class="tag" style="margin: 0 0 1rem -3rem;">&lt;section&gt;</p>
-      <p class="tag" style="margin: 0 0 -0.5rem -1rem;">&lt;h2&gt;</p>
+      <p class="tag" style="margin: 0 0 -2rem -1rem;">&lt;h2&gt;</p>
       <span class="modal-head">
         <Bounce delay={0} size={s} spacing={sp} text="W" />
         <Bounce delay={30} size={s} spacing={sp} text="O" />
@@ -26,7 +26,7 @@
         <Bounce delay={240} size={s} spacing={sp} text="H" />
         <Bounce delay={370} size={s} spacing={sp} text="S" />
       </span>
-      <p class="tag" style="margin: -2.3rem -6rem 0 45rem;">&lt;h2/&gt;</p>
+      <p class="tag" style="margin: -3.6rem -6rem 0 45rem;">&lt;h2/&gt;</p>
       <p class="tag" style="margin: 0.5rem 0 -2rem -1rem;">&lt;h3&gt;</p>
       <h2>Making The Difference</h2>
       <p class="tag" style="margin: -1.3rem 0 0 -1rem;">&lt;h3/&gt;</p>

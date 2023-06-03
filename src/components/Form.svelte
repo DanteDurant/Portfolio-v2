@@ -37,7 +37,7 @@
         />
       </div>
 
-      <button class="button">
+      <button>
         <Button text="Send Message!" />
       </button>
     </form>
@@ -88,7 +88,7 @@
     }
   }
 
-  .button {
+  button {
     margin-top: 2rem;
     display: flex;
     padding: 0;

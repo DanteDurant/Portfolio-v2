@@ -51,7 +51,6 @@
 
 <style lang="scss">
   main {
-    padding-left: 7.5rem;
     margin-left: 13rem;
     background-color: var(--bg);
     z-index: 1;
@@ -79,21 +78,23 @@
     display: flex;
     align-items: center;
     position: relative;
-
     width: 45%;
     padding-right: 7.5rem;
+    padding-left: 7.5rem;
+
     margin-top: -5rem;
+    background-color: var(--bg);
   }
 
   .tag {
     &-one {
       position: absolute;
-      left: -3rem;
+      left: 4.5rem;
       bottom: 6rem;
     }
     &-two {
       position: absolute;
-      left: -5rem;
+      left: 2.5rem;
       bottom: 3rem;
     }
   }
