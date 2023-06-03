@@ -1,9 +1,6 @@
 <script>
   import Sidebar from "../components/Sidebar.svelte";
   import Tendrils from "../components/features/Tendrils.svelte";
-  import SharedStyles from "../utility/SharedStyles.scss";
-  import KeyFrames from "../utility/KeyFrames.css";
-  import MediaQueries from "../utility/MediaQueries.scss";
 </script>
 
 <div class="app">
@@ -19,6 +16,9 @@
 </div>
 
 <style>
+  @import "../utility/SharedStyles.scss";
+  @import "../utility/KeyFrames.css";
+  @import "../utility/MediaQueries.scss";
   .app {
     background-color: #1d1d1d;
   }
