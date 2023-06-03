@@ -4,6 +4,7 @@
   import Work from "./work/Work.svelte";
   import Skills from "./skills/Skills.svelte";
   import Contact from "./contact/Contact.svelte";
+  import SharedStyles from "../utility/SharedStyles.scss";
 </script>
 
 <Intro />

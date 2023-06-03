@@ -16,9 +16,6 @@
 </div>
 
 <style>
-  @import "../utility/SharedStyles.scss";
-  @import "../utility/KeyFrames.css";
-  @import "../utility/MediaQueries.scss";
   .app {
     background-color: #1d1d1d;
   }
