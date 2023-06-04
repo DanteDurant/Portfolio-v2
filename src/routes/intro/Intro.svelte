@@ -5,7 +5,6 @@
   import ArrowDown from "$lib/images/logos/ArrowDown.svelte";
   import sharedStyles from "../../utility/sharedStyles.scss";
   import keyFrames from "../../utility/keyFrames.css";
-  import mediaQueries from "../../utility/mediaQueries.scss";
 
   let subVisible = false;
   let buttonVisible = false;
