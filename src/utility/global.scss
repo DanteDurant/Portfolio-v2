@@ -178,6 +178,10 @@ body {
 
 @media (max-width: 600px) {
 
+  .app {
+    width: 100vw;
+  }
+
   .tendrils {
     display: none;
   }
@@ -306,17 +310,24 @@ body {
 
   .about {
     display: flex;
+    width: 100vw;
     flex-direction: column;
-    justify-content: center;
-    padding-top: 13rem;
+    justify-content: end;
+    // padding-top: 9rem;
+
+    p {
+      width: max-content;
+    }
 
     .container-text {
-      // margin: 0 13rem !important;
-      margin-right: -13rem;
-      width: 100% !important;
+      margin: 0 !important;
+      width: 70% !important;
+      // margin-right: -13rem !important;
+      // width: 100% !important;
 
       .head_alt {
-        width: 80%;
+        width: 100%;
+        font-size: 2.5rem;
       }
     }
 
@@ -326,7 +337,7 @@ body {
 
     .tagcloud {
       align-self: center;
-      // margin-right: -7rem;
+      margin-bottom: 1rem;
     }
 
   }
