@@ -12,6 +12,6 @@
 
 <!-- <Work /> -->
 
-<!-- <Skills /> -->
+<Skills />
 
 <!-- <Contact /> -->
