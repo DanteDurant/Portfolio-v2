@@ -10,7 +10,7 @@
 
 <About />
 
-<!-- <Work /> -->
+<Work />
 
 <Skills />
 

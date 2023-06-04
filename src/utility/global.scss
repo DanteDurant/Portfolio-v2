@@ -18,7 +18,8 @@
   scroll-snap-align: start;
   scroll-snap-stop: always;
   display: flex;
-  width: calc(100vw - 20.5rem);
+  // width: calc(100vw - 20.5rem);
+  width: 100%;
   margin-left: 20.5rem;
   height: 100vh;
 }
@@ -194,49 +195,45 @@ body {
 
 
   .main-menu {
+    min-height: 100% !important;
     height: 100% !important;
     width: 100% !important;
     display: flex;
     flex-direction: row;
-    // align-items: center !important;
 
     &_top {
-      width: 26rem !important;
-      height: 100% !important;
+      width: max-content !important;
+      min-height: 100% !important;
       display: flex;
       flex-direction: row;
-      // justify-content: space-between;
 
       .logo {
-        margin-left: 2.8rem;
+        margin-left: 4rem;
+
+        &-svg {
+          scale: 1.2;
+        }
       }
 
       span {
         display: flex;
         flex-direction: column;
         width: 100%;
-        align-items: center;
 
         a {
-          margin: 0;
-          overflow: hidden;
-          width: 12.7rem;
-          padding-right: 5rem;
-
           .name {
-            font-family: "coolvetica";
-            font-weight: 400 !important;
-            font-size: 8rem !important;
-            line-height: 6.5rem !important;
-            margin-left: -1rem;
+            font-weight: 600 !important;
+            font-size: 4.5rem !important;
+            line-height: 5rem !important;
+            margin: 0;
+            margin: 0 4rem 0 3rem;
           }
         }
 
         .job {
           font-size: 2rem !important;
-          line-height: 1.5rem;
-          margin-bottom: -1.2rem;
-          margin-right: -2rem;
+          line-height: 1rem;
+          align-self: center;
         }
       }
     }
@@ -246,19 +243,23 @@ body {
       grid-template-columns: auto auto;
       grid-template-rows: auto auto;
       gap: .7rem;
-      height: 100%;
+      height: 13rem !important;
       width: 1fr !important;
-      justify-content: center;
+      justify-content: start;
       align-items: center;
       border-top: none !important;
-      margin-top: 3rem;
+      margin-left: 2rem;
 
       a {
+        display: flex;
         width: 12rem;
-        height: 4rem;
+        height: 5.5rem;
+        justify-content: center;
+        align-items: center;
         line-height: 4rem !important;
         font-size: 2rem;
         border: 1px solid #282828;
+        border-bottom: 2px solid #282828 !important;
       }
     }
 
@@ -268,8 +269,7 @@ body {
       justify-content: center !important;
       gap: 3rem;
       width: 1fr !important;
-      // margin: 0 !important;
-      margin-right: 4rem;
+      margin-right: 6rem;
 
       li {
         width: 3rem !important;
@@ -279,9 +279,9 @@ body {
     }
   }
 
-
-
-
+  ////////////////////////////////////////////
+  ///////////////   INTRO   //////////////////
+  ////////////////////////////////////////////
   .intro {
     margin-top: 13rem;
 
@@ -289,30 +289,42 @@ body {
       &-one {
         position: absolute;
         left: 1rem !important;
-        top: 15rem !important;
+        top: 18rem !important;
       }
 
       &-two {
         position: absolute;
         left: 3rem !important;
-        top: 19rem !important;
+        top: 21rem !important;
       }
     }
   }
+
 
 
   .about {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-top: 13rem;
 
-    .container {
+    .container-text {
+      // margin: 0 13rem !important;
+      margin-right: -13rem;
       width: 100% !important;
+
+      .head_alt {
+        width: 80%;
+      }
+    }
+
+    .tag-last {
+      margin: 0 0 0 -1rem !important;
     }
 
     .tagcloud {
-      width: 100%;
-      margin-left: -2rem;
+      align-self: center;
+      // margin-right: -7rem;
     }
 
   }

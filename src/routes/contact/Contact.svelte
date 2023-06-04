@@ -60,7 +60,7 @@
     z-index: 1;
   }
   .aside-back {
-    width: 16rem;
+    width: 15.6rem;
     height: 100vh;
   }
 
