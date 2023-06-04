@@ -54,7 +54,6 @@
   .main {
     margin-left: 0;
     width: 100%;
-    height: 100vh;
     background-color: var(--bg);
     z-index: 1;
   }
