@@ -4,8 +4,8 @@
   import Button from "../../components/Button.svelte";
   import ArrowDown from "$lib/images/logos/ArrowDown.svelte";
   import sharedStyles from "../../utility/sharedStyles.scss";
-  import keyFrames from "../../utility/keyFrames.css";
-  import MediaQueries from "../../utility/MediaQueries.scss";
+  // import keyFrames from "../../utility/keyFrames.css";
+  // import MediaQueries from "../../utility/MediaQueries.scss";
 
   let subVisible = false;
   let buttonVisible = false;
