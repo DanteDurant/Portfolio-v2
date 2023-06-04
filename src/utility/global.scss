@@ -280,41 +280,27 @@ body {
   }
 
   ////////////////////////////////////////////
-  ///////////////   INTRO   //////////////////
+  ///////////////   ABOUT   //////////////////
   ////////////////////////////////////////////
-  .intro {
-    margin-top: 13rem;
-
-    .tag {
-      &-one {
-        position: absolute;
-        left: 1rem !important;
-        top: 18rem !important;
-      }
-
-      &-two {
-        position: absolute;
-        left: 3rem !important;
-        top: 21rem !important;
-      }
-    }
-  }
-
-
 
   .about {
     display: flex;
+    width: 100vw;
     flex-direction: column;
-    justify-content: center;
-    padding-top: 13rem;
+    justify-content: end;
+    // padding-top: 9rem;
+
+    p {
+      width: max-content;
+    }
 
     .container-text {
-      // margin: 0 13rem !important;
-      margin-right: -13rem;
-      width: 100% !important;
+      margin: 0 !important;
+      width: 80% !important;
 
       .head_alt {
-        width: 80%;
+        width: 100%;
+        font-size: 2.2rem;
       }
     }
 
@@ -324,9 +310,74 @@ body {
 
     .tagcloud {
       align-self: center;
-      // margin-right: -7rem;
+      margin-top: -1rem;
+      margin-bottom: 1rem;
     }
 
+  }
+}
+
+////////////////////////////////////////////
+///////////////   WORK   ///////////////////
+////////////////////////////////////////////
+
+////////////////////////////////////////////
+//////////////   SKILLS   //////////////////
+////////////////////////////////////////////
+
+.skills {
+  margin: 0 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .container-text {
+    width: 80% !important;
+
+    .head_alt {
+      width: 100%;
+      font-size: 2.2rem;
+    }
+  }
+}
+
+////////////////////////////////////////////
+//////////////   CONTACT   /////////////////
+////////////////////////////////////////////
+
+.contact {
+  flex-direction: column-reverse !important;
+
+  .container {
+    &-text {
+      width: 80% !important;
+      height: 55% !important;
+
+      .head_alt {
+        font-size: 2.2rem !important;
+      }
+
+      input,
+      textarea {
+        font-size: 2.2rem !important;
+      }
+
+    }
+
+    &-map {
+      width: 100% !important;
+      height: 45% !important;
+
+      .fill_alt {
+        position: absolute;
+        bottom: -1.5rem !important;
+        right: 0;
+        height: 6.5rem !important;
+        width: 100%;
+        background-color: var(--bg);
+        z-index: 1;
+      }
+    }
   }
 }
 
