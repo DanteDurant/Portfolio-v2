@@ -55,10 +55,8 @@
   .aside-back {
     width: 14rem;
     height: 100vh;
-    margin: 0;
   }
   .main {
-    margin-left: 0;
     width: 100%;
     margin: 0;
   }

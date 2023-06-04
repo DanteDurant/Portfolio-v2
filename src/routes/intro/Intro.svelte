@@ -20,13 +20,14 @@
 </script>
 
 <main id="Home" class="main">
+  <span class="aside-back" />
   <div class="down">
     <span>scroll down</span>
     <div><ArrowDown /></div>
   </div>
-  <section class="container">
-    <p class="tag tag-one">&lt;/html&gt;</p>
-    <p class="tag tag-two">&lt;body&gt;</p>
+  <p class="tag tag-one">&lt;/html&gt;</p>
+  <p class="tag tag-two">&lt;body&gt;</p>
+  <section class="container-text">
     <div class="head">
       <p class="tag" style="margin: 0 0 -1rem -1rem">&lt;h1&gt;</p>
       <IntroText />
@@ -57,21 +58,26 @@
 </main>
 
 <style lang="scss">
-  main {
-    margin-left: 13rem;
-    width: calc(100vw - 20.5rem - 13rem);
+  .main {
+    width: 100%;
+    margin: 0;
   }
 
-  .container {
-    justify-content: center;
+  .aside-back {
+    width: 13rem;
     height: 100vh;
-    left: 6rem;
+  }
 
-    margin: 1rem 0 0 0;
+  .container-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-left: 5rem;
   }
 
   .down {
-    width: 2.7rem;
+    width: 4rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -92,12 +98,12 @@
   .tag {
     &-one {
       position: absolute;
-      left: -5rem;
+      left: 15rem;
       top: 1rem;
     }
     &-two {
       position: absolute;
-      left: -3rem;
+      left: 17rem;
       top: 4rem;
     }
   }
