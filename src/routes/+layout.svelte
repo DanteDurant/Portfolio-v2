@@ -15,7 +15,7 @@
   </main>
 </div>
 
-<style>
+<style lang="scss">
   .app {
     background-color: #1d1d1d;
   }
