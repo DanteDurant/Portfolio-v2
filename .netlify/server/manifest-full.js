@@ -4,7 +4,7 @@ export const manifest = {
 	assets: new Set([".DS_Store","coolvetica-rg.woff2","favicon.png"]),
 	mimeTypes: {".woff2":"font/woff2",".png":"image/png"},
 	_: {
-		client: {"start":"_app/immutable/entry/start.6b0a50a3.js","app":"_app/immutable/entry/app.bf9bfd8a.js","imports":["_app/immutable/entry/start.6b0a50a3.js","_app/immutable/chunks/index.a0bf89ce.js","_app/immutable/chunks/singletons.da87a076.js","_app/immutable/chunks/index.04818fb6.js","_app/immutable/entry/app.bf9bfd8a.js","_app/immutable/chunks/index.a0bf89ce.js"],"stylesheets":[],"fonts":[]},
+		client: {"start":"_app/immutable/entry/start.507ea914.js","app":"_app/immutable/entry/app.ff6683cc.js","imports":["_app/immutable/entry/start.507ea914.js","_app/immutable/chunks/index.a0bf89ce.js","_app/immutable/chunks/singletons.9ebe2bad.js","_app/immutable/chunks/index.04818fb6.js","_app/immutable/entry/app.ff6683cc.js","_app/immutable/chunks/index.a0bf89ce.js"],"stylesheets":[],"fonts":[]},
 		nodes: [
 			() => import('./nodes/0.js'),
 			() => import('./nodes/1.js'),

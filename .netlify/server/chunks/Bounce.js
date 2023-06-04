@@ -16,7 +16,7 @@ const PopUpText = create_ssr_component(($$result, $$props, $$bindings, slots) =>
 });
 const Bounce_svelte_svelte_type_style_lang = "";
 const css = {
-  code: ".rubberBand.svelte-fdw9v6{display:inline-block;width:max-content}.animate.svelte-fdw9v6{animation:rubberBand 1s ease}h1.svelte-fdw9v6{font-weight:500;transition:all 250ms;margin:0}h1.svelte-fdw9v6:hover{color:var(--pri)}",
+  code: '.rubberBand.svelte-1szofb7{display:inline-block;width:max-content}.animate.svelte-1szofb7{animation:rubberBand 1s ease}h1.svelte-1szofb7{font-family:"coolvetica", sans-serif;font-weight:500;transition:all 250ms;margin:0}h1.svelte-1szofb7:hover{color:var(--pri)}',
   map: null
 };
 const Bounce = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -39,13 +39,13 @@ const Bounce = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   if ($$props.height === void 0 && $$bindings.height && height !== void 0)
     $$bindings.height(height);
   $$result.css.add(css);
-  return `<span class="${"rubberBand " + escape("", true) + " svelte-fdw9v6"}"><h1${add_attribute(
+  return `<span class="${"rubberBand " + escape("", true) + " svelte-1szofb7"}"><h1${add_attribute(
     "style",
     `
       font-size: ${size}; ${customStyles}; 
       letter-spacing: ${spacing}; line-height: ${height}`,
     0
-  )} class="svelte-fdw9v6">${validate_component(PopUpText, "PopUpText").$$render($$result, { delay, content: text }, {}, {})}</h1>
+  )} class="svelte-1szofb7">${validate_component(PopUpText, "PopUpText").$$render($$result, { delay, content: text }, {}, {})}</h1>
 </span>`;
 });
 export {
