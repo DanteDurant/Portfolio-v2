@@ -18,8 +18,7 @@
   scroll-snap-align: start;
   scroll-snap-stop: always;
   display: flex;
-  // width: calc(100vw - 20.5rem);
-  width: 100%;
+  width: calc(100vw - 20.5rem);
   margin-left: 20.5rem;
   height: 100vh;
 }
@@ -178,10 +177,6 @@ body {
 
 @media (max-width: 600px) {
 
-  .app {
-    width: 100vw;
-  }
-
   .tendrils {
     display: none;
   }
@@ -199,45 +194,49 @@ body {
 
 
   .main-menu {
-    min-height: 100% !important;
     height: 100% !important;
     width: 100% !important;
     display: flex;
     flex-direction: row;
+    // align-items: center !important;
 
     &_top {
-      width: max-content !important;
-      min-height: 100% !important;
+      width: 26rem !important;
+      height: 100% !important;
       display: flex;
       flex-direction: row;
+      // justify-content: space-between;
 
       .logo {
-        margin-left: 4rem;
-
-        &-svg {
-          scale: 1.2;
-        }
+        margin-left: 2.8rem;
       }
 
       span {
         display: flex;
         flex-direction: column;
         width: 100%;
+        align-items: center;
 
         a {
+          margin: 0;
+          overflow: hidden;
+          width: 12.7rem;
+          padding-right: 5rem;
+
           .name {
-            font-weight: 600 !important;
-            font-size: 4.5rem !important;
-            line-height: 5rem !important;
-            margin: 0;
-            margin: 0 4rem 0 3rem;
+            font-family: "coolvetica";
+            font-weight: 400 !important;
+            font-size: 8rem !important;
+            line-height: 6.5rem !important;
+            margin-left: -1rem;
           }
         }
 
         .job {
           font-size: 2rem !important;
-          line-height: 1rem;
-          align-self: center;
+          line-height: 1.5rem;
+          margin-bottom: -1.2rem;
+          margin-right: -2rem;
         }
       }
     }
@@ -247,23 +246,19 @@ body {
       grid-template-columns: auto auto;
       grid-template-rows: auto auto;
       gap: .7rem;
-      height: 13rem !important;
+      height: 100%;
       width: 1fr !important;
-      justify-content: start;
+      justify-content: center;
       align-items: center;
       border-top: none !important;
-      margin-left: 2rem;
+      margin-top: 3rem;
 
       a {
-        display: flex;
         width: 12rem;
-        height: 5.5rem;
-        justify-content: center;
-        align-items: center;
+        height: 4rem;
         line-height: 4rem !important;
         font-size: 2rem;
         border: 1px solid #282828;
-        border-bottom: 2px solid #282828 !important;
       }
     }
 
@@ -273,7 +268,8 @@ body {
       justify-content: center !important;
       gap: 3rem;
       width: 1fr !important;
-      margin-right: 6rem;
+      // margin: 0 !important;
+      margin-right: 4rem;
 
       li {
         width: 3rem !important;
@@ -283,130 +279,42 @@ body {
     }
   }
 
-  ////////////////////////////////////////////
-  ///////////////   INTRO   //////////////////
-  ////////////////////////////////////////////
+
+
+
   .intro {
     margin-top: 13rem;
-    height: 100dvh !important;
 
     .tag {
       &-one {
         position: absolute;
         left: 1rem !important;
-        top: 18rem !important;
+        top: 15rem !important;
       }
 
       &-two {
         position: absolute;
         left: 3rem !important;
-        top: 21rem !important;
+        top: 19rem !important;
       }
     }
   }
 
-  ////////////////////////////////////////////
-  ///////////////   ABOUT   //////////////////
-  ////////////////////////////////////////////
 
   .about {
     display: flex;
-    width: 100vw;
-    height: 100dvh !important;
     flex-direction: column;
-    justify-content: end;
-    // padding-top: 9rem;
+    justify-content: center;
 
-    p {
-      width: max-content;
-    }
-
-    .container-text {
-      margin: 0 !important;
-      width: 80% !important;
-
-      .head_alt {
-        width: 100%;
-        font-size: 2.2rem;
-      }
-    }
-
-    .tag-last {
-      margin: 0 0 0 -1rem !important;
+    .container {
+      width: 100% !important;
     }
 
     .tagcloud {
-      align-self: center;
-      margin-top: -1rem;
-      margin-bottom: 1rem;
-    }
-
-  }
-}
-
-////////////////////////////////////////////
-///////////////   WORK   ///////////////////
-////////////////////////////////////////////
-
-////////////////////////////////////////////
-//////////////   SKILLS   //////////////////
-////////////////////////////////////////////
-
-.skills {
-  height: 100dvh !important;
-  margin: 0 !important;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  .container-text {
-    width: 80% !important;
-
-    .head_alt {
       width: 100%;
-      font-size: 2.2rem;
-    }
-  }
-}
-
-////////////////////////////////////////////
-//////////////   CONTACT   /////////////////
-////////////////////////////////////////////
-
-.contact {
-  height: 100dvh !important;
-  flex-direction: column-reverse !important;
-
-  .container {
-    &-text {
-      width: 80% !important;
-      height: 55% !important;
-
-      .head_alt {
-        font-size: 2.2rem !important;
-      }
-
-      input,
-      textarea {
-        font-size: 2.2rem !important;
-      }
-
+      margin-left: -2rem;
     }
 
-    &-map {
-      width: 100% !important;
-      height: 45% !important;
-
-      .fill_alt {
-        position: absolute;
-        bottom: -1.5rem !important;
-        right: 0;
-        height: 6.5rem !important;
-        width: 100%;
-        background-color: var(--bg);
-        z-index: 1;
-      }
-    }
   }
 }
 

@@ -59,7 +59,7 @@ const About = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       I firmly believe that an environment built on integrity and trust is crucial
       for fostering growth and achieving positive outcomes.
     </span>
-    <p class="tag" style="margin: 0 0 4rem -1rem;">&lt;p/&gt;</p></div>
+    <p class="tag tag-last" style="margin: 0 0 4rem -1rem;">&lt;p/&gt;</p></div>
   <span class="tagcloud center-parent svelte-1407o5e">${validate_component(TagCloud_1, "TagCloud").$$render($$result, {}, {}, {})}</span>
 </main>`;
 });

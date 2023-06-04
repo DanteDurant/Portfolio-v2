@@ -2,7 +2,7 @@ import { c as create_ssr_component, v as validate_component } from "./index2.js"
 import { B as Bounce } from "./Bounce.js";
 const Skills_svelte_svelte_type_style_lang = "";
 const css = {
-  code: ".container.svelte-qlheni{width:55%}",
+  code: ".container-text.svelte-xuwrra{width:55%;height:min-content;display:flex;flex-direction:column;position:relative;align-self:center}",
   map: null
 };
 const s = "6rem";
@@ -10,7 +10,7 @@ const sp = "-0.2rem";
 const h = "5.5rem";
 const Skills = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css);
-  return `<main id="Skills" class="main skills"><div class="container svelte-qlheni"><p class="tag" style="margin: 0 0 1rem -1rem;">&lt;h2&gt;</p>
+  return `<main id="Skills" class="main skills"><div class="container-text svelte-xuwrra"><p class="tag" style="margin: 0 0 1rem -1rem;">&lt;h2&gt;</p>
     <span class="head">${validate_component(Bounce, "Bounce").$$render(
     $$result,
     {

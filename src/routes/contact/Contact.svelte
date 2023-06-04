@@ -52,6 +52,8 @@
 
 <style lang="scss">
   .main {
+    display: flex;
+    flex-direction: row;
     margin-left: 0;
     width: 100%;
     background-color: var(--bg);
