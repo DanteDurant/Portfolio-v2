@@ -6,7 +6,7 @@
   import Contact from "./contact/Contact.svelte";
 </script>
 
-<!-- <Intro /> -->
+<Intro />
 
 <About />
 
