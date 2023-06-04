@@ -19,7 +19,7 @@
   bind:this={canvas}
   id="canvas"
   style="top: 0; left: 0; position: fixed;  "
-  class={$modalState ? "hide" : "show"}
+  class="{$modalState ? 'hide' : 'show'} tendrils"
 />
 
 <style>

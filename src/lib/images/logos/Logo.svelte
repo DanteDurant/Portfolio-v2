@@ -2,7 +2,7 @@
 
 <span>
   <svg
-    style="logo"
+    class="logo-svg"
     viewBox="0 0 45 46"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
