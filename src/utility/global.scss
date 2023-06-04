@@ -288,6 +288,7 @@ body {
   ////////////////////////////////////////////
   .intro {
     margin-top: 13rem;
+    height: 100dvh !important;
 
     .tag {
       &-one {
@@ -311,6 +312,7 @@ body {
   .about {
     display: flex;
     width: 100vw;
+    height: 100dvh !important;
     flex-direction: column;
     justify-content: end;
     // padding-top: 9rem;
@@ -351,6 +353,7 @@ body {
 ////////////////////////////////////////////
 
 .skills {
+  height: 100dvh !important;
   margin: 0 !important;
   display: flex;
   justify-content: center;
@@ -371,6 +374,7 @@ body {
 ////////////////////////////////////////////
 
 .contact {
+  height: 100dvh !important;
   flex-direction: column-reverse !important;
 
   .container {
