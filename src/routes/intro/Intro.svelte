@@ -3,7 +3,7 @@
   import IntroText from "../../components/text/IntroHeading.svelte";
   import Button from "../../components/Button.svelte";
   import ArrowDown from "$lib/images/logos/ArrowDown.svelte";
-  import sharedStyles from "../../utility/sharedStyles.scss";
+  import global from "../../utility/global.scss";
   import keyFrames from "../../utility/keyFrames.css";
 
   let subVisible = false;

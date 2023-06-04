@@ -28,4 +28,121 @@
     width: 13rem;
     overflow: auto;
   }
+
+  // "1920x1080",8.93
+  // "360x800",6.53
+  // "1366x768",6.35
+  // "1536x864",4.12
+  // "390x844",3.79
+  // "414x896",3.61
+  // "412x915",3.28
+  // "360x640",2.71
+  // "393x873",2.7
+  // "360x780",2.59
+  // "1280x720",2.52
+  // "1440x900",2.33
+  // "375x812",2.27
+  // "375x667",2.04
+  // "360x760",2.01
+  // "385x854",1.92
+  // "393x851",1.85
+  // "428x926",1.75
+  // "412x892",1.46
+  // "768x1024",1.33
+  // "Other",35.92
+
+  // 4k. 3840 × 2160
+  // 1440p. 2560 x 1440
+  // 1080p. 1920 x 1080
+  // 720p. 1280 x 720
+
+  @media (max-width: 1000px) {
+    html {
+      font-size: 27.3%;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .about {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .container {
+        width: 100% !important;
+      }
+
+      .tagcloud {
+        width: 100%;
+        margin-left: -2rem;
+      }
+    }
+  }
+
+  //mobile/desktop break
+
+  @media (min-width: 1000px) {
+    html {
+      font-size: 27.3%;
+    }
+  }
+
+  @media (min-width: 1000px) {
+    html {
+      font-size: 57.5%;
+    }
+  }
+
+  @media (min-width: 1400px) {
+    html {
+      font-size: 62.5%;
+    }
+  }
+
+  @media (min-width: 1800px) {
+    html {
+      font-size: 65%;
+    }
+  }
+
+  @media (min-width: 2200px) {
+    html {
+      font-size: 67.7%;
+    }
+  }
+
+  // 1440p
+  @media (min-width: 2560px) {
+    html {
+      font-size: 70%;
+    }
+
+    .skills {
+      .container {
+        width: 40% !important;
+      }
+    }
+
+    .tagcloud {
+      font-size: 2.5rem;
+    }
+  }
+
+  @media (min-width: 3000px) {
+    html {
+      font-size: 77.5%;
+    }
+  }
+
+  @media (min-width: 3400px) {
+    html {
+      font-size: 87.5%;
+    }
+  }
+
+  @media (min-width: 3840px) {
+    html {
+      font-size: 97.5%;
+    }
+  }
 </style>
