@@ -27,5 +27,6 @@
     height: 100%;
     width: 13rem;
     overflow: auto;
+    z-index: 999;
   }
 </style>
