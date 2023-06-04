@@ -156,95 +156,98 @@ body {
 // 720p. 1280 x 720
 
 
-@media (max-width: 1000px) {
-  html {
-    font-size: 27.3%;
-  }
-}
+// @media (max-width: 1000px) {
+//   html {
+//     font-size: 27.3%;
+//   }
+// }
 
-@media (max-width: 600px) {
+// @media (max-width: 600px) {
 
-  .about {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+//   .about {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
 
-    .container {
-      width: 100% !important;
-    }
+//     .container {
+//       width: 100% !important;
+//     }
 
-    .tagcloud {
-      width: 100%;
-      margin-left: -2rem;
-    }
+//     .tagcloud {
+//       width: 100%;
+//       margin-left: -2rem;
+//     }
 
-  }
-}
+//   }
+// }
 
-//mobile/desktop break
+// //mobile/desktop break
 
-@media (min-width: 1000px) {
-  html {
-    font-size: 27.3%;
-  }
-}
+// @media (min-width: 1000px) {
+//   html {
+//     font-size: 27.3%;
+//   }
+// }
 
-@media (min-width: 1000px) {
-  html {
-    font-size: 57.5%;
-  }
-}
+// @media (min-width: 1000px) {
+//   html {
+//     font-size: 57.5%;
+//   }
+// }
 
-@media (min-width: 1400px) {
-  html {
-    font-size: 62.5%;
-  }
-}
-
-
-@media (min-width: 1800px) {
-  html {
-    font-size: 65%;
-  }
-}
+// @media (min-width: 1400px) {
+//   html {
+//     font-size: 62.5%;
+//   }
+// }
 
 
+// @media (min-width: 1800px) {
+//   html {
+//     font-size: 65%;
+//   }
+// }
 
-@media (min-width: 2200px) {
-  html {
-    font-size: 67.7%;
-  }
-}
 
-// 1440p
-@media (min-width: 2560px) {
-  html {
-    font-size: 70%;
-  }
 
-  .skills {
-    .container {
-      width: 40% !important;
-    }
-  }
+// @media (min-width: 2200px) {
+//   html {
+//     font-size: 67.7%;
+//   }
+// }
 
-  .tagcloud {
-    font-size: 2.5rem;
-  }
-}
+// // 1440p
+// @media (min-width: 2560px) {
+//   html {
+//     font-size: 70%;
+//   }
 
-@media (min-width: 3000px) {
-  html {
-    font-size: 77.5%;
-  }
-}
+//   .skills {
+//     .container {
+//       width: 40% !important;
+//     }
+//   }
 
-@media (min-width: 3400px) {
-  html {
-    font-size: 87.5%;
-  }
-}
+//   .tagcloud {
+//     font-size: 2.5rem;
+//   }
+// }
 
-@media (min-width: 3840px) {
-  html {
-    font-size: 97.5%;
+// @media (min-width: 3000px) {
+//   html {
+//     font-size: 77.5%;
+//   }
+// }
+
+// @media (min-width: 3400px) {
+//   html {
+//     font-size: 87.5%;
+//   }
+// }
+
+// @media (min-width: 3840px) {
+//   html {
+//     font-size: 97.5%;
+
+//   }
+// }
