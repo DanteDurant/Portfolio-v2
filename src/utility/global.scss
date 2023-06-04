@@ -321,13 +321,15 @@ body {
 
     .container-text {
       margin: 0 !important;
-      width: 70% !important;
+      width: 80% !important;
+
       // margin-right: -13rem !important;
       // width: 100% !important;
 
+
       .head_alt {
         width: 100%;
-        font-size: 2.5rem;
+        font-size: 2.2rem;
       }
     }
 
@@ -337,6 +339,7 @@ body {
 
     .tagcloud {
       align-self: center;
+      margin-top: -1rem;
       margin-bottom: 1rem;
     }
 
