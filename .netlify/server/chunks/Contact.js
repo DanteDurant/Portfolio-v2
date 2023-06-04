@@ -20,15 +20,15 @@ const Form = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 });
 const Contact_svelte_svelte_type_style_lang = "";
 const css = {
-  code: ".main.svelte-tb9zy0{margin-left:13rem;width:calc(100vw - 13rem);background-color:var(--bg);z-index:1}.fill.svelte-tb9zy0{width:calc(100vw - 13rem);margin-left:13rem;height:2.5rem;z-index:1;background-color:var(--bg);box-shadow:0px -40px 200px 0px #000}.fill_alt.svelte-tb9zy0{position:absolute;bottom:0;right:0;height:2.5rem;width:100%;background-color:var(--bg);z-index:1}.con-form.svelte-tb9zy0{display:flex;align-items:center;position:relative;width:45%;padding-right:7.5rem;padding-left:7.5rem;margin-top:-5rem;background-color:var(--bg)}.tag-one.svelte-tb9zy0{position:absolute;left:4.5rem;bottom:6rem}.tag-two.svelte-tb9zy0{position:absolute;left:2.5rem;bottom:3rem}.con-map.svelte-tb9zy0{position:relative;height:100%;width:55%;z-index:1}",
+  code: ".main.svelte-w0xh64.svelte-w0xh64{margin-left:13rem;width:calc(100vw - 13rem);height:100vh;background-color:var(--bg);z-index:1}.container-text.svelte-w0xh64.svelte-w0xh64{position:relative;display:flex;flex-direction:column;width:45%;height:100vh;padding-right:7.5rem;padding-left:7.5rem;background-color:var(--bg)}.container-text.svelte-w0xh64 div.svelte-w0xh64{margin-top:-5rem}.fill.svelte-w0xh64.svelte-w0xh64{width:calc(100vw - 13rem);margin-left:13rem;height:2.5rem;z-index:1;background-color:var(--bg);box-shadow:0px -40px 200px 0px #000}.fill_alt.svelte-w0xh64.svelte-w0xh64{position:absolute;bottom:0;right:0;height:2.5rem;width:100%;background-color:var(--bg);z-index:1}.tag-one.svelte-w0xh64.svelte-w0xh64{position:absolute;left:4.5rem;bottom:4rem}.tag-two.svelte-w0xh64.svelte-w0xh64{position:absolute;left:2.5rem;bottom:1rem}.con-map.svelte-w0xh64.svelte-w0xh64{position:relative;height:100%;width:55%;z-index:1}",
   map: null
 };
 const s = "8rem";
 const sp = "-0.2rem";
 const Contact = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css);
-  return `<div class="fill svelte-tb9zy0"></div>
-<main id="Contact" class="main svelte-tb9zy0"><span class="con-form svelte-tb9zy0"><div><p class="tag" style="margin: 0 0 -1.5rem -1rem;">&lt;h1&gt;</p>
+  return `<div class="fill svelte-w0xh64"></div>
+<main id="Contact" class="main svelte-w0xh64"><span class="container-text center-parent svelte-w0xh64"><div class="svelte-w0xh64"><p class="tag" style="margin: 0 0 -1.5rem -1rem;">&lt;h1&gt;</p>
       <span class="head">${validate_component(Bounce, "Bounce").$$render($$result, { size: s, spacing: sp, text: "C" }, {}, {})}
         ${validate_component(Bounce, "Bounce").$$render($$result, { size: s, spacing: sp, text: "o" }, {}, {})}
         ${validate_component(Bounce, "Bounce").$$render($$result, { size: s, spacing: sp, text: "n" }, {}, {})}
@@ -48,11 +48,12 @@ const Contact = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       </span>
       <p class="tag" style="margin: 0 0 4rem -1rem;">&lt;p/&gt;</p>
       ${validate_component(Form, "Form").$$render($$result, {}, {}, {})}</div>
-    <p class="tag tag-two svelte-tb9zy0">&lt;/html&gt;</p>
-    <p class="tag tag-one svelte-tb9zy0">&lt;/body&gt;</p></span>
 
-  <div class="con-map svelte-tb9zy0"><iframe title="map" src="https://snazzymaps.com/embed/491438" width="100%" height="100%" style="border:none;"></iframe>
-    <div class="fill_alt svelte-tb9zy0"></div></div>
+    <p class="tag tag-two svelte-w0xh64">&lt;/html&gt;</p>
+    <p class="tag tag-one svelte-w0xh64">&lt;/body&gt;</p></span>
+
+  <div class="con-map svelte-w0xh64"><iframe title="map" src="https://snazzymaps.com/embed/491438" width="100%" height="100%" style="border:none;"></iframe>
+    <div class="fill_alt svelte-w0xh64"></div></div>
 </main>`;
 });
 export {

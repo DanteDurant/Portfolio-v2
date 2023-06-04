@@ -5,8 +5,8 @@
   const sp = "-0.2rem";
 </script>
 
-<div class="fill" />
 <main id="Contact" class="main">
+  <span class="aside-back" />
   <span class="container-text center-parent">
     <div>
       <p class="tag" style="margin: 0 0 -1.5rem -1rem;">&lt;h1&gt;</p>
@@ -52,11 +52,15 @@
 
 <style lang="scss">
   .main {
-    margin-left: 13rem;
-    width: calc(100vw - 13rem);
+    margin-left: 0;
+    width: 100%;
     height: 100vh;
     background-color: var(--bg);
     z-index: 1;
+  }
+  .aside-back {
+    width: 16rem;
+    height: 100vh;
   }
 
   .container-text {
@@ -73,22 +77,14 @@
     }
   }
 
-  .fill {
-    width: calc(100vw - 13rem);
-    margin-left: 13rem;
+  .fill_alt {
+    position: absolute;
+    bottom: 0;
+    right: 0;
     height: 2.5rem;
-    z-index: 1;
+    width: 100%;
     background-color: var(--bg);
-    box-shadow: 0px -40px 200px 0px #000;
-    &_alt {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      height: 2.5rem;
-      width: 100%;
-      background-color: var(--bg);
-      z-index: 1;
-    }
+    z-index: 1;
   }
 
   .tag {

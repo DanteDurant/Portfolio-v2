@@ -864,16 +864,16 @@ const ImageGrid = create_ssr_component(($$result, $$props, $$bindings, slots) =>
 });
 const Work_svelte_svelte_type_style_lang = "";
 const css = {
-  code: '.aside-back.svelte-1njl8am{width:14rem;height:100vh;margin:0}.main.svelte-1njl8am{margin-left:0;width:100%;margin:0}.container-outer.svelte-1njl8am{display:flex;flex-direction:column;width:100%}.container-text.svelte-1njl8am{background-color:transparent;width:100%;height:33rem;display:flex;flex-direction:column;position:relative;align-self:center;overflow:hidden;margin:0}.container-text_inner.svelte-1njl8am{margin-left:5rem}.head_alt.svelte-1njl8am{z-index:1}.bg-text.svelte-1njl8am{position:absolute;right:-6rem;bottom:18rem;font-size:50rem;font-family:"coolvetica";font-weight:400;line-height:0;letter-spacing:-1rem;color:rgba(0, 0, 0, 0.25)}',
+  code: '.aside-back.svelte-1h5t60a{width:14rem;height:100vh}.main.svelte-1h5t60a{width:100%;margin:0}.container-outer.svelte-1h5t60a{display:flex;flex-direction:column;width:100%}.container-text.svelte-1h5t60a{background-color:transparent;width:100%;height:33rem;display:flex;flex-direction:column;position:relative;align-self:center;overflow:hidden;margin:0}.container-text_inner.svelte-1h5t60a{margin-left:7.5rem}.bg-text.svelte-1h5t60a{position:absolute;right:-6rem;bottom:18rem;font-size:50rem;font-family:"coolvetica";font-weight:400;line-height:0;letter-spacing:-1rem;color:rgba(0, 0, 0, 0.25);z-index:0}',
   map: null
 };
 const s = "6rem";
 const sp = "-0.2rem";
 const Work = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css);
-  return `<main id="Work" class="main center-parent svelte-1njl8am"><span class="aside-back svelte-1njl8am"></span>
-  <span class="container-outer svelte-1njl8am"><div class="container-text svelte-1njl8am"><p class="bg-text svelte-1njl8am">Work</p>
-      <span class="container-text_inner svelte-1njl8am"><p class="tag" style="margin: 0 0 -0.5rem -1rem;">&lt;h2&gt;</p>
+  return `<main id="Work" class="main center-parent svelte-1h5t60a"><span class="aside-back svelte-1h5t60a"></span>
+  <span class="container-outer svelte-1h5t60a"><div class="container-text svelte-1h5t60a"><p class="bg-text svelte-1h5t60a">Work</p>
+      <span class="container-text_inner svelte-1h5t60a"><p class="tag" style="margin: 0 0 -2rem -1rem;">&lt;h2&gt;</p>
 
         <span class="head">${validate_component(Bounce, "Bounce").$$render($$result, { size: s, spacing: sp, text: "M" }, {}, {})}
           ${validate_component(Bounce, "Bounce").$$render($$result, { size: s, spacing: sp, text: "y" }, {}, {})}
@@ -889,10 +889,10 @@ const Work = create_ssr_component(($$result, $$props, $$bindings, slots) => {
           ${validate_component(Bounce, "Bounce").$$render($$result, { size: s, spacing: sp, text: "i" }, {}, {})}
           ${validate_component(Bounce, "Bounce").$$render($$result, { size: s, spacing: sp, text: "o" }, {}, {})}</span>
 
-        <p class="tag" style="margin: 0 0 0 -1rem;">&lt;h2/&gt;</p>
+        <p class="tag" style="margin: -1rem 0 0 -1rem;">&lt;h2/&gt;</p>
         <p class="tag" style="margin: -1rem 0 0 -1rem;">&lt;p&gt;</p>
 
-        <p class="head_alt svelte-1njl8am">A small gallery of recent projects chosen by me. I&#39;ve done them all
+        <p class="head_alt">A small gallery of recent projects chosen by me. I&#39;ve done them all
           together with amazing people from companies <br>
           around the country. the list is a work in progress and there is more to
           come.<br>Interested to see some more? Visit my
