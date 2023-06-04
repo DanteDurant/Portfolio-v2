@@ -5,7 +5,7 @@
   const sp = "-0.2rem";
 </script>
 
-<main id="Contact" class="main">
+<main id="Contact" class="main contact">
   <span class="aside-back" />
   <span class="container-text center-parent">
     <div>
@@ -38,7 +38,7 @@
     <p class="tag tag-one">&lt;/body&gt;</p>
   </span>
 
-  <div class="con-map">
+  <div class="container-map">
     <iframe
       title="map"
       src="https://snazzymaps.com/embed/491438"
@@ -99,7 +99,7 @@
     }
   }
 
-  .con-map {
+  .container-map {
     position: relative;
     height: 100%;
     width: 55%;

@@ -6,12 +6,12 @@
   import Contact from "./contact/Contact.svelte";
 </script>
 
-<Intro />
+<!-- <Intro /> -->
 
-<About />
+<!-- <About /> -->
 
 <!-- <Work /> -->
 
-<Skills />
+<!-- <Skills /> -->
 
-<!-- <Contact /> -->
+<Contact />
