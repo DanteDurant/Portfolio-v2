@@ -7,7 +7,7 @@
 
 <div class="fill" />
 <main id="Contact" class="main">
-  <span class="con-form">
+  <span class="container-text center-parent">
     <div>
       <p class="tag" style="margin: 0 0 -1.5rem -1rem;">&lt;h1&gt;</p>
       <span class="head">
@@ -33,6 +33,7 @@
       <p class="tag" style="margin: 0 0 4rem -1rem;">&lt;p/&gt;</p>
       <Form />
     </div>
+
     <p class="tag tag-two">&lt;/html&gt;</p>
     <p class="tag tag-one">&lt;/body&gt;</p>
   </span>
@@ -53,8 +54,23 @@
   .main {
     margin-left: 13rem;
     width: calc(100vw - 13rem);
+    height: 100vh;
     background-color: var(--bg);
     z-index: 1;
+  }
+
+  .container-text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    height: 100vh;
+    padding-right: 7.5rem;
+    padding-left: 7.5rem;
+    background-color: var(--bg);
+    div {
+      margin-top: -5rem;
+    }
   }
 
   .fill {
@@ -75,27 +91,16 @@
     }
   }
 
-  .con-form {
-    display: flex;
-    align-items: center;
-    position: relative;
-    width: 45%;
-    padding-right: 7.5rem;
-    padding-left: 7.5rem;
-    margin-top: -5rem;
-    background-color: var(--bg);
-  }
-
   .tag {
     &-one {
       position: absolute;
       left: 4.5rem;
-      bottom: 6rem;
+      bottom: 4rem;
     }
     &-two {
       position: absolute;
       left: 2.5rem;
-      bottom: 3rem;
+      bottom: 1rem;
     }
   }
 
