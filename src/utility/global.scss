@@ -11,7 +11,6 @@
 
 @font-face {
   font-family: 'coolvetica';
-  // src: url('%sveltekit.assets%/fonts/coolvetica-rg.woff2') format('woff2');
   src: url('../../static/fonts/coolvetica-rg.woff2') format('woff2');
 }
 
@@ -38,6 +37,18 @@
   font-size: 1.8rem;
   font-style: italic;
   font-family: "La Belle Aurore";
+
+  &-one_top {
+    position: absolute;
+    left: 15rem;
+    top: 1rem;
+  }
+
+  &-two_top {
+    position: absolute;
+    left: 17rem;
+    top: 4rem;
+  }
 }
 
 .head {
@@ -165,6 +176,123 @@ body {
 }
 
 @media (max-width: 600px) {
+
+  // sidebar
+
+  .main-menu {
+    height: 13rem !important;
+    width: 100% !important;
+    display: flex;
+    flex-direction: row;
+    // align-items: center !important;
+
+    &_top {
+      width: 28rem !important;
+      height: 100% !important;
+      display: flex;
+      flex-direction: row;
+      // justify-content: space-between;
+
+      .logo {
+        margin-left: 2.8rem;
+      }
+
+      span {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+
+        a {
+          margin: 0;
+          overflow: hidden;
+          width: 12.7rem;
+          padding-right: 5rem;
+
+          .name {
+            font-family: "coolvetica";
+            font-weight: 400 !important;
+            font-size: 8rem !important;
+            line-height: 6.5rem !important;
+            margin-left: -1rem;
+          }
+        }
+
+        .job {
+          font-size: 2rem !important;
+          line-height: 1.5rem;
+          margin-bottom: -1.2rem;
+          margin-right: -2rem;
+        }
+      }
+    }
+
+    &_nav {
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-template-rows: auto auto;
+      gap: .7rem;
+      height: 100%;
+      width: 1fr !important;
+      justify-content: center;
+      align-items: center;
+      border-top: none !important;
+      margin-top: 3rem;
+
+      a {
+        width: 12rem;
+        height: 4rem;
+        line-height: 4rem !important;
+        font-size: 2rem;
+        border: 1px solid #282828;
+      }
+    }
+
+    .socials {
+      height: 13rem !important;
+      align-items: center;
+      justify-content: center !important;
+      gap: 3rem;
+      width: 1fr !important;
+      // margin: 0 !important;
+      margin-right: 4rem;
+
+      li {
+        width: 3rem !important;
+      }
+
+
+    }
+  }
+
+  aside {
+    height: 13rem !important;
+    width: 100% !important;
+  }
+
+  .aside-back {
+    display: none;
+  }
+
+
+  .intro {
+    margin-top: 13rem;
+
+    .tag {
+      &-one {
+        position: absolute;
+        left: 1rem !important;
+        top: 15rem !important;
+      }
+
+      &-two {
+        position: absolute;
+        left: 3rem !important;
+        top: 19rem !important;
+      }
+    }
+  }
+
 
   .about {
     display: flex;

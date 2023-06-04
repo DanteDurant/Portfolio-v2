@@ -1,6 +1,6 @@
 <span>
   <svg
-    width="1.5rem"
+    width="inherit"
     aria-hidden="true"
     focusable="false"
     data-prefix="fab"

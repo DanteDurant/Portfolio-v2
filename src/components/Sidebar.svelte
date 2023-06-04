@@ -7,13 +7,15 @@
 
 <menu class="main-menu column">
   <div class="main-menu_top center-parent column">
-    <a href="#Home">
+    <a href="#Home" class="logo">
       <Logo />
     </a>
-    <a href="#Home">
-      <span class="name">Dante</span>
-    </a>
-    <p class="job">Web Developer</p>
+    <span>
+      <a href="#Home">
+        <span class="name">Dante</span>
+      </a>
+      <p class="job">Web Developer</p>
+    </span>
   </div>
 
   <nav class="main-menu_nav column">
@@ -96,7 +98,9 @@
     justify-content: space-between;
     height: 20rem;
     width: 56%;
+    list-style: none;
     li {
+      width: 1.5rem;
       a {
         transition: all 300ms;
         color: #909096;

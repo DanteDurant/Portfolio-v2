@@ -19,7 +19,7 @@
   });
 </script>
 
-<main id="Home" class="main">
+<main id="Home" class="main intro">
   <span class="aside-back" />
   <div class="down">
     <span>scroll down</span>
