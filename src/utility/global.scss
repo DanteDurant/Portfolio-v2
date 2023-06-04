@@ -268,7 +268,6 @@ body {
       justify-content: center !important;
       gap: 3rem;
       width: 1fr !important;
-      // margin: 0 !important;
       margin-right: 6rem;
 
       li {
@@ -278,9 +277,6 @@ body {
 
     }
   }
-
-
-
 
   .intro {
     margin-top: 13rem;
@@ -305,14 +301,25 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-top: 13rem;
 
-    .container {
+    .container-text {
+      // margin: 0 13rem !important;
+      margin-right: -13rem;
       width: 100% !important;
+
+      .head_alt {
+        width: 80%;
+      }
+    }
+
+    .tag-last {
+      margin: 0 0 0 -1rem !important;
     }
 
     .tagcloud {
-      width: 100%;
-      margin-left: -2rem;
+      align-self: center;
+      // margin-right: -7rem;
     }
 
   }

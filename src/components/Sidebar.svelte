@@ -22,7 +22,7 @@
     <a href="#About">About</a>
     <a href="#Work">Work</a>
     <a href="#Skills">Skills</a>
-    <a href="#Contact">Contact</a>
+    <a href="#Contact">Contact</a>a
   </nav>
 
   <ul class="socials">

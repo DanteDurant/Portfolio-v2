@@ -45,7 +45,9 @@
   afterUpdate(() => {
     const screenWidth = window.innerWidth;
     radius =
-      screenWidth <= 1000
+      screenWidth <= 600
+        ? 130
+        : screenWidth <= 1000
         ? 150
         : screenWidth <= 1400
         ? 200
