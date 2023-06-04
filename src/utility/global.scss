@@ -47,9 +47,11 @@
 
 
   &_alt {
+    position: relative;
     color: var(--text);
     font-size: 1.6rem;
     line-height: 1.5;
+    z-index: 1;
   }
 }
 

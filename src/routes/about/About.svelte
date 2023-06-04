@@ -6,7 +6,8 @@
 </script>
 
 <main id="About" class="main about">
-  <div class="container">
+  <span class="aside-back" />
+  <div class="container-text">
     <p class="tag" style="margin: 0 0 -0.5rem -1rem;">&lt;h2&gt;</p>
     <span class="head">
       <Bounce size={s} spacing={sp} text="M" />
@@ -58,8 +59,25 @@
 </main>
 
 <style lang="scss">
-  .container {
+  .main {
+    width: 100%;
+    margin: 0;
+  }
+  .aside-back {
+    width: 13rem;
+    height: 100vh;
+  }
+  .container-text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
     width: 40%;
+    margin-left: 9rem;
+  }
+  .aside-back {
+    width: 13rem;
+    height: 100vh;
   }
 
   .tagcloud {

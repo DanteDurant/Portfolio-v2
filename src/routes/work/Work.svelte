@@ -11,7 +11,7 @@
     <div class="container-text">
       <p class="bg-text">Work</p>
       <span class="container-text_inner">
-        <p class="tag" style="margin: 0 0 -0.5rem -1rem;">&lt;h2&gt;</p>
+        <p class="tag" style="margin: 0 0 -2rem -1rem;">&lt;h2&gt;</p>
 
         <span class="head">
           <Bounce size={s} spacing={sp} text="M" />
@@ -29,7 +29,7 @@
           <Bounce size={s} spacing={sp} text="o" />
         </span>
 
-        <p class="tag" style="margin: 0 0 0 -1rem;">&lt;h2/&gt;</p>
+        <p class="tag" style="margin: -1rem 0 0 -1rem;">&lt;h2/&gt;</p>
         <p class="tag" style="margin: -1rem 0 0 -1rem;">&lt;p&gt;</p>
 
         <p class="head_alt">
@@ -76,12 +76,8 @@
     overflow: hidden;
     margin: 0;
     &_inner {
-      margin-left: 5rem;
+      margin-left: 7.5rem;
     }
-  }
-
-  .head_alt {
-    z-index: 1;
   }
 
   .bg-text {
@@ -94,5 +90,6 @@
     line-height: 0;
     letter-spacing: -1rem;
     color: rgba(0, 0, 0, 0.25);
+    z-index: 0;
   }
 </style>
