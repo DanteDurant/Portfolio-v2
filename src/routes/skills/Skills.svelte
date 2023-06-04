@@ -6,9 +6,7 @@
 </script>
 
 <main id="Skills" class="main skills">
-  <span class="aside-back" />
-
-  <div class="container-text">
+  <div class="container">
     <p class="tag" style="margin: 0 0 1rem -1rem;">&lt;h2&gt;</p>
     <span class="head">
       <Bounce size={s} spacing={sp} height={h} text="S" />
@@ -61,20 +59,7 @@
 </main>
 
 <style lang="scss">
-  .main {
-    width: 100%;
-    margin: 0;
-  }
-  .aside-back {
-    width: 13rem;
-    height: 100vh;
-  }
-  .container-text {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-self: center;
+  .container {
     width: 55%;
-    margin-left: 7.5rem;
   }
 </style>
