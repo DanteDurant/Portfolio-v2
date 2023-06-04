@@ -45,11 +45,10 @@
   }
 
   h1 {
-    // font-family: "coolvetica", sans-serif;
+    font-family: "coolvetica", sans-serif;
     font-weight: 500;
     transition: all 250ms;
     margin: 0;
-    // line-height: 8.6rem;
 
     &:hover {
       color: var(--pri);
