@@ -107,4 +107,42 @@
     width: 55%;
     z-index: 1;
   }
+
+  @media (max-width: 600px) {
+    .contact {
+      flex-direction: column-reverse;
+      overflow: hidden;
+
+      .container {
+        &-text {
+          width: 80%;
+          height: 55%;
+
+          .head_alt {
+            font-size: 2.2rem;
+          }
+
+          input,
+          textarea {
+            font-size: 2.2rem;
+          }
+        }
+
+        &-map {
+          width: 193vw;
+          height: 45%;
+
+          .fill_alt {
+            position: absolute;
+            bottom: -1.5rem;
+            right: 0;
+            height: 6.5rem;
+            width: 100%;
+            background-color: var(--bg);
+            z-index: 1;
+          }
+        }
+      }
+    }
+  }
 </style>
