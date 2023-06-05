@@ -181,4 +181,16 @@
     height: 102%;
     object-fit: cover;
   }
+
+  @media (max-width: 600px) {
+    .image-grid {
+      grid-template-columns: 1fr 1fr !important;
+      grid-auto-rows: minmax(auto, auto) !important;
+      width: 80% !important;
+      align-self: center;
+      &:last-child {
+        margin-bottom: 6rem !important;
+      }
+    }
+  }
 </style>

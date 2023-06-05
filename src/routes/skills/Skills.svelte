@@ -6,7 +6,7 @@
 </script>
 
 <main id="Skills" class="main skills">
-  <div class="container-text">
+  <div class="container-textd">
     <p class="tag" style="margin: 0 0 1rem -1rem;">&lt;h2&gt;</p>
     <span class="head">
       <Bounce size={s} spacing={sp} height={h} text="S" />

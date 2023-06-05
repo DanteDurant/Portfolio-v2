@@ -5,7 +5,7 @@
   const sp = "-0.2rem";
 </script>
 
-<main id="Work" class="main center-parent">
+<main id="Work" class="main work center-parent">
   <span class="aside-back" />
   <span class="container-outer">
     <div class="container-text">
@@ -13,7 +13,7 @@
       <span class="container-text_inner">
         <p class="tag" style="margin: 0 0 -2rem -1rem;">&lt;h2&gt;</p>
 
-        <span class="head">
+        <span class="head work">
           <Bounce size={s} spacing={sp} text="M" />
           <Bounce size={s} spacing={sp} text="y" />
           <span>&nbsp</span>
@@ -34,9 +34,9 @@
 
         <p class="head_alt">
           A small gallery of recent projects chosen by me. I've done them all
-          together with amazing people from companies <br />
-          around the country. the list is a work in progress and there is more to
-          come.<br />Interested to see some more? Visit my
+          together with amazing people from companies around the country. the
+          list is a work in progress and there is more to come.<br />Interested
+          to see some more? Visit my
           <a
             href="https://github.com/DanteDurant?tab=repositories"
             target="_blank">GitHub</a
@@ -78,6 +78,13 @@
     &_inner {
       margin-left: 7.5rem;
     }
+
+    .head {
+      position: relative;
+      &_alt {
+        width: 80rem;
+      }
+    }
   }
 
   .bg-text {
@@ -91,5 +98,33 @@
     letter-spacing: -1rem;
     color: rgba(0, 0, 0, 0.25);
     z-index: 0;
+  }
+
+  @media (max-width: 600px) {
+    .work {
+      height: 100dvh;
+      width: 100vw;
+      overflow: hidden;
+      .container-outer {
+        margin-bottom: -20rem;
+        .container-text {
+          width: 80%;
+          overflow: visible;
+          .bg-text {
+            font-size: 49rem;
+            left: -20rem;
+            bottom: 18rem;
+            // display: none;
+          }
+          &_inner {
+            margin: 0;
+          }
+          .head_alt {
+            width: 100%;
+            font-size: 2.2rem;
+          }
+        }
+      }
+    }
   }
 </style>

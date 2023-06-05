@@ -315,70 +315,105 @@ body {
     }
 
   }
-}
 
-////////////////////////////////////////////
-///////////////   WORK   ///////////////////
-////////////////////////////////////////////
+  ////////////////////////////////////////////
+  ///////////////   WORK   ///////////////////
+  ////////////////////////////////////////////
+  // .work {
+  //   height: 100dvh !important;
+  //   // justify-content: end !important;
+  //   // align-items: end !important;
 
-////////////////////////////////////////////
-//////////////   SKILLS   //////////////////
-////////////////////////////////////////////
+  //   .container-outer {
+  //     margin-bottom: -20rem;
+  //     .container-text {
+  //       width: 80% !important;
+  //       &_inner {
+  //         margin: 0 !important;
+  //       }
+  //       .head_alt {
+  //         width: 100% !important;
+  //         font-size: 2.2rem !important;
+  //       }
+  //     }
+  //   }
 
-.skills {
-  margin: 0 !important;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  // }
 
-  .container-text {
-    width: 80% !important;
+  // .image-grid {
+  //   grid-template-columns: 1fr 1fr !important;
+  //   grid-auto-rows: minmax(auto, auto) !important;
+  //   width: 80% !important;
+  //   align-self: center;
+  //   ;
 
-    .head_alt {
-      width: 100%;
-      font-size: 2.2rem;
-    }
-  }
-}
+  //   &:last-child {
+  //     margin-bottom: 6rem !important;
+  //   }
+  // }
 
-////////////////////////////////////////////
-//////////////   CONTACT   /////////////////
-////////////////////////////////////////////
 
-.contact {
-  flex-direction: column-reverse !important;
+  ////////////////////////////////////////////
+  //////////////   SKILLS   //////////////////
+  ////////////////////////////////////////////
 
-  .container {
-    &-text {
+
+  .skills {
+    margin: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .container-text {
       width: 80% !important;
-      height: 55% !important;
 
       .head_alt {
-        font-size: 2.2rem !important;
-      }
-
-      input,
-      textarea {
-        font-size: 2.2rem !important;
-      }
-
-    }
-
-    &-map {
-      width: 100% !important;
-      height: 45% !important;
-
-      .fill_alt {
-        position: absolute;
-        bottom: -1.5rem !important;
-        right: 0;
-        height: 6.5rem !important;
         width: 100%;
-        background-color: var(--bg);
-        z-index: 1;
+        font-size: 2.2rem;
       }
     }
   }
+
+  ////////////////////////////////////////////
+  //////////////   CONTACT   /////////////////
+  ////////////////////////////////////////////
+
+  .contact {
+    flex-direction: column-reverse !important;
+
+    .container {
+      &-text {
+        width: 80% !important;
+        height: 55% !important;
+
+        .head_alt {
+          font-size: 2.2rem !important;
+        }
+
+        input,
+        textarea {
+          font-size: 2.2rem !important;
+        }
+
+      }
+
+      &-map {
+        width: 100% !important;
+        height: 45% !important;
+
+        .fill_alt {
+          position: absolute;
+          bottom: -1.5rem !important;
+          right: 0;
+          height: 6.5rem !important;
+          width: 100%;
+          background-color: var(--bg);
+          z-index: 1;
+        }
+      }
+    }
+  }
+
 }
 
 //mobile/desktop break
