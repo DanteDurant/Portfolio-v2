@@ -53,17 +53,17 @@
 
 <div class="image-grid">
   <Modal isOpen={$modalState} onClose={closeModal}>
-    {#if currentModal === SanlamStory}
-      <SanlamStory on:modalclose={handleModalClose} />
-    {/if}
     {#if currentModal === SanlamDS}
       <SanlamDS on:modalclose={handleModalClose} />
     {/if}
-    {#if currentModal === RetailRocket}
-      <RetailRocket on:modalclose={handleModalClose} />
+    {#if currentModal === SanlamStory}
+      <SanlamStory on:modalclose={handleModalClose} />
     {/if}
     {#if currentModal === WineChampion}
       <WineChampion on:modalclose={handleModalClose} />
+    {/if}
+    {#if currentModal === RetailRocket}
+      <RetailRocket on:modalclose={handleModalClose} />
     {/if}
     {#if currentModal === WooliesMTD}
       <WooliesMTD on:modalclose={handleModalClose} />

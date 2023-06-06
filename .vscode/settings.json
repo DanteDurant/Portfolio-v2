@@ -4,6 +4,8 @@
     "terminalCursor.foreground": "#4e4e4e00",
     "activityBar.background": "#09351D",
     "titleBar.activeBackground": "#0C4A29",
-    "titleBar.activeForeground": "#F3FDF8"
+    "titleBar.activeForeground": "#F3FDF8",
+    "minimap.background": "#00000000",
+    "scrollbar.shadow": "#00000000"
   }
 }

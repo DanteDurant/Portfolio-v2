@@ -15,7 +15,7 @@
   </div>
 </div>
 
-<style>
+<style lang="scss">
   .fullscreen {
     position: fixed;
     top: 0;
@@ -56,5 +56,19 @@
     bottom: 3.5rem;
     background-color: transparent;
     padding: 0;
+  }
+
+  @media (max-width: 600px) {
+    .modal-outer {
+      margin: 5rem;
+      height: calc(100dvh - 16rem);
+      align-self: end;
+      width: 100%;
+      margin: 0;
+      .close-button {
+        left: 53rem;
+        bottom: 5rem;
+      }
+    }
   }
 </style>

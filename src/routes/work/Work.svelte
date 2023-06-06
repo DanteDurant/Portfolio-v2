@@ -121,7 +121,7 @@
           }
           .head_alt {
             width: 100%;
-            font-size: 2.2rem;
+            // font-size: 2.2rem;
           }
         }
       }

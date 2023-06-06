@@ -9,8 +9,8 @@
 </script>
 
 <section class="modal-inner">
-  <div class="con-text">
-    <p class="tag" style="margin: 0 0 1rem -3rem;">&lt;section&gt;</p>
+  <div class="container-text">
+    <p class="tag tag-first" style="margin: 0 0 1rem -3rem;">&lt;section&gt;</p>
     <p class="tag" style="margin: 0 0 -2rem -1rem;">&lt;h2&gt;</p>
     <span class="modal-head">
       <Bounce delay={0} size={s} spacing={sp} text="R" />
@@ -51,9 +51,9 @@
       </p>
       <p class="tag" style="margin: .5rem 0 0 -1rem;">&lt;p/&gt;</p>
     </span>
-    <p class="tag" style="margin: 1rem 0 0 -3rem;">&lt;section/&gt;</p>
+    <p class="tag tag-last" style="margin: 1rem 0 0 -3rem;">&lt;section/&gt;</p>
   </div>
-  <div class="con-img">
+  <div class="container-img">
     <div>
       <a href="https://retailrockit.co.za/" target="_blank">
         <ImageLoader src={Rocket} alt="Retail rocket landing page" />
@@ -68,4 +68,32 @@
 </section>
 
 <style lang="scss">
+  @media (max-width: 600px) {
+    .modal-inner {
+      height: 100%;
+      width: 100%;
+      flex-direction: column;
+    }
+    .container-text {
+      width: 85%;
+      margin-bottom: -35rem;
+
+      .head_alt {
+        font-size: 2.2rem;
+      }
+      .tag-last,
+      .tag-first {
+        display: none;
+      }
+    }
+    .container-img {
+      padding: 0;
+      width: 85%;
+      align-self: center;
+      margin-bottom: -5rem;
+      .link {
+        font-size: 3rem;
+      }
+    }
+  }
 </style>

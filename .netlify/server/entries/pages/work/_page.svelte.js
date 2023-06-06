@@ -83,7 +83,7 @@ const ImageLoader = create_ssr_component(($$result, $$props, $$bindings, slots) 
 const s$5 = "7rem";
 const sp$5 = "-0.1rem";
 const SanlamStory = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `<section class="modal-inner"><span class="modal-inner"><div class="con con-text"><p class="tag" style="margin: 0 0 1rem -3rem;">&lt;section&gt;</p>
+  return `<section class="modal-inner"><span class="modal-inner"><div class="con container-text"><p class="tag" style="margin: 0 0 1rem -3rem;">&lt;section&gt;</p>
       <p class="tag" style="margin: 0 0 -2rem -1rem;">&lt;h2&gt;</p>
       <span class="modal-head">${validate_component(Bounce, "Bounce").$$render(
     $$result,
@@ -171,7 +171,7 @@ const SanlamStory = create_ssr_component(($$result, $$props, $$bindings, slots) 
         </p>
         <p class="tag" style="margin: .5rem 0 0 -1rem;">&lt;p/&gt;</p></span>
       <p class="tag" style="margin: 1rem 0 0 -3rem;">&lt;section/&gt;</p></div>
-    <div class="con con-img"><div>
+    <div class="con container-img"><div>
         <span><a style="font-size: 5rem; text-align:center; line-height:5rem;" class="link center-parent" href="https://storybook.sanlam.design/react-ui-next/index.html?path=/story/docs-introduction--page" target="_blank">website is down<br> temporarily
           </a></span></div></div></span>
 </section>`;
@@ -192,7 +192,7 @@ const Clipboard = create_ssr_component(($$result, $$props, $$bindings, slots) =>
 const s$4 = "7rem";
 const sp$4 = "-0.1rem";
 const SanlamDS = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `<section class="modal-inner"><span class="modal-inner"><div class="con-text"><p class="tag" style="margin: 0 0 1rem -3rem;">&lt;section&gt;</p>
+  return `<section class="modal-inner"><span class="modal-inner"><div class="container-text"><p class="tag" style="margin: 0 0 1rem -3rem;">&lt;section&gt;</p>
       <p class="tag" style="margin: 0 0 -0.5rem -1rem;">&lt;h2&gt;</p>
       <span class="modal-head">${validate_component(Bounce, "Bounce").$$render(
     $$result,
@@ -281,7 +281,7 @@ const SanlamDS = create_ssr_component(($$result, $$props, $$bindings, slots) => 
         </p>
         <p class="tag" style="margin: .5rem 0 0 -1rem;">&lt;p/&gt;</p></span>
       <p class="tag" style="margin: 1rem 0 0 -3rem;">&lt;section/&gt;</p></div>
-    <div class="con-img"><div><a href="http://sanlam-dsm.mlab.cx/ " target="_blank">${validate_component(ImageLoader, "ImageLoader").$$render(
+    <div class="container-img"><div><a href="http://sanlam-dsm.mlab.cx/ " target="_blank">${validate_component(ImageLoader, "ImageLoader").$$render(
     $$result,
     {
       src: Sanlam,
@@ -300,7 +300,7 @@ const Rocket = "/_app/immutable/assets/rocket.b18fd1ee.webp";
 const s$3 = "7rem";
 const sp$3 = "-0.1rem";
 const RetailRocket = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `<section class="modal-inner"><div class="con-text"><p class="tag" style="margin: 0 0 1rem -3rem;">&lt;section&gt;</p>
+  return `<section class="modal-inner"><div class="container-text"><p class="tag" style="margin: 0 0 1rem -3rem;">&lt;section&gt;</p>
     <p class="tag" style="margin: 0 0 -2rem -1rem;">&lt;h2&gt;</p>
     <span class="modal-head">${validate_component(Bounce, "Bounce").$$render(
     $$result,
@@ -457,7 +457,7 @@ const RetailRocket = create_ssr_component(($$result, $$props, $$bindings, slots)
       </p>
       <p class="tag" style="margin: .5rem 0 0 -1rem;">&lt;p/&gt;</p></span>
     <p class="tag" style="margin: 1rem 0 0 -3rem;">&lt;section/&gt;</p></div>
-  <div class="con-img"><div><a href="https://retailrockit.co.za/" target="_blank">${validate_component(ImageLoader, "ImageLoader").$$render(
+  <div class="container-img"><div><a href="https://retailrockit.co.za/" target="_blank">${validate_component(ImageLoader, "ImageLoader").$$render(
     $$result,
     {
       src: Rocket,
@@ -477,7 +477,7 @@ const Link = "https://play.google.com/store/apps/details?id=com.wwfconservationc
 const s$2 = "7rem";
 const sp$2 = "-0.1rem";
 const WineChampion = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `<section class="modal-inner"><span class="modal-inner"><div class="con-text" style="transform: translateY(-4%);"><p class="tag" style="margin: 0 0 1rem -3rem;">&lt;section&gt;</p>
+  return `<section class="modal-inner"><span class="modal-inner"><div class="container-text" style="transform: translateY(-4%);"><p class="tag" style="margin: 0 0 1rem -3rem;">&lt;section&gt;</p>
       <p class="tag" style="margin: 0 0 -0.5rem -1rem;">&lt;h2&gt;</p>
       <span class="modal-head">${validate_component(Bounce, "Bounce").$$render(
     $$result,
@@ -625,7 +625,7 @@ const WineChampion = create_ssr_component(($$result, $$props, $$bindings, slots)
         </p>
         <p class="tag" style="margin: .5rem 0 0 -1rem;">&lt;p/&gt;</p></span>
       <p class="tag" style="margin: 1rem 0 0 -3rem;">&lt;section/&gt;</p></div>
-    <div class="con-img-alt"><div><div><a${add_attribute("href", Link, 0)} target="_blank">${validate_component(ImageLoader, "ImageLoader").$$render(
+    <div class="container-img-alt"><div><div><a${add_attribute("href", Link, 0)} target="_blank">${validate_component(ImageLoader, "ImageLoader").$$render(
     $$result,
     {
       src: Guide,
@@ -659,7 +659,7 @@ const Woolies = "/_app/immutable/assets/woolies.84fd6d53.webp";
 const s$1 = "6.5rem";
 const sp$1 = "-0.1rem";
 const Woolies_1 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `<section class="modal-inner"><span class="modal-inner"><div class="con con-text"><p class="tag" style="margin: 0 0 1rem -3rem;">&lt;section&gt;</p>
+  return `<section class="modal-inner"><span class="modal-inner"><div class="con container-text"><p class="tag" style="margin: 0 0 1rem -3rem;">&lt;section&gt;</p>
       <p class="tag" style="margin: 0 0 -2rem -1rem;">&lt;h2&gt;</p>
       <span class="modal-head">${validate_component(Bounce, "Bounce").$$render(
     $$result,
@@ -794,7 +794,7 @@ const Woolies_1 = create_ssr_component(($$result, $$props, $$bindings, slots) =>
         </p>
         <p class="tag" style="margin: .5rem 0 0 -1rem;">&lt;p/&gt;</p></span>
       <p class="tag" style="margin: 1rem 0 0 -3rem;">&lt;section/&gt;</p></div>
-    <div class="con con-img"><div><a href="https://mtd.woolworths.co.za/ " target="_blank">${validate_component(ImageLoader, "ImageLoader").$$render(
+    <div class="con container-img"><div><a href="https://mtd.woolworths.co.za/ " target="_blank">${validate_component(ImageLoader, "ImageLoader").$$render(
     $$result,
     {
       src: Woolies,

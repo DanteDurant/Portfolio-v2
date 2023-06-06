@@ -10,8 +10,10 @@
 
 <section class="modal-inner">
   <span class="modal-inner">
-    <div class="con con-text">
-      <p class="tag" style="margin: 0 0 1rem -3rem;">&lt;section&gt;</p>
+    <div class="con container-text">
+      <p class="tag tag-first" style="margin: 0 0 1rem -3rem;">
+        &lt;section&gt;
+      </p>
       <p class="tag" style="margin: 0 0 -2rem -1rem;">&lt;h2&gt;</p>
       <span class="modal-head">
         <Bounce delay={0} size={s} spacing={sp} text="S" />
@@ -43,9 +45,11 @@
         </p>
         <p class="tag" style="margin: .5rem 0 0 -1rem;">&lt;p/&gt;</p>
       </span>
-      <p class="tag" style="margin: 1rem 0 0 -3rem;">&lt;section/&gt;</p>
+      <p class="tag tag-last" style="margin: 1rem 0 0 -3rem;">
+        &lt;section/&gt;
+      </p>
     </div>
-    <div class="con con-img">
+    <div class="con container-img">
       <div>
         <!-- <a href="http://sanlam-dsm.mlab.cx/ " target="_blank">
           <ImageLoader src={Sanlam} alt="Sanlam storybook landing page" />
@@ -66,4 +70,28 @@
 </section>
 
 <style lang="scss">
+  @media (max-width: 600px) {
+    .modal-inner {
+      height: 100%;
+      width: 100%;
+      flex-direction: column;
+    }
+    .container-text {
+      width: 85%;
+      margin-bottom: -15rem;
+
+      .head_alt {
+        font-size: 2.2rem;
+      }
+      .tag-last,
+      .tag-first {
+        display: none;
+      }
+    }
+    .container-img {
+      padding: 0;
+      width: 85%;
+      align-self: center;
+    }
+  }
 </style>
