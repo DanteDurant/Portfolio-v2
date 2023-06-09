@@ -57,6 +57,7 @@
     height: 100vh;
   }
   .main {
+    overflow: hidden;
     width: 100%;
     margin: 0;
   }
@@ -73,10 +74,9 @@
     flex-direction: column;
     position: relative;
     align-self: center;
-    overflow: hidden;
     margin: 0;
     &_inner {
-      margin-left: 7.5rem;
+      margin-left: 9rem;
     }
 
     .head {
@@ -89,8 +89,8 @@
 
   .bg-text {
     position: absolute;
-    right: -6rem;
-    bottom: 18rem;
+    right: 0;
+    bottom: 10rem;
     font-size: 50rem;
     font-family: "coolvetica";
     font-weight: 400;

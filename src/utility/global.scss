@@ -18,20 +18,18 @@
   scroll-snap-align: start;
   scroll-snap-stop: always;
   display: flex;
-  // width: calc(100vw - 20.5rem);
   width: 100%;
-  margin-left: 20.5rem;
   height: 100vh;
 }
 
-.container {
-  width: 100%;
-  height: min-content;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  align-self: center;
-}
+// .container {
+//   width: 100%;
+//   height: min-content;
+//   display: flex;
+//   flex-direction: column;
+//   position: relative;
+//   align-self: center;
+// }
 
 .tag {
   color: var(--tag);

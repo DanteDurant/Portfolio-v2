@@ -64,7 +64,7 @@
     margin: 0;
   }
   .aside-back {
-    width: 13rem;
+    width: 16rem;
     height: 100vh;
   }
   .container-text {
@@ -73,11 +73,8 @@
     flex-direction: column;
     align-self: center;
     width: 40%;
-    margin-left: 9rem;
-  }
-  .aside-back {
-    width: 13rem;
-    height: 100vh;
+    height: max-content;
+    margin: 0 0 0 3rem;
   }
 
   .tagcloud {

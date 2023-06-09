@@ -6,6 +6,7 @@
 </script>
 
 <main id="Skills" class="main skills">
+  <span class="aside-back" />
   <div class="container-text">
     <p class="tag" style="margin: 0 0 1rem -1rem;">&lt;h2&gt;</p>
     <span class="head">
@@ -59,6 +60,10 @@
 </main>
 
 <style lang="scss">
+  .aside-back {
+    width: 16rem;
+    height: 100vh;
+  }
   .container-text {
     width: 55%;
     height: min-content;

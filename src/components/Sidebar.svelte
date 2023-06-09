@@ -48,6 +48,7 @@
   .main-menu {
     height: 100%;
     width: 13rem;
+    z-index: 99;
     background-color: var(--bg-alt);
     justify-content: space-between;
     align-items: center;

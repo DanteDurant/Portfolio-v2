@@ -59,12 +59,14 @@
 
 <style lang="scss">
   .main {
+    // display: flex;
+    // flex-direction: row;
     width: 100%;
     margin: 0;
   }
 
   .aside-back {
-    width: 13rem;
+    width: 16rem;
     height: 100vh;
   }
 
@@ -73,11 +75,11 @@
     display: flex;
     flex-direction: column;
     align-self: center;
-    margin-left: 5rem;
+    // margin-left: -1rem;
   }
 
   .down {
-    width: 4rem;
+    width: 3rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;

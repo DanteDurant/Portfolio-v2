@@ -54,13 +54,17 @@
   .main {
     display: flex;
     flex-direction: row;
+    justify-content: start;
+    align-items: start;
     margin-left: 0;
     width: 100%;
     background-color: var(--bg);
     z-index: 1;
   }
   .aside-back {
-    width: 15.6rem;
+    width: 16rem;
+    z-index: 98;
+    background-color: var(--bg-alt);
     height: 100vh;
   }
 
@@ -70,9 +74,10 @@
     flex-direction: column;
     width: 45%;
     height: 100vh;
-    padding-right: 7.5rem;
-    padding-left: 7.5rem;
+    padding-right: 6rem;
+    padding-left: 9rem;
     background-color: var(--bg);
+    transform: translateY(0);
     div {
       margin-top: -5rem;
     }

@@ -11,15 +11,15 @@ const TagCloud_1 = create_ssr_component(($$result, $$props, $$bindings, slots) =
 });
 const About_svelte_svelte_type_style_lang = "";
 const css = {
-  code: ".main.svelte-1407o5e{width:100%;margin:0}.aside-back.svelte-1407o5e{width:13rem;height:100vh}.container-text.svelte-1407o5e{position:relative;display:flex;flex-direction:column;align-self:center;width:40%;margin-left:9rem}.aside-back.svelte-1407o5e{width:13rem;height:100vh}.tagcloud.svelte-1407o5e{width:60%}",
+  code: ".main.svelte-1847ysb{width:100%;margin:0}.aside-back.svelte-1847ysb{width:16rem;height:100vh}.container-text.svelte-1847ysb{position:relative;display:flex;flex-direction:column;align-self:center;width:40%;height:max-content;margin:0 0 0 3rem}.tagcloud.svelte-1847ysb{width:60%}",
   map: null
 };
 const s = "6rem";
 const sp = "-0.2rem";
 const About = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css);
-  return `<main id="About" class="main about svelte-1407o5e"><span class="aside-back svelte-1407o5e"></span>
-  <div class="container-text svelte-1407o5e"><p class="tag" style="margin: 0 0 -0.5rem -1rem;">&lt;h2&gt;</p>
+  return `<main id="About" class="main about svelte-1847ysb"><span class="aside-back svelte-1847ysb"></span>
+  <div class="container-text svelte-1847ysb"><p class="tag" style="margin: 0 0 -0.5rem -1rem;">&lt;h2&gt;</p>
     <span class="head">${validate_component(Bounce, "Bounce").$$render($$result, { size: s, spacing: sp, text: "M" }, {}, {})}
       ${validate_component(Bounce, "Bounce").$$render($$result, { size: s, spacing: sp, text: "e" }, {}, {})}
       ${validate_component(Bounce, "Bounce").$$render($$result, { size: s, spacing: sp, text: "," }, {}, {})}
@@ -60,7 +60,7 @@ const About = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       for fostering growth and achieving positive outcomes.
     </span>
     <p class="tag tag-last" style="margin: 0 0 4rem -1rem;">&lt;p/&gt;</p></div>
-  <span class="tagcloud center-parent svelte-1407o5e">${validate_component(TagCloud_1, "TagCloud").$$render($$result, {}, {}, {})}</span>
+  <span class="tagcloud center-parent svelte-1847ysb">${validate_component(TagCloud_1, "TagCloud").$$render($$result, {}, {}, {})}</span>
 </main>`;
 });
 export {
