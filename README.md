@@ -8,3 +8,8 @@ Thank you for taking a moment to take a look
 at my portfolio, I hope you enjoy your time.
 
 Have a wonderful day.
+
+
+ps. here is a link to my old portfolio if you'd like to see:
+
+https://dante-durant-portfolio.netlify.app/
