@@ -10,7 +10,7 @@
 </script>
 
 <section class="modal-inner">
-  <div class="container-text">
+  <div class="modal-text">
     <p class="tag tag-first" style="margin: 0 0 1rem -3rem;">&lt;section&gt;</p>
     <p class="tag" style="margin: 0 0 -0.5rem -1rem;">&lt;h2&gt;</p>
     <span class="modal-head">
@@ -46,7 +46,7 @@
     </span>
     <p class="tag tag-last" style="margin: 1rem 0 0 -3rem;">&lt;section/&gt;</p>
   </div>
-  <div class="container-img">
+  <div class="modal-img">
     <div>
       <a href="http://sanlam-dsm.mlab.cx/ " target="_blank">
         <ImageLoader src={Sanlam} alt="Sanlam DSM landing page" />

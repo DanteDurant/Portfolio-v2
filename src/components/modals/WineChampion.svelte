@@ -14,7 +14,7 @@
 </script>
 
 <section class="modal-inner">
-  <div class="container-text" style="transform: translateY(-4%);">
+  <div class="modal-text" style="transform: translateY(-4%);">
     <p class="tag tag-first" style="margin: 0 0 1rem -3rem;">&lt;section&gt;</p>
     <p class="tag" style="margin: 0 0 -0.5rem -1rem;">&lt;h2&gt;</p>
     <span class="modal-head">
@@ -59,7 +59,7 @@
     </span>
     <p class="tag tag-last" style="margin: 1rem 0 0 -3rem;">&lt;section/&gt;</p>
   </div>
-  <div class="container-img-alt">
+  <div class="modal-img-alt">
     <div>
       <div>
         <a href={Link} target="_blank">

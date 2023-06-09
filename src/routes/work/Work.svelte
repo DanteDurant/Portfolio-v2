@@ -53,7 +53,7 @@
 
 <style lang="scss">
   .aside-back {
-    width: 14rem;
+    min-width: 13rem;
     height: 100vh;
   }
   .main {

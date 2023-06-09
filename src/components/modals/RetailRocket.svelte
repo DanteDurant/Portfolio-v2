@@ -9,7 +9,7 @@
 </script>
 
 <section class="modal-inner">
-  <div class="container-text">
+  <div class="modal-text">
     <p class="tag tag-first" style="margin: 0 0 1rem -3rem;">&lt;section&gt;</p>
     <p class="tag" style="margin: 0 0 -2rem -1rem;">&lt;h2&gt;</p>
     <span class="modal-head">
@@ -53,7 +53,7 @@
     </span>
     <p class="tag tag-last" style="margin: 1rem 0 0 -3rem;">&lt;section/&gt;</p>
   </div>
-  <div class="container-img">
+  <div class="modal-img">
     <div>
       <a href="https://retailrockit.co.za/" target="_blank">
         <ImageLoader src={Rocket} alt="Retail rocket landing page" />

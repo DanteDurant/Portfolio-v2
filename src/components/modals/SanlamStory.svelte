@@ -10,7 +10,7 @@
 
 <section class="modal-inner">
   <span class="modal-inner">
-    <div class="con container-text">
+    <div class="modal-text">
       <p class="tag tag-first" style="margin: 0 0 1rem -3rem;">
         &lt;section&gt;
       </p>
@@ -49,7 +49,7 @@
         &lt;section/&gt;
       </p>
     </div>
-    <div class="con container-img">
+    <div class="modal-img">
       <div>
         <!-- <a href="http://sanlam-dsm.mlab.cx/ " target="_blank">
           <ImageLoader src={Sanlam} alt="Sanlam storybook landing page" />

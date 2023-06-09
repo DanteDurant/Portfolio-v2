@@ -5,7 +5,7 @@
   const sp = "-0.2rem";
 </script>
 
-<main id="About" class="main about">
+<main id="About" class="main center-parent about">
   <span class="aside-back" />
   <div class="container-text">
     <p class="tag" style="margin: 0 0 -0.5rem -1rem;">&lt;h2&gt;</p>
@@ -51,7 +51,7 @@
       I firmly believe that an environment built on integrity and trust is crucial
       for fostering growth and achieving positive outcomes.
     </span>
-    <p class="tag tag-last" style="margin: 0 0 4rem -1rem;">&lt;p/&gt;</p>
+    <p class="tag tag-last" style="margin: 0 0 0 -1rem;">&lt;p/&gt;</p>
   </div>
   <span class="tagcloud center-parent">
     <TagCloud />
@@ -60,21 +60,21 @@
 
 <style lang="scss">
   .main {
+    display: flex;
     width: 100%;
-    margin: 0;
+    align-content: end;
   }
   .aside-back {
-    width: 16rem;
+    min-width: 13rem;
     height: 100vh;
   }
   .container-text {
     position: relative;
     display: flex;
     flex-direction: column;
-    align-self: center;
     width: 40%;
-    height: max-content;
-    margin: 0 0 0 3rem;
+    // height: 100%;
+    margin-left: 9rem;
   }
 
   .tagcloud {

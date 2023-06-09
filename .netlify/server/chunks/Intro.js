@@ -101,27 +101,27 @@ const global = ':root{--pri: #08fdd8;--sec: #fd2055;--bg: #1d1d1d;--bg-alt: #181
 const keyFrames = "@keyframes moveUpDown{0%{transform:translateY(0)}50%{transform:translateY(-1rem)}to{transform:translateY(0)}}@keyframes rubberBand{0%{transform:scale(1)}30%{transform:scaleY(1.25) scaleX(.75)}40%{transform:scaleY(.75) scaleX(1.25)}50%{transform:scaleY(1.15) scaleX(.85)}65%{transform:scaleY(.95) scaleX(1.05)}75%{transform:scaleY(1.05) scaleX(.95)}to{transform:scaleY(1) scaleX(1)}}@keyframes fadeIn{0%{opacity:0}to{opacity:1}}@keyframes slideInFromBottomText{0%{transform:translateY(20%);opacity:0}to{transform:translateY(0);opacity:1}}@keyframes slideInFromLeft{0%{transform:translate(-100%)}to{transform:translate(0)}}@keyframes slideOutFromRight{0%{transform:translate(0)}to{transform:translate(-100%)}}@keyframes slideInFromBottom{0%{transform:translateY(100%)}to{transform:translateY(0)}}@keyframes slideOutFromTop{0%{transform:translateY(0)}to{transform:translateY(100%)}}\n";
 const Intro_svelte_svelte_type_style_lang = "";
 const css = {
-  code: ".main.svelte-13vjdqd.svelte-13vjdqd{width:100%;margin:0}.aside-back.svelte-13vjdqd.svelte-13vjdqd{width:16rem;height:100vh}.container-text.svelte-13vjdqd.svelte-13vjdqd{width:100%;display:flex;flex-direction:column;align-self:center}.down.svelte-13vjdqd.svelte-13vjdqd{width:3rem;display:flex;flex-direction:column;justify-content:flex-end;align-items:flex-end;z-index:0}.down.svelte-13vjdqd span.svelte-13vjdqd{writing-mode:vertical-lr;font-size:1.4rem;color:white;animation:moveUpDown 1s ease-in-out infinite}.down.svelte-13vjdqd div.svelte-13vjdqd{padding:0.7rem 0.5rem 2rem 0}.tag-one.svelte-13vjdqd.svelte-13vjdqd{position:absolute;left:15rem;top:1rem}.tag-two.svelte-13vjdqd.svelte-13vjdqd{position:absolute;left:17rem;top:4rem}.sub.svelte-13vjdqd.svelte-13vjdqd{opacity:0}.sub.svelte-13vjdqd.svelte-13vjdqd.fadeIn{opacity:1}.sub-head.svelte-13vjdqd.svelte-13vjdqd{font-size:1.6rem;letter-spacing:4px;color:var(--text-alt)}.button-con.svelte-13vjdqd.svelte-13vjdqd{opacity:0}.button-con.svelte-13vjdqd.svelte-13vjdqd.fadeIn{opacity:1}.fadeIn.svelte-13vjdqd.svelte-13vjdqd{animation:fadeIn 0.5s ease-in-out forwards}.slideInFromBottomText.svelte-13vjdqd.svelte-13vjdqd{animation:slideInFromBottomText 0.5s ease-in-out forwards}",
+  code: ".main.svelte-lpba2n.svelte-lpba2n{width:100%;margin:0}.aside-back.svelte-lpba2n.svelte-lpba2n{min-width:13rem;height:100vh}.container-text.svelte-lpba2n.svelte-lpba2n{width:100%;display:flex;flex-direction:column;align-self:center}.down.svelte-lpba2n.svelte-lpba2n{width:3rem;display:flex;flex-direction:column;justify-content:flex-end;align-items:flex-end;z-index:0}.down.svelte-lpba2n span.svelte-lpba2n{writing-mode:vertical-lr;font-size:1.4rem;color:white;animation:moveUpDown 1s ease-in-out infinite}.down.svelte-lpba2n div.svelte-lpba2n{padding:0.7rem 0.5rem 2rem 0}.tag-one.svelte-lpba2n.svelte-lpba2n{position:absolute;left:15rem;top:1rem}.tag-two.svelte-lpba2n.svelte-lpba2n{position:absolute;left:17rem;top:4rem}.sub.svelte-lpba2n.svelte-lpba2n{opacity:0}.sub.svelte-lpba2n.svelte-lpba2n.fadeIn{opacity:1}.sub-head.svelte-lpba2n.svelte-lpba2n{font-size:1.6rem;letter-spacing:4px;color:var(--text-alt)}.button-con.svelte-lpba2n.svelte-lpba2n{opacity:0}.button-con.svelte-lpba2n.svelte-lpba2n.fadeIn{opacity:1}.fadeIn.svelte-lpba2n.svelte-lpba2n{animation:fadeIn 0.5s ease-in-out forwards}.slideInFromBottomText.svelte-lpba2n.svelte-lpba2n{animation:slideInFromBottomText 0.5s ease-in-out forwards}",
   map: null
 };
 const Intro = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css);
-  return `<main id="Home" class="main intro svelte-13vjdqd"><span class="aside-back svelte-13vjdqd"></span>
-  <div class="down svelte-13vjdqd"><span class="svelte-13vjdqd">scroll down</span>
-    <div class="svelte-13vjdqd">${validate_component(ArrowDown, "ArrowDown").$$render($$result, {}, {}, {})}</div></div>
-  <p class="tag tag-one svelte-13vjdqd">&lt;/html&gt;</p>
-  <p class="tag tag-two svelte-13vjdqd">&lt;body&gt;</p>
-  <section class="container-text svelte-13vjdqd"><div class="head"><p class="tag" style="margin: 0 0 -1rem -1rem">&lt;h1&gt;</p>
+  return `<main id="Home" class="main intro svelte-lpba2n"><span class="aside-back svelte-lpba2n"></span>
+  <div class="down svelte-lpba2n"><span class="svelte-lpba2n">scroll down</span>
+    <div class="svelte-lpba2n">${validate_component(ArrowDown, "ArrowDown").$$render($$result, {}, {}, {})}</div></div>
+  <p class="tag tag-one svelte-lpba2n">&lt;/html&gt;</p>
+  <p class="tag tag-two svelte-lpba2n">&lt;body&gt;</p>
+  <section class="container-text svelte-lpba2n"><div class="head"><p class="tag" style="margin: 0 0 -1rem -1rem">&lt;h1&gt;</p>
       ${validate_component(IntroHeading, "IntroText").$$render($$result, {}, {}, {})}
       <p class="tag" style="margin: -3.7rem -6rem 0 56.5rem;">&lt;h1/&gt;</p>
       <div class="${[
-    "sub svelte-13vjdqd",
+    "sub svelte-lpba2n",
     " "
   ].join(" ").trim()}"><p class="tag" style="margin: 0 0 0 -1rem;">&lt;p&gt;</p>
-        <p class="sub-head svelte-13vjdqd">Front End Developer / Designer</p>
+        <p class="sub-head svelte-lpba2n">Front End Developer / Designer</p>
         <p class="tag" style="margin: 0 0 2.5rem -1rem;">&lt;p/&gt;</p></div>
       <div class="${[
-    "button-con svelte-13vjdqd",
+    "button-con svelte-lpba2n",
     " "
   ].join(" ").trim()}"><a href="#Contact">${validate_component(Button, "Button").$$render($$result, {}, {}, {})}</a></div></div></section>
   <section class="work"><div></div></section>

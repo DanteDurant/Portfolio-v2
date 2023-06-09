@@ -11,7 +11,7 @@
 
 <section class="modal-inner">
   <span class="modal-inner">
-    <div class="con container-text">
+    <div class="con modal-text">
       <p class="tag tag-first" style="margin: 0 0 1rem -3rem;">
         &lt;section&gt;
       </p>
@@ -57,7 +57,7 @@
         &lt;section/&gt;
       </p>
     </div>
-    <div class="con container-img">
+    <div class="con modal-img">
       <div>
         <a href="https://mtd.woolworths.co.za/ " target="_blank">
           <ImageLoader src={Woolies} alt="Woolworth MTD landing page" />

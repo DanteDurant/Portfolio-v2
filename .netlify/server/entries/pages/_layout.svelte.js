@@ -23,23 +23,23 @@ const YouTube = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 });
 const Sidebar_svelte_svelte_type_style_lang = "";
 const css$2 = {
-  code: ".main-menu.svelte-1dps6uk.svelte-1dps6uk{height:100%;width:13rem;z-index:99;background-color:var(--bg-alt);justify-content:space-between;align-items:center}.main-menu_top.svelte-1dps6uk.svelte-1dps6uk{width:100%;min-height:21rem;background-color:#000}.main-menu_top.svelte-1dps6uk .name.svelte-1dps6uk{font-size:2.7rem;font-weight:900;line-height:2;color:#fff}.main-menu_top.svelte-1dps6uk .job.svelte-1dps6uk{font-family:serif;font-size:1.2rem;padding-top:1rem;color:#a5a5a5}.main-menu_nav.svelte-1dps6uk.svelte-1dps6uk{width:100%;border-top:1px solid #282828}.main-menu_nav.svelte-1dps6uk a.svelte-1dps6uk{text-align:center;justify-self:center;border-bottom:1px solid #282828;color:#909090;line-height:5rem;transition:all 300ms}.main-menu_nav.svelte-1dps6uk a.svelte-1dps6uk:hover{color:var(--pri)}.main-menu_nav.svelte-1dps6uk a.svelte-1dps6uk:last-child{color:var(--pri)}.main-menu_nav.svelte-1dps6uk a.svelte-1dps6uk:last-child:hover{color:#fff}.socials.svelte-1dps6uk.svelte-1dps6uk{display:flex;margin-top:2rem;padding:0;justify-content:space-between;height:20rem;width:56%;list-style:none}.socials.svelte-1dps6uk li.svelte-1dps6uk{width:1.5rem}.socials.svelte-1dps6uk li a.svelte-1dps6uk{transition:all 300ms;color:#909096}.socials.svelte-1dps6uk li a.svelte-1dps6uk:hover{color:var(--pri)}",
+  code: ".main-menu.svelte-kaj5a6.svelte-kaj5a6{height:100%;width:100%;background-color:var(--bg-alt);justify-content:space-between;align-items:center}.main-menu_top.svelte-kaj5a6.svelte-kaj5a6{width:100%;min-height:21rem;background-color:#000}.main-menu_top.svelte-kaj5a6 .name.svelte-kaj5a6{font-size:2.7rem;font-weight:900;line-height:2;color:#fff}.main-menu_top.svelte-kaj5a6 .job.svelte-kaj5a6{font-family:serif;font-size:1.2rem;padding-top:1rem;color:#a5a5a5}.main-menu_nav.svelte-kaj5a6.svelte-kaj5a6{width:100%;border-top:1px solid #282828}.main-menu_nav.svelte-kaj5a6 a.svelte-kaj5a6{text-align:center;justify-self:center;border-bottom:1px solid #282828;color:#909090;line-height:5rem;transition:all 300ms}.main-menu_nav.svelte-kaj5a6 a.svelte-kaj5a6:hover{color:var(--pri)}.main-menu_nav.svelte-kaj5a6 a.svelte-kaj5a6:last-child{color:var(--pri)}.main-menu_nav.svelte-kaj5a6 a.svelte-kaj5a6:last-child:hover{color:#fff}.socials.svelte-kaj5a6.svelte-kaj5a6{display:flex;margin-top:2rem;padding:0;justify-content:space-between;height:20rem;width:56%;list-style:none}.socials.svelte-kaj5a6 li.svelte-kaj5a6{width:1.5rem}.socials.svelte-kaj5a6 li a.svelte-kaj5a6{transition:all 300ms;color:#909096}.socials.svelte-kaj5a6 li a.svelte-kaj5a6:hover{color:var(--pri)}",
   map: null
 };
 const Sidebar = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css$2);
-  return `<menu class="main-menu column svelte-1dps6uk"><div class="main-menu_top center-parent column svelte-1dps6uk"><a href="#Home" class="logo">${validate_component(Logo, "Logo").$$render($$result, {}, {}, {})}</a>
-    <span><a href="#Home"><span class="name svelte-1dps6uk">Dante</span></a>
-      <p class="job svelte-1dps6uk">Web Developer</p></span></div>
+  return `<menu class="main-menu column svelte-kaj5a6"><div class="main-menu_top center-parent column svelte-kaj5a6"><a href="#Home" class="logo">${validate_component(Logo, "Logo").$$render($$result, {}, {}, {})}</a>
+    <span><a href="#Home"><span class="name svelte-kaj5a6">Dante</span></a>
+      <p class="job svelte-kaj5a6">Web Developer</p></span></div>
 
-  <nav class="main-menu_nav column svelte-1dps6uk"><a href="#About" class="svelte-1dps6uk">About</a>
-    <a href="#Work" class="svelte-1dps6uk">Work</a>
-    <a href="#Skills" class="svelte-1dps6uk">Skills</a>
-    <a href="#Contact" class="svelte-1dps6uk">Contact</a></nav>
+  <nav class="main-menu_nav column svelte-kaj5a6"><a href="#About" class="svelte-kaj5a6">About</a>
+    <a href="#Work" class="svelte-kaj5a6">Work</a>
+    <a href="#Skills" class="svelte-kaj5a6">Skills</a>
+    <a href="#Contact" class="svelte-kaj5a6">Contact</a></nav>
 
-  <ul class="socials svelte-1dps6uk"><li class="svelte-1dps6uk"><a href="https://www.linkedin.com/in/dantedurant/" target="_blank" class="svelte-1dps6uk">${validate_component(LinkedIn, "LinkedIn").$$render($$result, {}, {}, {})}</a></li>
-    <li class="svelte-1dps6uk"><a href="https://github.com/DanteDurant?tab=repositories" target="_blank" class="svelte-1dps6uk">${validate_component(Github, "Github").$$render($$result, {}, {}, {})}</a></li>
-    <li class="svelte-1dps6uk"><a href="https://www.youtube.com/@dantedurant3412" target="_blank" class="svelte-1dps6uk">${validate_component(YouTube, "YouTube").$$render($$result, {}, {}, {})}</a></li></ul>
+  <ul class="socials svelte-kaj5a6"><li class="svelte-kaj5a6"><a href="https://www.linkedin.com/in/dantedurant/" target="_blank" class="svelte-kaj5a6">${validate_component(LinkedIn, "LinkedIn").$$render($$result, {}, {}, {})}</a></li>
+    <li class="svelte-kaj5a6"><a href="https://github.com/DanteDurant?tab=repositories" target="_blank" class="svelte-kaj5a6">${validate_component(Github, "Github").$$render($$result, {}, {}, {})}</a></li>
+    <li class="svelte-kaj5a6"><a href="https://www.youtube.com/@dantedurant3412" target="_blank" class="svelte-kaj5a6">${validate_component(YouTube, "YouTube").$$render($$result, {}, {}, {})}</a></li></ul>
 </menu>`;
 });
 const Tendrils_svelte_svelte_type_style_lang = "";
@@ -57,14 +57,14 @@ const Tendrils = create_ssr_component(($$result, $$props, $$bindings, slots) => 
 });
 const _layout_svelte_svelte_type_style_lang = "";
 const css = {
-  code: ".app.svelte-vutfkp{background-color:#1d1d1d}aside.svelte-vutfkp{position:fixed;top:0;left:0;height:100%;width:13rem;overflow:auto;z-index:999}",
+  code: ".app.svelte-1s6qhwq{background-color:#1d1d1d}aside.svelte-1s6qhwq{position:fixed;top:0;bottom:0;left:0;width:13rem;z-index:99}",
   map: null
 };
 const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css);
-  return `<div class="app svelte-vutfkp">${validate_component(Tendrils, "Tendrils").$$render($$result, {}, {}, {})}
+  return `<div class="app svelte-1s6qhwq">${validate_component(Tendrils, "Tendrils").$$render($$result, {}, {}, {})}
 
-  <aside class="svelte-vutfkp">${validate_component(Sidebar, "Sidebar").$$render($$result, {}, {}, {})}</aside>
+  <aside class="svelte-1s6qhwq">${validate_component(Sidebar, "Sidebar").$$render($$result, {}, {}, {})}</aside>
 
   <main>${slots.default ? slots.default({}) : ``}</main>
 </div>`;

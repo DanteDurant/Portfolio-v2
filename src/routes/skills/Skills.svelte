@@ -55,13 +55,13 @@
       remain at the forefront of technology. Passionate about programming, I am eager
       to contribute my expertise to your projects and create remarkable digital solutions.
     </span>
-    <p class="tag" style="margin: 0 0 4rem -1rem;">&lt;p/&gt;</p>
+    <p class="tag" style="margin: 0 0 0 -1rem;">&lt;p/&gt;</p>
   </div>
 </main>
 
 <style lang="scss">
   .aside-back {
-    width: 16rem;
+    min-width: 13rem;
     height: 100vh;
   }
   .container-text {
@@ -71,5 +71,6 @@
     flex-direction: column;
     position: relative;
     align-self: center;
+    margin-left: 9rem;
   }
 </style>

@@ -56,15 +56,13 @@
     flex-direction: row;
     justify-content: start;
     align-items: start;
-    margin-left: 0;
     width: 100%;
     background-color: var(--bg);
     z-index: 1;
   }
   .aside-back {
-    width: 16rem;
-    z-index: 98;
-    background-color: var(--bg-alt);
+    min-width: 13rem;
+    z-index: 900;
     height: 100vh;
   }
 
@@ -72,7 +70,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 45%;
+    width: 150rem;
     height: 100vh;
     padding-right: 6rem;
     padding-left: 9rem;
@@ -109,7 +107,7 @@
   .container-map {
     position: relative;
     height: 100%;
-    width: 55%;
+    width: 100%;
     z-index: 1;
   }
 
