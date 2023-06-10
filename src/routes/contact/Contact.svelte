@@ -62,7 +62,6 @@
   }
   .aside-back {
     min-width: 13rem;
-    z-index: 900;
     height: 100vh;
   }
 

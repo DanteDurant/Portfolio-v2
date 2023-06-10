@@ -74,7 +74,7 @@
       width: 100%;
       flex-direction: column;
     }
-    .container-text {
+    .modal-text {
       width: 85%;
       margin-bottom: -35rem;
 
@@ -86,7 +86,7 @@
         display: none;
       }
     }
-    .container-img {
+    .modal-img {
       padding: 0;
       width: 85%;
       align-self: center;

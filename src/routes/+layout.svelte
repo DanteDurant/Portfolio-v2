@@ -21,11 +21,11 @@
   }
 
   aside {
-    position: fixed;
+    position: sticky;
     top: 0;
     bottom: 0;
     left: 0;
     width: 13rem;
-    z-index: 99;
+    height: 100vh;
   }
 </style>

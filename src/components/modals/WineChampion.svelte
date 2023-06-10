@@ -1,6 +1,7 @@
 <script>
   import "./ModalStyles.scss";
-  import Guide from "$lib/images/modals/wwf-guide.webp";
+  import GuideHigh from "$lib/images/modals/wwf-guide.webp";
+  import GuideLow from "$lib/images/modals/lazy/wwf-guide-lazy.webp";
   import Farm from "$lib/images/modals/wwf-farm.webp";
   import Map from "$lib/images/modals/wwf-map.webp";
   import Bounce from "../text/Bounce.svelte";
@@ -63,7 +64,7 @@
     <div>
       <div>
         <a href={Link} target="_blank">
-          <ImageLoader src={Guide} alt="Guide screen of mobile app" />
+          <ImageLoader src={GuideHigh} alt="Guide screen of mobile app" />
         </a>
         <a href={Link} target="_blank">
           <ImageLoader src={Farm} alt="Farm modal screen of mobile app" />
@@ -88,7 +89,7 @@
       width: 100%;
       flex-direction: column;
     }
-    .container-text {
+    .modal-text {
       width: 85%;
       margin-bottom: -10rem;
 
@@ -100,7 +101,7 @@
         display: none;
       }
     }
-    .container-img-alt {
+    .modal-img-alt {
       padding: 0;
       width: 85%;
       align-self: center;

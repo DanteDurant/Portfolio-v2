@@ -68,7 +68,10 @@ const Image = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   if ($$props.alt === void 0 && $$bindings.alt && alt !== void 0)
     $$bindings.alt(alt);
   $$result.css.add(css$8);
-  return `<img${add_attribute("src", src, 0)}${add_attribute("alt", alt, 0)} loading="lazy" class="${["svelte-oos5x1", ""].join(" ").trim()}"${add_attribute("this", thisImage, 0)}>`;
+  return `<img${add_attribute("src", src, 0)}${add_attribute("alt", alt, 0)} loading="lazy" class="${["svelte-oos5x1", ""].join(" ").trim()}"${add_attribute("this", thisImage, 0)}>
+
+
+--&gt;`;
 });
 const ImageLoader = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let { src } = $$props;
@@ -82,7 +85,9 @@ const ImageLoader = create_ssr_component(($$result, $$props, $$bindings, slots) 
     default: ({ intersecting }) => {
       return `${intersecting || nativeLoading ? `${validate_component(Image, "Image").$$render($$result, { alt, src }, {}, {})}` : ``}`;
     }
-  })}`;
+  })}
+
+`;
 });
 const SanlamStory_svelte_svelte_type_style_lang = "";
 const css$7 = {
@@ -213,14 +218,14 @@ const Clipboard = create_ssr_component(($$result, $$props, $$bindings, slots) =>
 });
 const SanlamDS_svelte_svelte_type_style_lang = "";
 const css$5 = {
-  code: "@media(max-width: 600px){.modal-inner.svelte-fpkip3{height:100%;width:100%;flex-direction:column}}",
+  code: "@media(max-width: 600px){.modal-inner.svelte-fpkip3.svelte-fpkip3{height:100%;width:100%;flex-direction:column}.container-text.svelte-fpkip3.svelte-fpkip3{width:85%;margin-bottom:-30rem}.container-text.svelte-fpkip3 .head_alt.svelte-fpkip3{font-size:2.2rem}.container-text.svelte-fpkip3 .tag-last.svelte-fpkip3,.container-text.svelte-fpkip3 .tag-first.svelte-fpkip3{display:none}.container-img.svelte-fpkip3.svelte-fpkip3{padding:0;width:85%;align-self:center}.container-img.svelte-fpkip3 .link.svelte-fpkip3{font-size:3rem}}",
   map: null
 };
 const s$4 = "7rem";
 const sp$4 = "-0.1rem";
 const SanlamDS = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css$5);
-  return `<section class="modal-inner svelte-fpkip3"><div class="modal-text"><p class="tag tag-first" style="margin: 0 0 1rem -3rem;">&lt;section&gt;</p>
+  return `<section class="modal-inner svelte-fpkip3"><div class="container-text svelte-fpkip3"><p class="tag tag-first svelte-fpkip3" style="margin: 0 0 1rem -3rem;">&lt;section&gt;</p>
     <p class="tag" style="margin: 0 0 -0.5rem -1rem;">&lt;h2&gt;</p>
     <span class="modal-head">${validate_component(Bounce, "Bounce").$$render(
     $$result,
@@ -293,7 +298,7 @@ const SanlamDS = create_ssr_component(($$result, $$props, $$bindings, slots) => 
     <h2>Design System Manager</h2>
     <p class="tag" style="margin: -1.3rem 0 0 -1rem;">&lt;h3/&gt;</p>
 
-    <span class="head_alt"><p class="tag" style="margin: 0 0 0 -1rem;">&lt;p&gt;</p>
+    <span class="head_alt svelte-fpkip3"><p class="tag" style="margin: 0 0 0 -1rem;">&lt;p&gt;</p>
       <p>As a key contributor to the Sanlam DSM project, I undertook various
         duties and responsibilities to enhance its functionality and visual
         appeal of the site, including adding documentation, rebuilding the
@@ -308,8 +313,8 @@ const SanlamDS = create_ssr_component(($$result, $$props, $$bindings, slots) => 
         Node.js, React, Docusaurus, and Axios.
       </p>
       <p class="tag" style="margin: .5rem 0 0 -1rem;">&lt;p/&gt;</p></span>
-    <p class="tag tag-last" style="margin: 1rem 0 0 -3rem;">&lt;section/&gt;</p></div>
-  <div class="modal-img"><div><a href="http://sanlam-dsm.mlab.cx/ " target="_blank">${validate_component(ImageLoader, "ImageLoader").$$render(
+    <p class="tag tag-last svelte-fpkip3" style="margin: 1rem 0 0 -3rem;">&lt;section/&gt;</p></div>
+  <div class="container-img svelte-fpkip3"><div><a href="http://sanlam-dsm.mlab.cx/ " target="_blank">${validate_component(ImageLoader, "ImageLoader").$$render(
     $$result,
     {
       src: Sanlam,
@@ -318,7 +323,7 @@ const SanlamDS = create_ssr_component(($$result, $$props, $$bindings, slots) => 
     {},
     {}
   )}</a>
-      <span><a class="link" href="http://sanlam-dsm.mlab.cx/ " target="_blank">http://sanlam-dsm.mlab.cx
+      <span><a class="link svelte-fpkip3" href="http://sanlam-dsm.mlab.cx/ " target="_blank">http://sanlam-dsm.mlab.cx
         </a>
         ${validate_component(Clipboard, "Clipboard").$$render($$result, { text: "sanlam" }, {}, {})}
         <div style="height: 1rem;"></div>
@@ -505,7 +510,7 @@ const RetailRocket = create_ssr_component(($$result, $$props, $$bindings, slots)
         </a></span></div></div>
 </section>`;
 });
-const Guide = "/_app/immutable/assets/wwf-guide.5080f0cb.webp";
+const GuideHigh = "/_app/immutable/assets/wwf-guide.5080f0cb.webp";
 const Farm = "/_app/immutable/assets/wwf-farm.539cf687.webp";
 const Map = "/_app/immutable/assets/wwf-map.d71301bd.webp";
 const WineChampion_svelte_svelte_type_style_lang = "";
@@ -669,7 +674,7 @@ const WineChampion = create_ssr_component(($$result, $$props, $$bindings, slots)
   <div class="modal-img-alt"><div><div><a${add_attribute("href", Link, 0)} target="_blank">${validate_component(ImageLoader, "ImageLoader").$$render(
     $$result,
     {
-      src: Guide,
+      src: GuideHigh,
       alt: "Guide screen of mobile app"
     },
     {},

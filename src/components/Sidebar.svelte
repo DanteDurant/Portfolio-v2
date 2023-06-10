@@ -47,7 +47,7 @@
 <style lang="scss">
   .main-menu {
     height: 100%;
-    width: 100%;
+    width: 13rem;
     background-color: var(--bg-alt);
     justify-content: space-between;
     align-items: center;
