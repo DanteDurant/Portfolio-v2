@@ -1,6 +1,6 @@
 <script>
   import "./ModalStyles.scss";
-  import Sanlam from "$lib/images/modals/sanlam.webp";
+  import Storybook from "$lib/images/modals/storybook.webp";
   import Bounce from "../text/Bounce.svelte";
   import ImageLoader from "$lib/images/ImageLoader.svelte";
 
@@ -51,17 +51,15 @@
     </div>
     <div class="modal-img">
       <div>
-        <!-- <a href="http://sanlam-dsm.mlab.cx/ " target="_blank">
-          <ImageLoader src={Sanlam} alt="Sanlam storybook landing page" />
-        </a> -->
+        <a href="https://retailrockit.co.za/" target="_blank">
+          <ImageLoader src={Storybook} alt="Retail rocket landing page" />
+        </a>
         <span>
           <a
-            style="font-size: 5rem; text-align:center; line-height:5rem;"
-            class="link center-parent"
+            class="link"
             href="https://storybook.sanlam.design/react-ui-next/index.html?path=/story/docs-introduction--page"
             target="_blank"
-          >
-            website is down<br /> temporarily
+            >https://storybook.sanlam.design.co.za
           </a>
         </span>
       </div>
@@ -92,6 +90,9 @@
       padding: 0;
       width: 85%;
       align-self: center;
+      .link {
+        font-size: 3rem;
+      }
     }
   }
 </style>

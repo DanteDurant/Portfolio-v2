@@ -10,6 +10,6 @@ at my portfolio, I hope you enjoy your time.
 Have a wonderful day.
 
 
-ps. here is a link to my old portfolio if you'd like to see:
+PS. Here is a link to my old portfolio if you'd like to see:
 
 https://dante-durant-portfolio.netlify.app/

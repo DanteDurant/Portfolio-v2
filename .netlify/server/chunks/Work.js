@@ -26,7 +26,7 @@ const Modal = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 </div>`;
 });
 const ModalStyles = "";
-const Sanlam = "/_app/immutable/assets/sanlam.7b08b020.webp";
+const Storybook = "/_app/immutable/assets/storybook.77bb849c.webp";
 const IntersectionObserver_svelte_svelte_type_style_lang = "";
 const css$9 = {
   code: "div.svelte-1kuj9kb{width:100%;height:100%}",
@@ -86,14 +86,14 @@ const ImageLoader = create_ssr_component(($$result, $$props, $$bindings, slots) 
 });
 const SanlamStory_svelte_svelte_type_style_lang = "";
 const css$7 = {
-  code: "@media(max-width: 600px){.modal-inner.svelte-18ta1tm.svelte-18ta1tm{height:100%;width:100%;flex-direction:column}.container-text.svelte-18ta1tm.svelte-18ta1tm{width:85%;margin-bottom:-15rem}.container-text.svelte-18ta1tm .head_alt.svelte-18ta1tm{font-size:2.2rem}.container-text.svelte-18ta1tm .tag-last.svelte-18ta1tm,.container-text.svelte-18ta1tm .tag-first.svelte-18ta1tm{display:none}.container-img.svelte-18ta1tm.svelte-18ta1tm{padding:0;width:85%;align-self:center}}",
+  code: "@media(max-width: 600px){.modal-inner.svelte-5mrwgu{height:100%;width:100%;flex-direction:column}}",
   map: null
 };
 const s$5 = "7rem";
 const sp$5 = "-0.1rem";
 const SanlamStory = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css$7);
-  return `<section class="modal-inner svelte-18ta1tm"><span class="modal-inner svelte-18ta1tm"><div class="con container-text svelte-18ta1tm"><p class="tag tag-first svelte-18ta1tm" style="margin: 0 0 1rem -3rem;">&lt;section&gt;
+  return `<section class="modal-inner svelte-5mrwgu"><span class="modal-inner svelte-5mrwgu"><div class="modal-text"><p class="tag tag-first" style="margin: 0 0 1rem -3rem;">&lt;section&gt;
       </p>
       <p class="tag" style="margin: 0 0 -2rem -1rem;">&lt;h2&gt;</p>
       <span class="modal-head">${validate_component(Bounce, "Bounce").$$render(
@@ -167,7 +167,7 @@ const SanlamStory = create_ssr_component(($$result, $$props, $$bindings, slots) 
       <h2>Storybook</h2>
       <p class="tag" style="margin: -1.3rem 0 0 -1rem;">&lt;h3/&gt;</p>
 
-      <span class="head_alt svelte-18ta1tm"><p class="tag" style="margin: 0 0 0 -1rem;">&lt;p&gt;</p>
+      <span class="head_alt"><p class="tag" style="margin: 0 0 0 -1rem;">&lt;p&gt;</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
           distinctio, ipsam corrupti fugiat nam voluptatem optio porro, soluta
           fugit odio accusamus deleniti pariatur vero laudantium velit.
@@ -181,13 +181,22 @@ const SanlamStory = create_ssr_component(($$result, $$props, $$bindings, slots) 
           velit ab, itaque ipsum voluptatem aliquam quis nihil.
         </p>
         <p class="tag" style="margin: .5rem 0 0 -1rem;">&lt;p/&gt;</p></span>
-      <p class="tag tag-last svelte-18ta1tm" style="margin: 1rem 0 0 -3rem;">&lt;section/&gt;
+      <p class="tag tag-last" style="margin: 1rem 0 0 -3rem;">&lt;section/&gt;
       </p></div>
-    <div class="con container-img svelte-18ta1tm"><div>
-        <span><a style="font-size: 5rem; text-align:center; line-height:5rem;" class="link center-parent" href="https://storybook.sanlam.design/react-ui-next/index.html?path=/story/docs-introduction--page" target="_blank">website is down<br> temporarily
+    <div class="modal-img"><div><a href="https://retailrockit.co.za/" target="_blank">${validate_component(ImageLoader, "ImageLoader").$$render(
+    $$result,
+    {
+      src: Storybook,
+      alt: "Retail rocket landing page"
+    },
+    {},
+    {}
+  )}</a>
+        <span><a class="link" href="https://storybook.sanlam.design/react-ui-next/index.html?path=/story/docs-introduction--page" target="_blank">https://storybook.sanlam.design.co.za
           </a></span></div></div></span>
 </section>`;
 });
+const Sanlam = "/_app/immutable/assets/sanlam.7b08b020.webp";
 const Clipboard_svelte_svelte_type_style_lang = "";
 const css$6 = {
   code: "main.svelte-1g55r9h{display:flex}p.svelte-1g55r9h{font-size:1.6rem}svg.svelte-1g55r9h{margin-left:1rem;color:var(--pri);cursor:pointer;transition:transform 300ms}svg.svelte-1g55r9h:hover{transform:scale(1.2)}svg.svelte-1g55r9h:active{transform:scale(0.9)}.text.svelte-1g55r9h{width:19rem;background-color:var(--bg-form);padding:0.6rem 1rem}",
@@ -204,14 +213,14 @@ const Clipboard = create_ssr_component(($$result, $$props, $$bindings, slots) =>
 });
 const SanlamDS_svelte_svelte_type_style_lang = "";
 const css$5 = {
-  code: "@media(max-width: 600px){.modal-inner.svelte-fpkip3.svelte-fpkip3{height:100%;width:100%;flex-direction:column}.container-text.svelte-fpkip3.svelte-fpkip3{width:85%;margin-bottom:-30rem}.container-text.svelte-fpkip3 .head_alt.svelte-fpkip3{font-size:2.2rem}.container-text.svelte-fpkip3 .tag-last.svelte-fpkip3,.container-text.svelte-fpkip3 .tag-first.svelte-fpkip3{display:none}.container-img.svelte-fpkip3.svelte-fpkip3{padding:0;width:85%;align-self:center}.container-img.svelte-fpkip3 .link.svelte-fpkip3{font-size:3rem}}",
+  code: "@media(max-width: 600px){.modal-inner.svelte-fpkip3{height:100%;width:100%;flex-direction:column}}",
   map: null
 };
 const s$4 = "7rem";
 const sp$4 = "-0.1rem";
 const SanlamDS = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css$5);
-  return `<section class="modal-inner svelte-fpkip3"><div class="container-text svelte-fpkip3"><p class="tag tag-first svelte-fpkip3" style="margin: 0 0 1rem -3rem;">&lt;section&gt;</p>
+  return `<section class="modal-inner svelte-fpkip3"><div class="modal-text"><p class="tag tag-first" style="margin: 0 0 1rem -3rem;">&lt;section&gt;</p>
     <p class="tag" style="margin: 0 0 -0.5rem -1rem;">&lt;h2&gt;</p>
     <span class="modal-head">${validate_component(Bounce, "Bounce").$$render(
     $$result,
@@ -284,7 +293,7 @@ const SanlamDS = create_ssr_component(($$result, $$props, $$bindings, slots) => 
     <h2>Design System Manager</h2>
     <p class="tag" style="margin: -1.3rem 0 0 -1rem;">&lt;h3/&gt;</p>
 
-    <span class="head_alt svelte-fpkip3"><p class="tag" style="margin: 0 0 0 -1rem;">&lt;p&gt;</p>
+    <span class="head_alt"><p class="tag" style="margin: 0 0 0 -1rem;">&lt;p&gt;</p>
       <p>As a key contributor to the Sanlam DSM project, I undertook various
         duties and responsibilities to enhance its functionality and visual
         appeal of the site, including adding documentation, rebuilding the
@@ -299,8 +308,8 @@ const SanlamDS = create_ssr_component(($$result, $$props, $$bindings, slots) => 
         Node.js, React, Docusaurus, and Axios.
       </p>
       <p class="tag" style="margin: .5rem 0 0 -1rem;">&lt;p/&gt;</p></span>
-    <p class="tag tag-last svelte-fpkip3" style="margin: 1rem 0 0 -3rem;">&lt;section/&gt;</p></div>
-  <div class="container-img svelte-fpkip3"><div><a href="http://sanlam-dsm.mlab.cx/ " target="_blank">${validate_component(ImageLoader, "ImageLoader").$$render(
+    <p class="tag tag-last" style="margin: 1rem 0 0 -3rem;">&lt;section/&gt;</p></div>
+  <div class="modal-img"><div><a href="http://sanlam-dsm.mlab.cx/ " target="_blank">${validate_component(ImageLoader, "ImageLoader").$$render(
     $$result,
     {
       src: Sanlam,
@@ -309,7 +318,7 @@ const SanlamDS = create_ssr_component(($$result, $$props, $$bindings, slots) => 
     {},
     {}
   )}</a>
-      <span><a class="link svelte-fpkip3" href="http://sanlam-dsm.mlab.cx/ " target="_blank">http://sanlam-dsm.mlab.cx
+      <span><a class="link" href="http://sanlam-dsm.mlab.cx/ " target="_blank">http://sanlam-dsm.mlab.cx
         </a>
         ${validate_component(Clipboard, "Clipboard").$$render($$result, { text: "sanlam" }, {}, {})}
         <div style="height: 1rem;"></div>
@@ -319,14 +328,14 @@ const SanlamDS = create_ssr_component(($$result, $$props, $$bindings, slots) => 
 const Rocket = "/_app/immutable/assets/rocket.b18fd1ee.webp";
 const RetailRocket_svelte_svelte_type_style_lang = "";
 const css$4 = {
-  code: "@media(max-width: 600px){.modal-inner.svelte-1tcbgab.svelte-1tcbgab{height:100%;width:100%;flex-direction:column}.container-text.svelte-1tcbgab.svelte-1tcbgab{width:85%;margin-bottom:-35rem}.container-text.svelte-1tcbgab .head_alt.svelte-1tcbgab{font-size:2.2rem}.container-text.svelte-1tcbgab .tag-last.svelte-1tcbgab,.container-text.svelte-1tcbgab .tag-first.svelte-1tcbgab{display:none}.container-img.svelte-1tcbgab.svelte-1tcbgab{padding:0;width:85%;align-self:center;margin-bottom:-5rem}.container-img.svelte-1tcbgab .link.svelte-1tcbgab{font-size:3rem}}",
+  code: "@media(max-width: 600px){.modal-inner.svelte-1tcbgab{height:100%;width:100%;flex-direction:column}}",
   map: null
 };
 const s$3 = "7rem";
 const sp$3 = "-0.1rem";
 const RetailRocket = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css$4);
-  return `<section class="modal-inner svelte-1tcbgab"><div class="container-text svelte-1tcbgab"><p class="tag tag-first svelte-1tcbgab" style="margin: 0 0 1rem -3rem;">&lt;section&gt;</p>
+  return `<section class="modal-inner svelte-1tcbgab"><div class="modal-text"><p class="tag tag-first" style="margin: 0 0 1rem -3rem;">&lt;section&gt;</p>
     <p class="tag" style="margin: 0 0 -2rem -1rem;">&lt;h2&gt;</p>
     <span class="modal-head">${validate_component(Bounce, "Bounce").$$render(
     $$result,
@@ -465,7 +474,7 @@ const RetailRocket = create_ssr_component(($$result, $$props, $$bindings, slots)
     <h2>Supply Chain Finance Platform</h2>
     <p class="tag" style="margin: -1.3rem 0 0 -1rem;">&lt;h3/&gt;</p>
 
-    <span class="head_alt svelte-1tcbgab"><p class="tag" style="margin: 0 0 0 -1rem;">&lt;p&gt;</p>
+    <span class="head_alt"><p class="tag" style="margin: 0 0 0 -1rem;">&lt;p&gt;</p>
       <p>In RetailRockIT, I played a key role as a backend developer, working
         with the Takealot API and integrating the CIPCI database via Thisisme
         API. The project focused on assisting businesses in financing bulk
@@ -482,8 +491,8 @@ const RetailRocket = create_ssr_component(($$result, $$props, $$bindings, slots)
         and Axios to boost its functionality.
       </p>
       <p class="tag" style="margin: .5rem 0 0 -1rem;">&lt;p/&gt;</p></span>
-    <p class="tag tag-last svelte-1tcbgab" style="margin: 1rem 0 0 -3rem;">&lt;section/&gt;</p></div>
-  <div class="container-img svelte-1tcbgab"><div><a href="https://retailrockit.co.za/" target="_blank">${validate_component(ImageLoader, "ImageLoader").$$render(
+    <p class="tag tag-last" style="margin: 1rem 0 0 -3rem;">&lt;section/&gt;</p></div>
+  <div class="modal-img"><div><a href="https://retailrockit.co.za/" target="_blank">${validate_component(ImageLoader, "ImageLoader").$$render(
     $$result,
     {
       src: Rocket,
@@ -492,7 +501,7 @@ const RetailRocket = create_ssr_component(($$result, $$props, $$bindings, slots)
     {},
     {}
   )}</a>
-      <span><a class="link svelte-1tcbgab" href="https://retailrockit.co.za/" target="_blank">https://retailrockit.co.za/
+      <span><a class="link" href="https://retailrockit.co.za/" target="_blank">https://retailrockit.co.za/
         </a></span></div></div>
 </section>`;
 });
@@ -501,7 +510,7 @@ const Farm = "/_app/immutable/assets/wwf-farm.539cf687.webp";
 const Map = "/_app/immutable/assets/wwf-map.d71301bd.webp";
 const WineChampion_svelte_svelte_type_style_lang = "";
 const css$3 = {
-  code: "@media(max-width: 600px){.modal-inner.svelte-kctodq.svelte-kctodq{height:100%;width:100%;flex-direction:column}.container-text.svelte-kctodq.svelte-kctodq{width:85%;margin-bottom:-10rem}.container-text.svelte-kctodq .head_alt.svelte-kctodq{font-size:2.2rem}.container-text.svelte-kctodq .tag-last.svelte-kctodq,.container-text.svelte-kctodq .tag-first.svelte-kctodq{display:none}.container-img-alt.svelte-kctodq.svelte-kctodq{padding:0;width:85%;align-self:center;margin-bottom:15rem}.container-img-alt.svelte-kctodq .link.svelte-kctodq{font-size:3rem}}",
+  code: "@media(max-width: 600px){.modal-inner.svelte-kctodq{height:100%;width:100%;flex-direction:column}}",
   map: null
 };
 const Link = "https://play.google.com/store/apps/details?id=com.wwfconservationchampions&gl=US";
@@ -509,7 +518,7 @@ const s$2 = "7rem";
 const sp$2 = "-0.1rem";
 const WineChampion = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css$3);
-  return `<section class="modal-inner svelte-kctodq"><div class="container-text svelte-kctodq" style="transform: translateY(-4%);"><p class="tag tag-first svelte-kctodq" style="margin: 0 0 1rem -3rem;">&lt;section&gt;</p>
+  return `<section class="modal-inner svelte-kctodq"><div class="modal-text" style="transform: translateY(-4%);"><p class="tag tag-first" style="margin: 0 0 1rem -3rem;">&lt;section&gt;</p>
     <p class="tag" style="margin: 0 0 -0.5rem -1rem;">&lt;h2&gt;</p>
     <span class="modal-head">${validate_component(Bounce, "Bounce").$$render(
     $$result,
@@ -639,7 +648,7 @@ const WineChampion = create_ssr_component(($$result, $$props, $$bindings, slots)
     <h2>Wine Farm Guide</h2>
     <p class="tag" style="margin: -1.3rem 0 0 -1rem;">&lt;h3/&gt;</p>
 
-    <span class="head_alt svelte-kctodq"><p class="tag" style="margin: 0 0 0 -1rem;">&lt;p&gt;</p>
+    <span class="head_alt"><p class="tag" style="margin: 0 0 0 -1rem;">&lt;p&gt;</p>
       <p>Developed using React Native and Expo, the WWF Farm Guide app was my
         first mobile app, built with meticulous attention to detail. This mobile
         app caters to wine enthusiasts in South Africa, providing a
@@ -656,8 +665,8 @@ const WineChampion = create_ssr_component(($$result, $$props, $$bindings, slots)
         development, and optimal code implementation.
       </p>
       <p class="tag" style="margin: .5rem 0 0 -1rem;">&lt;p/&gt;</p></span>
-    <p class="tag tag-last svelte-kctodq" style="margin: 1rem 0 0 -3rem;">&lt;section/&gt;</p></div>
-  <div class="container-img-alt svelte-kctodq"><div><div><a${add_attribute("href", Link, 0)} target="_blank">${validate_component(ImageLoader, "ImageLoader").$$render(
+    <p class="tag tag-last" style="margin: 1rem 0 0 -3rem;">&lt;section/&gt;</p></div>
+  <div class="modal-img-alt"><div><div><a${add_attribute("href", Link, 0)} target="_blank">${validate_component(ImageLoader, "ImageLoader").$$render(
     $$result,
     {
       src: Guide,
@@ -684,21 +693,21 @@ const WineChampion = create_ssr_component(($$result, $$props, $$bindings, slots)
     {},
     {}
   )}</a></div></div>
-    <span><a class="link svelte-kctodq"${add_attribute("href", Link, 0)} target="_blank">https://play.google.com/wwfconservationchampions.com
+    <span><a class="link"${add_attribute("href", Link, 0)} target="_blank">https://play.google.com/wwfconservationchampions.com
       </a></span></div>
 </section>`;
 });
 const Woolies = "/_app/immutable/assets/woolies.84fd6d53.webp";
 const Woolies_svelte_svelte_type_style_lang = "";
 const css$2 = {
-  code: "@media(max-width: 600px){.modal-inner.svelte-1tcbgab.svelte-1tcbgab{height:100%;width:100%;flex-direction:column}.container-text.svelte-1tcbgab.svelte-1tcbgab{width:85%;margin-bottom:-35rem}.container-text.svelte-1tcbgab .head_alt.svelte-1tcbgab{font-size:2.2rem}.container-text.svelte-1tcbgab .tag-last.svelte-1tcbgab,.container-text.svelte-1tcbgab .tag-first.svelte-1tcbgab{display:none}.container-img.svelte-1tcbgab.svelte-1tcbgab{padding:0;width:85%;align-self:center;margin-bottom:-5rem}.container-img.svelte-1tcbgab .link.svelte-1tcbgab{font-size:3rem}}",
+  code: "@media(max-width: 600px){.modal-inner.svelte-1tcbgab{height:100%;width:100%;flex-direction:column}}",
   map: null
 };
 const s$1 = "6.5rem";
 const sp$1 = "-0.1rem";
 const Woolies_1 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css$2);
-  return `<section class="modal-inner svelte-1tcbgab"><span class="modal-inner svelte-1tcbgab"><div class="con container-text svelte-1tcbgab"><p class="tag tag-first svelte-1tcbgab" style="margin: 0 0 1rem -3rem;">&lt;section&gt;
+  return `<section class="modal-inner svelte-1tcbgab"><span class="modal-inner svelte-1tcbgab"><div class="con modal-text"><p class="tag tag-first" style="margin: 0 0 1rem -3rem;">&lt;section&gt;
       </p>
       <p class="tag" style="margin: 0 0 -2rem -1rem;">&lt;h2&gt;</p>
       <span class="modal-head">${validate_component(Bounce, "Bounce").$$render(
@@ -816,7 +825,7 @@ const Woolies_1 = create_ssr_component(($$result, $$props, $$bindings, slots) =>
       <h2>Making The Difference</h2>
       <p class="tag" style="margin: -1.3rem 0 0 -1rem;">&lt;h3/&gt;</p>
 
-      <span class="head_alt svelte-1tcbgab"><p class="tag" style="margin: 0 0 0 -1rem;">&lt;p&gt;</p>
+      <span class="head_alt"><p class="tag" style="margin: 0 0 0 -1rem;">&lt;p&gt;</p>
         <p>Working on Woolworth&#39;s Making the Difference platform (MTD), I was
           entrusted with the task of revamping and enhancing the site&#39;s Content
           Management System (CMS) for improved efficiency and customization.
@@ -833,9 +842,9 @@ const Woolies_1 = create_ssr_component(($$result, $$props, $$bindings, slots) =>
           technologies like React, Payload, Mongoose, and Axios.
         </p>
         <p class="tag" style="margin: .5rem 0 0 -1rem;">&lt;p/&gt;</p></span>
-      <p class="tag tag-last svelte-1tcbgab" style="margin: 1rem 0 0 -3rem;">&lt;section/&gt;
+      <p class="tag tag-last" style="margin: 1rem 0 0 -3rem;">&lt;section/&gt;
       </p></div>
-    <div class="con container-img svelte-1tcbgab"><div><a href="https://mtd.woolworths.co.za/ " target="_blank">${validate_component(ImageLoader, "ImageLoader").$$render(
+    <div class="con modal-img"><div><a href="https://mtd.woolworths.co.za/ " target="_blank">${validate_component(ImageLoader, "ImageLoader").$$render(
     $$result,
     {
       src: Woolies,
@@ -844,7 +853,7 @@ const Woolies_1 = create_ssr_component(($$result, $$props, $$bindings, slots) =>
     {},
     {}
   )}</a>
-        <span><a class="link svelte-1tcbgab" href="https://mtd.woolworths.co.za/" target="_blank">https://mtd.woolworths.co.za/
+        <span><a class="link" href="https://mtd.woolworths.co.za/" target="_blank">https://mtd.woolworths.co.za/
           </a></span></div></div></span>
 </section>`;
 });
@@ -901,18 +910,18 @@ const ImageGrid = create_ssr_component(($$result, $$props, $$bindings, slots) =>
 });
 const Work_svelte_svelte_type_style_lang = "";
 const css = {
-  code: '.aside-back.svelte-q9r7sp.svelte-q9r7sp{width:14rem;height:100vh}.main.svelte-q9r7sp.svelte-q9r7sp{overflow:hidden;width:100%;margin:0}.container-outer.svelte-q9r7sp.svelte-q9r7sp{display:flex;flex-direction:column;width:100%}.container-text.svelte-q9r7sp.svelte-q9r7sp{background-color:transparent;width:100%;height:33rem;display:flex;flex-direction:column;position:relative;align-self:center;margin:0}.container-text_inner.svelte-q9r7sp.svelte-q9r7sp{margin-left:9rem}.container-text.svelte-q9r7sp .head.svelte-q9r7sp{position:relative}.container-text.svelte-q9r7sp .head_alt.svelte-q9r7sp{width:80rem}.bg-text.svelte-q9r7sp.svelte-q9r7sp{position:absolute;right:0;bottom:10rem;font-size:50rem;font-family:"coolvetica";font-weight:400;line-height:0;letter-spacing:-1rem;color:rgba(0, 0, 0, 0.25);z-index:0}@media(max-width: 600px){.work.svelte-q9r7sp.svelte-q9r7sp{height:100dvh;width:100vw;overflow:hidden}.work.svelte-q9r7sp .container-outer.svelte-q9r7sp{margin-bottom:-20rem}.work.svelte-q9r7sp .container-outer .container-text.svelte-q9r7sp{width:80%;overflow:visible}.work.svelte-q9r7sp .container-outer .container-text .bg-text.svelte-q9r7sp{font-size:49rem;left:-20rem;bottom:18rem}.work.svelte-q9r7sp .container-outer .container-text_inner.svelte-q9r7sp{margin:0}.work.svelte-q9r7sp .container-outer .container-text .head_alt.svelte-q9r7sp{width:100%}}',
+  code: '.aside-back.svelte-1n1dwop.svelte-1n1dwop{min-width:13rem;height:100vh}.main.svelte-1n1dwop.svelte-1n1dwop{overflow:hidden;width:100%;margin:0}.container-outer.svelte-1n1dwop.svelte-1n1dwop{display:flex;flex-direction:column;width:100%}.container-text.svelte-1n1dwop.svelte-1n1dwop{background-color:transparent;width:100%;height:33rem;display:flex;flex-direction:column;position:relative;align-self:center;margin:0}.container-text_inner.svelte-1n1dwop.svelte-1n1dwop{margin-left:9rem}.container-text.svelte-1n1dwop .head.svelte-1n1dwop{position:relative}.container-text.svelte-1n1dwop .head_alt.svelte-1n1dwop{width:80rem}.bg-text.svelte-1n1dwop.svelte-1n1dwop{position:absolute;right:0;bottom:10rem;font-size:50rem;font-family:"coolvetica";font-weight:400;line-height:0;letter-spacing:-1rem;color:rgba(0, 0, 0, 0.25);z-index:0}@media(max-width: 600px){.work.svelte-1n1dwop.svelte-1n1dwop{height:100dvh;width:100vw;overflow:hidden}.work.svelte-1n1dwop .container-outer.svelte-1n1dwop{margin-bottom:-20rem}.work.svelte-1n1dwop .container-outer .container-text.svelte-1n1dwop{width:80%;overflow:visible}.work.svelte-1n1dwop .container-outer .container-text .bg-text.svelte-1n1dwop{font-size:49rem;left:-20rem;bottom:18rem}.work.svelte-1n1dwop .container-outer .container-text_inner.svelte-1n1dwop{margin:0}.work.svelte-1n1dwop .container-outer .container-text .head_alt.svelte-1n1dwop{width:100%}}',
   map: null
 };
 const s = "6rem";
 const sp = "-0.2rem";
 const Work = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css);
-  return `<main id="Work" class="main work center-parent svelte-q9r7sp"><span class="aside-back svelte-q9r7sp"></span>
-  <span class="container-outer svelte-q9r7sp"><div class="container-text svelte-q9r7sp"><p class="bg-text svelte-q9r7sp">Work</p>
-      <span class="container-text_inner svelte-q9r7sp"><p class="tag" style="margin: 0 0 -2rem -1rem;">&lt;h2&gt;</p>
+  return `<main id="Work" class="main work center-parent svelte-1n1dwop"><span class="aside-back svelte-1n1dwop"></span>
+  <span class="container-outer svelte-1n1dwop"><div class="container-text svelte-1n1dwop"><p class="bg-text svelte-1n1dwop">Work</p>
+      <span class="container-text_inner svelte-1n1dwop"><p class="tag" style="margin: 0 0 -2rem -1rem;">&lt;h2&gt;</p>
 
-        <span class="head work svelte-q9r7sp">${validate_component(Bounce, "Bounce").$$render($$result, { size: s, spacing: sp, text: "M" }, {}, {})}
+        <span class="head work svelte-1n1dwop">${validate_component(Bounce, "Bounce").$$render($$result, { size: s, spacing: sp, text: "M" }, {}, {})}
           ${validate_component(Bounce, "Bounce").$$render($$result, { size: s, spacing: sp, text: "y" }, {}, {})}
           <span> </span>
           <span> </span>
@@ -929,7 +938,7 @@ const Work = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         <p class="tag" style="margin: -1rem 0 0 -1rem;">&lt;h2/&gt;</p>
         <p class="tag" style="margin: -1rem 0 0 -1rem;">&lt;p&gt;</p>
 
-        <p class="head_alt svelte-q9r7sp">A small gallery of recent projects chosen by me. I&#39;ve done them all
+        <p class="head_alt svelte-1n1dwop">A small gallery of recent projects chosen by me. I&#39;ve done them all
           together with amazing people from companies around the country. the
           list is a work in progress and there is more to come.<br>Interested
           to see some more? Visit my
