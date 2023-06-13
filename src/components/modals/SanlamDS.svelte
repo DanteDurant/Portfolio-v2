@@ -55,9 +55,6 @@
         <a class="link" href="http://sanlam-dsm.mlab.cx/ " target="_blank"
           >http://sanlam-dsm.mlab.cx
         </a>
-        <Clipboard text="sanlam" />
-        <div style="height: 1rem;" />
-        <Clipboard text="q)gdLtP*gt8zpJKD" />
       </span>
     </div>
   </div>
