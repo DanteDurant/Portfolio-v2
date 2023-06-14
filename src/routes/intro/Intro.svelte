@@ -21,7 +21,7 @@
 
 <main id="Home" class="main intro">
   <span class="aside-back" />
-  <div class="down">
+  <div class="arrow-down">
     <span>scroll down</span>
     <div><ArrowDown /></div>
   </div>
@@ -58,25 +58,12 @@
 </main>
 
 <style lang="scss">
-  .main {
-    width: 100%;
-    margin: 0;
-  }
-
-  .aside-back {
-    min-width: 13rem;
-    height: 100vh;
-  }
-
   .container-text {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
     align-self: center;
-    padding-left: 6rem;
+    margin-left: 6rem;
   }
 
-  .down {
+  .arrow-down {
     width: 3rem;
     display: flex;
     flex-direction: column;

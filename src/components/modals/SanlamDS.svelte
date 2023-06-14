@@ -55,37 +55,10 @@
         <a class="link" href="http://sanlam-dsm.mlab.cx/ " target="_blank"
           >http://sanlam-dsm.mlab.cx
         </a>
+        <Clipboard text="sanlam" />
+        <div style="height: 1rem;" />
+        <Clipboard text="q)gdLtP*gt8zpJKD" />
       </span>
     </div>
   </div>
 </section>
-
-<style lang="scss">
-  @media (max-width: 600px) {
-    .modal-inner {
-      height: 100%;
-      width: 100%;
-      flex-direction: column;
-    }
-    .modal-text {
-      width: 85%;
-      margin-bottom: -30rem;
-
-      .head_alt {
-        font-size: 2.2rem;
-      }
-      .tag-last,
-      .tag-first {
-        display: none;
-      }
-    }
-    .modal-img {
-      padding: 0;
-      width: 85%;
-      align-self: center;
-      .link {
-        font-size: 3rem;
-      }
-    }
-  }
-</style>

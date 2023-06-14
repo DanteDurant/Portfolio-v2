@@ -6,7 +6,7 @@ export const handler = init({
 	assets: new Set([".DS_Store","favicon.png","fonts/coolvetica-rg.woff2"]),
 	mimeTypes: {".png":"image/png",".woff2":"font/woff2"},
 	_: {
-		client: {"start":"_app/immutable/entry/start.9d73bb33.js","app":"_app/immutable/entry/app.fedd2ef9.js","imports":["_app/immutable/entry/start.9d73bb33.js","_app/immutable/chunks/index.540fc541.js","_app/immutable/chunks/singletons.583572e0.js","_app/immutable/chunks/index.c031e861.js","_app/immutable/entry/app.fedd2ef9.js","_app/immutable/chunks/index.540fc541.js"],"stylesheets":[],"fonts":[]},
+		client: {"start":"_app/immutable/entry/start.0893c52a.js","app":"_app/immutable/entry/app.7db5676d.js","imports":["_app/immutable/entry/start.0893c52a.js","_app/immutable/chunks/index.ef86c8f1.js","_app/immutable/chunks/singletons.c92c1cde.js","_app/immutable/chunks/index.e393ab6d.js","_app/immutable/entry/app.7db5676d.js","_app/immutable/chunks/index.ef86c8f1.js"],"stylesheets":[],"fonts":[]},
 		nodes: [
 			() => import('../server/nodes/0.js'),
 			() => import('../server/nodes/1.js'),

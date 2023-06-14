@@ -14,40 +14,34 @@
   src: url('../../static/fonts/coolvetica-rg.woff2') format('woff2');
 }
 
+.aside-back {
+  min-width: 13rem;
+  height: 100vh;
+  z-index: -1 !important;
+}
+
 .main {
+  position: relative;
   scroll-snap-align: start;
   scroll-snap-stop: always;
   display: flex;
-  width: 100%;
+  min-width: 13rem;
   height: 100vh;
 }
 
-// .container {
-//   width: 100%;
-//   height: min-content;
-//   display: flex;
-//   flex-direction: column;
-//   position: relative;
-//   align-self: center;
-// }
+.container-text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 9rem;
+  align-self: center;
+
+}
 
 .tag {
   color: var(--tag);
   font-size: 1.8rem;
   font-style: italic;
   font-family: "La Belle Aurore";
-
-  &-one_top {
-    position: absolute;
-    left: 15rem;
-    top: 1rem;
-  }
-
-  &-two_top {
-    position: absolute;
-    left: 17rem;
-    top: 4rem;
-  }
 }
 
 .head {
@@ -192,90 +186,7 @@ body {
   }
 
 
-  .main-menu {
-    min-height: 100% !important;
-    height: 100% !important;
-    width: 100% !important;
-    display: flex;
-    flex-direction: row;
 
-    &_top {
-      width: max-content !important;
-      min-height: 100% !important;
-      display: flex;
-      flex-direction: row;
-
-      .logo {
-        margin-left: 4rem;
-
-        &-svg {
-          scale: 1.2;
-        }
-      }
-
-      span {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-
-        a {
-          .name {
-            font-weight: 600 !important;
-            font-size: 4.5rem !important;
-            line-height: 5rem !important;
-            margin: 0;
-            margin: 0 4rem 0 3rem;
-          }
-        }
-
-        .job {
-          font-size: 2rem !important;
-          line-height: 1rem;
-          align-self: center;
-        }
-      }
-    }
-
-    &_nav {
-      display: grid;
-      grid-template-columns: auto auto;
-      grid-template-rows: auto auto;
-      gap: .7rem;
-      height: 13rem !important;
-      width: 1fr !important;
-      justify-content: start;
-      align-items: center;
-      border-top: none !important;
-      margin-left: 2rem;
-
-      a {
-        display: flex;
-        width: 12rem;
-        height: 5.5rem;
-        justify-content: center;
-        align-items: center;
-        line-height: 4rem !important;
-        font-size: 2rem;
-        border: 1px solid #282828;
-        border-bottom: 2px solid #282828 !important;
-      }
-    }
-
-    .socials {
-      height: 13rem !important;
-      align-items: center;
-      justify-content: center !important;
-      gap: 3rem;
-      width: 1fr !important;
-      margin-right: 6rem;
-
-      li {
-        width: 3rem !important;
-      }
-
-
-    }
-  }
 
   ////////////////////////////////////////////
   ///////////////   ABOUT   //////////////////

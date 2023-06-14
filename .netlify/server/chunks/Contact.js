@@ -20,15 +20,15 @@ const Form = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 });
 const Contact_svelte_svelte_type_style_lang = "";
 const css = {
-  code: ".main.svelte-1pp5uan.svelte-1pp5uan{display:flex;flex-direction:row;justify-content:start;align-items:start;width:100%;background-color:var(--bg);z-index:1}.aside-back.svelte-1pp5uan.svelte-1pp5uan{min-width:13rem;z-index:900;height:100vh}.container-text.svelte-1pp5uan.svelte-1pp5uan{position:relative;display:flex;flex-direction:column;width:150rem;height:100vh;padding-right:6rem;padding-left:9rem;background-color:var(--bg);transform:translateY(0)}.container-text.svelte-1pp5uan div.svelte-1pp5uan{margin-top:-5rem}.fill_alt.svelte-1pp5uan.svelte-1pp5uan{position:absolute;bottom:0;right:0;height:2.5rem;width:100%;background-color:var(--bg);z-index:1}.tag-one.svelte-1pp5uan.svelte-1pp5uan{position:absolute;left:4.5rem;bottom:4rem}.tag-two.svelte-1pp5uan.svelte-1pp5uan{position:absolute;left:2.5rem;bottom:1rem}.container-map.svelte-1pp5uan.svelte-1pp5uan{position:relative;height:100%;width:100%;z-index:1}@media(max-width: 600px){.contact.svelte-1pp5uan.svelte-1pp5uan{flex-direction:column-reverse;overflow:hidden}.contact.svelte-1pp5uan .container-text.svelte-1pp5uan{width:80%;height:55%}.contact.svelte-1pp5uan .container-text .head_alt.svelte-1pp5uan{font-size:2.2rem}.contact.svelte-1pp5uan .container-map.svelte-1pp5uan{width:193vw;height:45%}.contact.svelte-1pp5uan .container-map .fill_alt.svelte-1pp5uan{position:absolute;bottom:-1.5rem;right:0;height:6.5rem;width:100%;background-color:var(--bg);z-index:1}}",
+  code: ".main.svelte-1c2ip3z.svelte-1c2ip3z{display:flex;flex-direction:row;justify-content:start;align-items:start;width:100%;background-color:var(--bg);z-index:1}.container-text.svelte-1c2ip3z.svelte-1c2ip3z{position:relative;display:flex;flex-direction:column;width:150rem;height:100vh;padding-right:6rem;padding-left:9rem;background-color:var(--bg);transform:translateY(0)}.container-text.svelte-1c2ip3z div.svelte-1c2ip3z{margin-top:-5rem}.fill_alt.svelte-1c2ip3z.svelte-1c2ip3z{position:absolute;bottom:0;right:0;height:2.5rem;width:100%;background-color:var(--bg);z-index:1}.tag-one.svelte-1c2ip3z.svelte-1c2ip3z{position:absolute;left:4.5rem;bottom:4rem}.tag-two.svelte-1c2ip3z.svelte-1c2ip3z{position:absolute;left:2.5rem;bottom:1rem}.container-map.svelte-1c2ip3z.svelte-1c2ip3z{position:relative;height:100%;width:100%;z-index:1}@media(max-width: 600px){.contact.svelte-1c2ip3z.svelte-1c2ip3z{flex-direction:column-reverse;overflow:hidden}.contact.svelte-1c2ip3z .container-text.svelte-1c2ip3z{width:80%;height:55%}.contact.svelte-1c2ip3z .container-text .head_alt.svelte-1c2ip3z{font-size:2.2rem}.contact.svelte-1c2ip3z .container-map.svelte-1c2ip3z{width:193vw;height:45%}.contact.svelte-1c2ip3z .container-map .fill_alt.svelte-1c2ip3z{position:absolute;bottom:-1.5rem;right:0;height:6.5rem;width:100%;background-color:var(--bg);z-index:1}}",
   map: null
 };
 const s = "8rem";
 const sp = "-0.2rem";
 const Contact = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css);
-  return `<main id="Contact" class="main contact svelte-1pp5uan"><span class="aside-back svelte-1pp5uan"></span>
-  <span class="container-text center-parent svelte-1pp5uan"><div class="svelte-1pp5uan"><p class="tag" style="margin: 0 0 -1.5rem -1rem;">&lt;h1&gt;</p>
+  return `<main id="Contact" class="main contact svelte-1c2ip3z"><span class="aside-back"></span>
+  <span class="container-text center-parent svelte-1c2ip3z"><div class="svelte-1c2ip3z"><p class="tag" style="margin: 0 0 -1.5rem -1rem;">&lt;h1&gt;</p>
       <span class="head">${validate_component(Bounce, "Bounce").$$render($$result, { size: s, spacing: sp, text: "C" }, {}, {})}
         ${validate_component(Bounce, "Bounce").$$render($$result, { size: s, spacing: sp, text: "o" }, {}, {})}
         ${validate_component(Bounce, "Bounce").$$render($$result, { size: s, spacing: sp, text: "n" }, {}, {})}
@@ -42,18 +42,18 @@ const Contact = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         ${validate_component(Bounce, "Bounce").$$render($$result, { size: s, spacing: sp, text: "e" }, {}, {})}</span>
       <p class="tag" style="margin: 0 0 0 -1rem;">&lt;h1/&gt;</p>
       <p class="tag" style="margin: -1rem 0 0 -1rem;">&lt;p&gt;</p>
-      <span class="head_alt svelte-1pp5uan">I’m interested in working as a front-end developer, especially ambitious
+      <span class="head_alt svelte-1c2ip3z">I’m interested in working as a front-end developer, especially ambitious
         or large projects. However, if you have other requests or questions,
         please don’t hesitate to use the form.
       </span>
       <p class="tag" style="margin: 0 0 4rem -1rem;">&lt;p/&gt;</p>
       ${validate_component(Form, "Form").$$render($$result, {}, {}, {})}</div>
 
-    <p class="tag tag-two svelte-1pp5uan">&lt;/html&gt;</p>
-    <p class="tag tag-one svelte-1pp5uan">&lt;/body&gt;</p></span>
+    <p class="tag tag-two svelte-1c2ip3z">&lt;/html&gt;</p>
+    <p class="tag tag-one svelte-1c2ip3z">&lt;/body&gt;</p></span>
 
-  <div class="container-map svelte-1pp5uan"><iframe title="map" src="https://snazzymaps.com/embed/491438" width="100%" height="100%" style="border:none;"></iframe>
-    <div class="fill_alt svelte-1pp5uan"></div></div>
+  <div class="container-map svelte-1c2ip3z"><iframe title="map" src="https://snazzymaps.com/embed/491438" width="100%" height="100%" style="border:none;"></iframe>
+    <div class="fill_alt svelte-1c2ip3z"></div></div>
 </main>`;
 });
 export {

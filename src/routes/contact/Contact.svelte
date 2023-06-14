@@ -52,31 +52,25 @@
 
 <style lang="scss">
   .main {
-    display: flex;
     flex-direction: row;
-    justify-content: start;
-    align-items: start;
-    width: 100%;
-    background-color: var(--bg);
-    z-index: 1;
-  }
-  .aside-back {
-    min-width: 13rem;
     height: 100vh;
+    // justify-content: start;
+    // align-items: start;
+    // width: 100%;
+    // background-color: var(--bg);
+    // z-index: 1;
   }
 
   .container-text {
     position: relative;
-    display: flex;
-    flex-direction: column;
     width: 150rem;
     height: 100vh;
+    margin-left: 0;
     padding-right: 6rem;
     padding-left: 9rem;
     background-color: var(--bg);
-    transform: translateY(0);
     div {
-      margin-top: -5rem;
+      margin-top: -7%;
     }
   }
 

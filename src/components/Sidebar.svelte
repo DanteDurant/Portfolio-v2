@@ -110,4 +110,89 @@
       }
     }
   }
+
+  @media (max-width: 600px) {
+    .main-menu {
+      min-height: 100%;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+
+      &_top {
+        width: max-content;
+        min-height: 100%;
+        display: flex;
+        flex-direction: row;
+
+        .logo {
+          margin-left: 4rem;
+
+          &-svg {
+            scale: 1.2;
+          }
+        }
+
+        span {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+
+          a {
+            .name {
+              font-weight: 600;
+              font-size: 4.5rem;
+              line-height: 5rem;
+              margin: 0;
+              margin: 0 4rem 0 3rem;
+            }
+          }
+
+          .job {
+            font-size: 2rem;
+            line-height: 1rem;
+            align-self: center;
+          }
+        }
+      }
+
+      &_nav {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        gap: 0.7rem;
+        height: 13rem;
+        width: 1fr;
+        justify-content: start;
+        align-items: center;
+        border-top: none;
+        margin-left: 2rem;
+
+        a {
+          display: flex;
+          width: 12rem;
+          height: 5.5rem;
+          justify-content: center;
+          align-items: center;
+          line-height: 4rem;
+          font-size: 2rem;
+          border: 1px solid #282828;
+          border-bottom: 2px solid #282828;
+        }
+      }
+
+      .socials {
+        height: 13rem;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+        width: 1fr;
+        margin-right: 6rem;
+
+        li {
+          width: 3rem;
+        }
+      }
+    }
+  }
 </style>

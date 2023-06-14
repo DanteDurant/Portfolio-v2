@@ -21,6 +21,7 @@
   }
 
   aside {
+    z-index: 1;
     position: sticky;
     top: 0;
     bottom: 0;

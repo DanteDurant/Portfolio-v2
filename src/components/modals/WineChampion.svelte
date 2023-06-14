@@ -83,6 +83,37 @@
 </section>
 
 <style lang="scss">
+  .modal-img-alt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 6rem;
+    width: 60%;
+
+    & div {
+      display: flex;
+      height: max-content;
+      width: 100%;
+      margin-bottom: 0.5rem;
+
+      & div {
+        height: max-content;
+        width: 100%;
+        gap: 1.2rem;
+
+        & a {
+          border-radius: 2rem;
+          overflow: hidden;
+          transition: all 300ms ease;
+          filter: brightness(0.8);
+          &:hover {
+            filter: brightness(1);
+          }
+        }
+      }
+    }
+  }
+
   @media (max-width: 600px) {
     .modal-inner {
       height: 100%;

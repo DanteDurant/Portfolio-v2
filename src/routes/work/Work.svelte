@@ -52,35 +52,22 @@
 </main>
 
 <style lang="scss">
-  .aside-back {
-    min-width: 13rem;
-    height: 100vh;
-  }
-  .main {
-    overflow: hidden;
-    width: 100%;
-    margin: 0;
-  }
   .container-outer {
     display: flex;
     flex-direction: column;
     width: 100%;
   }
   .container-text {
-    background-color: transparent;
     width: 100%;
     height: 33rem;
     display: flex;
-    flex-direction: column;
     position: relative;
-    align-self: center;
     margin: 0;
     &_inner {
       margin-left: 9rem;
     }
 
     .head {
-      position: relative;
       &_alt {
         width: 80rem;
       }
@@ -114,14 +101,12 @@
             font-size: 49rem;
             left: -20rem;
             bottom: 18rem;
-            // display: none;
           }
           &_inner {
             margin: 0;
           }
           .head_alt {
             width: 100%;
-            // font-size: 2.2rem;
           }
         }
       }

@@ -60,17 +60,7 @@
 </main>
 
 <style lang="scss">
-  .aside-back {
-    min-width: 13rem;
-    height: 100vh;
-  }
   .container-text {
     width: 55%;
-    height: min-content;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    align-self: center;
-    margin-left: 9rem;
   }
 </style>

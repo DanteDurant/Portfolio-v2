@@ -1,6 +1,7 @@
 <script>
   import Bounce from "../../components/text/Bounce.svelte";
   import TagCloud from "../../components/features/TagCloud.svelte";
+
   const s = "6rem";
   const sp = "-0.2rem";
 </script>
@@ -59,22 +60,8 @@
 </main>
 
 <style lang="scss">
-  .main {
-    display: flex;
-    width: 100%;
-    align-content: end;
-  }
-  .aside-back {
-    min-width: 13rem;
-    height: 100vh;
-  }
   .container-text {
-    position: relative;
-    display: flex;
-    flex-direction: column;
     width: 40%;
-    // height: 100%;
-    margin-left: 9rem;
   }
 
   .tagcloud {

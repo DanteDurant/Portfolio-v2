@@ -139,7 +139,7 @@
     position: relative;
     margin: 0;
     width: 100%;
-    z-index: 1;
+    // z-index: 1;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 0;
