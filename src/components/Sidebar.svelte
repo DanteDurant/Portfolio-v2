@@ -62,6 +62,8 @@
         color: #fff;
       }
       .job {
+        align-self: center;
+        justify-self: center;
         font-family: serif;
         font-size: 1.2rem;
         padding-top: 1rem;
