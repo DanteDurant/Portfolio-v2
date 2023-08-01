@@ -53,6 +53,9 @@
     align-items: center;
 
     &_top {
+      p {
+        display: inline;
+      }
       width: 100%;
       min-height: 21rem;
       background-color: #000;
