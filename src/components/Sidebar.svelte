@@ -51,6 +51,7 @@
     background-color: var(--bg-alt);
     justify-content: space-between;
     align-items: center;
+
     &_top {
       width: 100%;
       min-height: 21rem;
@@ -62,6 +63,7 @@
         color: #fff;
       }
       .job {
+        width: 100%;
         align-self: center;
         justify-self: center;
         font-family: serif;
