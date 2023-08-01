@@ -53,9 +53,6 @@
     align-items: center;
 
     &_top {
-      p {
-        display: inline;
-      }
       width: 100%;
       min-height: 21rem;
       background-color: #000;
@@ -66,9 +63,7 @@
         color: #fff;
       }
       .job {
-        width: 100%;
-        align-self: center;
-        justify-self: center;
+        text-align: center;
         font-family: serif;
         font-size: 1.2rem;
         padding-top: 1rem;
