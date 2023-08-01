@@ -1,11 +1,9 @@
 <script>
   import "./ModalStyles.scss";
   import GuideHigh from "$lib/images/modals/wwf-guide.webp";
-  import GuideLow from "$lib/images/modals/lazy/wwf-guide-lazy.webp";
   import Farm from "$lib/images/modals/wwf-farm.webp";
   import Map from "$lib/images/modals/wwf-map.webp";
   import Bounce from "../text/Bounce.svelte";
-  import ImageLoader from "$lib/images/ImageLoader.svelte";
 
   const Link =
     "https://play.google.com/store/apps/details?id=com.wwfconservationchampions&gl=US";
@@ -64,15 +62,12 @@
     <div>
       <div>
         <a href={Link} target="_blank">
-          <!-- <ImageLoader src={GuideHigh} alt="Guide screen of mobile app" /> -->
           <img src={GuideHigh} alt="Guide screen of mobile app" />
         </a>
         <a href={Link} target="_blank">
-          <!-- <ImageLoader src={Farm} alt="Farm modal screen of mobile app" /> -->
           <img src={Farm} alt="Farm modal screen of mobile app" />
         </a>
         <a class="map" href={Link} target="_blank">
-          <!-- <ImageLoader src={Map} alt="Map screen of mobile app" /> -->
           <img src={Map} alt="Map screen of mobile app" />
         </a>
       </div>

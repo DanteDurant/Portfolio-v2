@@ -2,7 +2,6 @@
   import "./ModalStyles.scss";
   import Storybook from "$lib/images/modals/storybook.webp";
   import Bounce from "../text/Bounce.svelte";
-  import ImageLoader from "$lib/images/ImageLoader.svelte";
 
   const s = "7rem";
   const sp = "-0.1rem";
@@ -28,17 +27,16 @@
     <span class="head_alt">
       <p class="tag" style="margin: 0 0 0 -1rem;">&lt;p&gt;</p>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
-        distinctio, ipsam corrupti fugiat nam voluptatem optio porro, soluta
-        fugit odio accusamus deleniti pariatur vero laudantium velit. Corporis,
-        suscipit soluta. Voluptatem, Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Esse aliquam nobis expedita! Quis, nihil tenetur fuga
-        sunt praesentium quaerat nostrum aliquid eius iste architecto animi
-        dolorum ullam voluptatum atque voluptates.
+        Working on the Sanlam Storybook, I enhanced this component library with
+        a versatile theming feature. This new addition includes a theming token
+        system, which automatically updates component styles according to
+        predefined themes. Additionally, designers have the flexibility to
+        modify and add colors through a custom Figma plugin, enabling seamless
+        integration of their preferred color palettes into the components.
         <br />
         <br />
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam necessitatibus
-        velit ab, itaque ipsum voluptatem aliquam quis nihil.
+        The project was constructed utilizing React, Storybook, and Typescript. Testing
+        was carried out using Cypress and Jest.
       </p>
       <p class="tag" style="margin: .5rem 0 0 -1rem;">&lt;p/&gt;</p>
     </span>
@@ -46,17 +44,12 @@
   </div>
   <div class="modal-img">
     <div>
-      <a href="https://retailrockit.co.za/" target="_blank">
-        <!-- <ImageLoader src={Storybook} alt="Retail rocket landing page" /> -->
-        <img src={Storybook} alt="Retail rocket landing page" />
-      </a>
+      <img src={Storybook} alt="Retail rocket landing page" />
       <span>
-        <a
-          class="link"
-          href="https://storybook.sanlam.design/react-ui-next/index.html?path=/story/docs-introduction--page"
-          target="_blank"
-          >https://storybook.sanlam.design.co.za
-        </a>
+        <p class="link" style="color: #fd2055;">
+          Unfortunately I am unable to provide a link due to the strict
+          security.
+        </p>
       </span>
     </div>
   </div>
