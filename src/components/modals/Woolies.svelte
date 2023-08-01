@@ -55,6 +55,7 @@
   <div class="con modal-img">
     <div>
       <a href="https://mtd.woolworths.co.za/ " target="_blank">
+        <!-- <ImageLoader src={Woolies} alt="Woolworth MTD landing page" /> -->
         <ImageLoader src={Woolies} alt="Woolworth MTD landing page" />
       </a>
       <span>

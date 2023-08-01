@@ -49,7 +49,8 @@
   <div class="modal-img">
     <div>
       <a href="http://sanlam-dsm.mlab.cx/ " target="_blank">
-        <ImageLoader src={Sanlam} alt="Sanlam DSM landing page" />
+        <!-- <ImageLoader src={Sanlam} alt="Sanlam DSM landing page" /> -->
+        <img src={Sanlam} alt="Sanlam DSM landing page" />
       </a>
       <span>
         <a class="link" href="http://sanlam-dsm.mlab.cx/ " target="_blank"

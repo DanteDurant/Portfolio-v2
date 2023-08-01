@@ -56,7 +56,8 @@
   <div class="modal-img">
     <div>
       <a href="https://retailrockit.co.za/" target="_blank">
-        <ImageLoader src={Rocket} alt="Retail rocket landing page" />
+        <!-- <ImageLoader src={Rocket} alt="Retail rocket landing page" /> -->
+        <img src={Rocket} alt="Retail rocket landing page" />
       </a>
       <span>
         <a class="link" href="https://retailrockit.co.za/" target="_blank"

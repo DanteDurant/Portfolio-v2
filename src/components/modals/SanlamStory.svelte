@@ -47,7 +47,8 @@
   <div class="modal-img">
     <div>
       <a href="https://retailrockit.co.za/" target="_blank">
-        <ImageLoader src={Storybook} alt="Retail rocket landing page" />
+        <!-- <ImageLoader src={Storybook} alt="Retail rocket landing page" /> -->
+        <img src={Storybook} alt="Retail rocket landing page" />
       </a>
       <span>
         <a

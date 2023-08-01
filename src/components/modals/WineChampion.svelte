@@ -64,13 +64,16 @@
     <div>
       <div>
         <a href={Link} target="_blank">
-          <ImageLoader src={GuideHigh} alt="Guide screen of mobile app" />
+          <!-- <ImageLoader src={GuideHigh} alt="Guide screen of mobile app" /> -->
+          <img src={GuideHigh} alt="Guide screen of mobile app" />
         </a>
         <a href={Link} target="_blank">
-          <ImageLoader src={Farm} alt="Farm modal screen of mobile app" />
+          <!-- <ImageLoader src={Farm} alt="Farm modal screen of mobile app" /> -->
+          <img src={Farm} alt="Farm modal screen of mobile app" />
         </a>
         <a class="map" href={Link} target="_blank">
-          <ImageLoader src={Map} alt="Map screen of mobile app" />
+          <!-- <ImageLoader src={Map} alt="Map screen of mobile app" /> -->
+          <img src={Map} alt="Map screen of mobile app" />
         </a>
       </div>
     </div>
@@ -108,6 +111,10 @@
           filter: brightness(0.8);
           &:hover {
             filter: brightness(1);
+          }
+          img {
+            height: 100%;
+            width: 100%;
           }
         }
       }
