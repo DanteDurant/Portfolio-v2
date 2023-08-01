@@ -6,8 +6,18 @@
   export let onClose;
 </script>
 
-<div class={isOpen ? "fullscreen open" : "fullscreen"}>
-  <div class="modal-outer">
+<div
+  class={isOpen ? "fullscreen open" : "fullscreen"}
+  on:click|preventDefault|stopPropagation={() => {
+    if (isOpen) onClose();
+  }}
+  on:keydown={(event) => {}}
+>
+  <div
+    class="modal-outer"
+    on:click|stopPropagation={() => {}}
+    on:keydown={(event) => {}}
+  >
     <slot />
     <button class="close-button" on:click={onClose}>
       <Button text="Return" />
