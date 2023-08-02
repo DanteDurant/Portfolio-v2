@@ -1,7 +1,9 @@
 <script>
   import "./ModalStyles.scss";
   import Rocket from "$lib/images/modals/rocket.webp";
+  import RocketLazy from "$lib/images/modals/lazy/rocket-lazy.webp";
   import Bounce from "../text/Bounce.svelte";
+  import LazyImage from "../../utility/LazyImage.svelte";
 
   const s = "7rem";
   const sp = "-0.1rem";
@@ -55,7 +57,11 @@
   <div class="modal-img">
     <div>
       <a href="https://retailrockit.co.za/" target="_blank">
-        <img src={Rocket} alt="Retail rocket landing page" />
+        <LazyImage
+          src={Rocket}
+          alt="retail rocket landing page"
+          lazySrc={RocketLazy}
+        />
       </a>
       <span>
         <a class="link" href="https://retailrockit.co.za/" target="_blank"

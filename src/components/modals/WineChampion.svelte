@@ -3,7 +3,11 @@
   import GuideHigh from "$lib/images/modals/wwf-guide.webp";
   import Farm from "$lib/images/modals/wwf-farm.webp";
   import Map from "$lib/images/modals/wwf-map.webp";
+  import GuideHighLazy from "$lib/images/modals/lazy/wwf-guide-lazy.webp";
+  import FarmLazy from "$lib/images/modals/lazy/wwf-farm-lazy.webp";
+  import MapLazy from "$lib/images/modals/lazy/wwf-map-lazy.webp";
   import Bounce from "../text/Bounce.svelte";
+  import LazyImage from "../../utility/LazyImage.svelte";
 
   const Link =
     "https://play.google.com/store/apps/details?id=com.wwfconservationchampions&gl=US";
@@ -62,13 +66,17 @@
     <div>
       <div>
         <a href={Link} target="_blank">
-          <img src={GuideHigh} alt="Guide screen of mobile app" />
+          <LazyImage
+            src={GuideHigh}
+            alt="guide screen"
+            lazySrc={GuideHighLazy}
+          />
         </a>
         <a href={Link} target="_blank">
-          <img src={Farm} alt="Farm modal screen of mobile app" />
+          <LazyImage src={Farm} alt="farm screen" lazySrc={FarmLazy} />
         </a>
-        <a class="map" href={Link} target="_blank">
-          <img src={Map} alt="Map screen of mobile app" />
+        <a href={Link} target="_blank">
+          <LazyImage src={Map} alt="map screen" lazySrc={MapLazy} />
         </a>
       </div>
     </div>
@@ -87,29 +95,20 @@
     justify-content: center;
     padding-right: 6rem;
     width: 60%;
-
     & div {
       display: flex;
-      height: max-content;
-      width: 100%;
       margin-bottom: 0.5rem;
-
       & div {
-        height: max-content;
-        width: 100%;
         gap: 1.2rem;
-
         & a {
           border-radius: 2rem;
           overflow: hidden;
           transition: all 300ms ease;
           filter: brightness(0.8);
+          width: 100%;
+          height: 100%;
           &:hover {
             filter: brightness(1);
-          }
-          img {
-            height: 100%;
-            width: 100%;
           }
         }
       }

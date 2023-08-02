@@ -20,15 +20,15 @@ const Form = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 });
 const Contact_svelte_svelte_type_style_lang = "";
 const css = {
-  code: ".main.svelte-1c2ip3z.svelte-1c2ip3z{display:flex;flex-direction:row;justify-content:start;align-items:start;width:100%;background-color:var(--bg);z-index:1}.container-text.svelte-1c2ip3z.svelte-1c2ip3z{position:relative;display:flex;flex-direction:column;width:150rem;height:100vh;padding-right:6rem;padding-left:9rem;background-color:var(--bg);transform:translateY(0)}.container-text.svelte-1c2ip3z div.svelte-1c2ip3z{margin-top:-5rem}.fill_alt.svelte-1c2ip3z.svelte-1c2ip3z{position:absolute;bottom:0;right:0;height:2.5rem;width:100%;background-color:var(--bg);z-index:1}.tag-one.svelte-1c2ip3z.svelte-1c2ip3z{position:absolute;left:4.5rem;bottom:4rem}.tag-two.svelte-1c2ip3z.svelte-1c2ip3z{position:absolute;left:2.5rem;bottom:1rem}.container-map.svelte-1c2ip3z.svelte-1c2ip3z{position:relative;height:100%;width:100%;z-index:1}@media(max-width: 600px){.contact.svelte-1c2ip3z.svelte-1c2ip3z{flex-direction:column-reverse;overflow:hidden}.contact.svelte-1c2ip3z .container-text.svelte-1c2ip3z{width:80%;height:55%}.contact.svelte-1c2ip3z .container-text .head_alt.svelte-1c2ip3z{font-size:2.2rem}.contact.svelte-1c2ip3z .container-map.svelte-1c2ip3z{width:193vw;height:45%}.contact.svelte-1c2ip3z .container-map .fill_alt.svelte-1c2ip3z{position:absolute;bottom:-1.5rem;right:0;height:6.5rem;width:100%;background-color:var(--bg);z-index:1}}",
+  code: ".main.svelte-thbbqx.svelte-thbbqx{flex-direction:row;height:100vh}.container-text.svelte-thbbqx.svelte-thbbqx{position:relative;width:150rem;height:100vh;margin-left:0;padding-right:6rem;padding-left:9rem;background-color:var(--bg)}.container-text.svelte-thbbqx div.svelte-thbbqx{margin-top:-7%}.fill_alt.svelte-thbbqx.svelte-thbbqx{position:absolute;bottom:0;right:0;height:2.5rem;width:100%;background-color:var(--bg);z-index:1}.tag-one.svelte-thbbqx.svelte-thbbqx{position:absolute;left:4.5rem;bottom:4rem}.tag-two.svelte-thbbqx.svelte-thbbqx{position:absolute;left:2.5rem;bottom:1rem}.container-map.svelte-thbbqx.svelte-thbbqx{position:relative;height:100%;width:100%;z-index:1}@media(max-width: 600px){.contact.svelte-thbbqx.svelte-thbbqx{flex-direction:column-reverse;overflow:hidden}.contact.svelte-thbbqx .container-text.svelte-thbbqx{width:80%;height:55%}.contact.svelte-thbbqx .container-text .head_alt.svelte-thbbqx{font-size:2.2rem}.contact.svelte-thbbqx .container-map.svelte-thbbqx{width:193vw;height:45%}.contact.svelte-thbbqx .container-map .fill_alt.svelte-thbbqx{position:absolute;bottom:-1.5rem;right:0;height:6.5rem;width:100%;background-color:var(--bg);z-index:1}}",
   map: null
 };
 const s = "8rem";
 const sp = "-0.2rem";
 const Contact = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css);
-  return `<main id="Contact" class="main contact svelte-1c2ip3z"><span class="aside-back"></span>
-  <span class="container-text center-parent svelte-1c2ip3z"><div class="svelte-1c2ip3z"><p class="tag" style="margin: 0 0 -1.5rem -1rem;">&lt;h1&gt;</p>
+  return `<main id="Contact" class="main contact svelte-thbbqx"><span class="aside-back"></span>
+  <span class="container-text center-parent svelte-thbbqx"><div class="svelte-thbbqx"><p class="tag" style="margin: 0 0 -1.5rem -1rem;">&lt;h1&gt;</p>
       <span class="head">${validate_component(Bounce, "Bounce").$$render($$result, { size: s, spacing: sp, text: "C" }, {}, {})}
         ${validate_component(Bounce, "Bounce").$$render($$result, { size: s, spacing: sp, text: "o" }, {}, {})}
         ${validate_component(Bounce, "Bounce").$$render($$result, { size: s, spacing: sp, text: "n" }, {}, {})}
@@ -42,18 +42,18 @@ const Contact = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         ${validate_component(Bounce, "Bounce").$$render($$result, { size: s, spacing: sp, text: "e" }, {}, {})}</span>
       <p class="tag" style="margin: 0 0 0 -1rem;">&lt;h1/&gt;</p>
       <p class="tag" style="margin: -1rem 0 0 -1rem;">&lt;p&gt;</p>
-      <span class="head_alt svelte-1c2ip3z">I’m interested in working as a front-end developer, especially ambitious
+      <span class="head_alt svelte-thbbqx">I’m interested in working as a front-end developer, especially ambitious
         or large projects. However, if you have other requests or questions,
         please don’t hesitate to use the form.
       </span>
       <p class="tag" style="margin: 0 0 4rem -1rem;">&lt;p/&gt;</p>
       ${validate_component(Form, "Form").$$render($$result, {}, {}, {})}</div>
 
-    <p class="tag tag-two svelte-1c2ip3z">&lt;/html&gt;</p>
-    <p class="tag tag-one svelte-1c2ip3z">&lt;/body&gt;</p></span>
+    <p class="tag tag-two svelte-thbbqx">&lt;/html&gt;</p>
+    <p class="tag tag-one svelte-thbbqx">&lt;/body&gt;</p></span>
 
-  <div class="container-map svelte-1c2ip3z"><iframe title="map" src="https://snazzymaps.com/embed/491438" width="100%" height="100%" style="border:none;"></iframe>
-    <div class="fill_alt svelte-1c2ip3z"></div></div>
+  <div class="container-map svelte-thbbqx"><iframe title="map" src="https://snazzymaps.com/embed/491438" width="100%" height="100%" style="border:none;"></iframe>
+    <div class="fill_alt svelte-thbbqx"></div></div>
 </main>`;
 });
 export {

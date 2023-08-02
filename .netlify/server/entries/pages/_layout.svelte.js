@@ -23,23 +23,23 @@ const YouTube = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 });
 const Sidebar_svelte_svelte_type_style_lang = "";
 const css$2 = {
-  code: ".main-menu.svelte-1t2zadc.svelte-1t2zadc{height:100%;width:13rem;background-color:var(--bg-alt);justify-content:space-between;align-items:center}.main-menu_top.svelte-1t2zadc.svelte-1t2zadc{width:100%;min-height:21rem;background-color:#000}.main-menu_top.svelte-1t2zadc .name.svelte-1t2zadc{font-size:2.7rem;font-weight:900;line-height:2;color:#fff}.main-menu_top.svelte-1t2zadc .job.svelte-1t2zadc{font-family:serif;font-size:1.2rem;padding-top:1rem;color:#a5a5a5}.main-menu_nav.svelte-1t2zadc.svelte-1t2zadc{width:100%;border-top:1px solid #282828}.main-menu_nav.svelte-1t2zadc a.svelte-1t2zadc{text-align:center;justify-self:center;border-bottom:1px solid #282828;color:#909090;line-height:5rem;transition:all 300ms}.main-menu_nav.svelte-1t2zadc a.svelte-1t2zadc:hover{color:var(--pri)}.main-menu_nav.svelte-1t2zadc a.svelte-1t2zadc:last-child{color:var(--pri)}.main-menu_nav.svelte-1t2zadc a.svelte-1t2zadc:last-child:hover{color:#fff}.socials.svelte-1t2zadc.svelte-1t2zadc{display:flex;margin-top:2rem;padding:0;justify-content:space-between;height:20rem;width:56%;list-style:none}.socials.svelte-1t2zadc li.svelte-1t2zadc{width:1.5rem}.socials.svelte-1t2zadc li a.svelte-1t2zadc{transition:all 300ms;color:#909096}.socials.svelte-1t2zadc li a.svelte-1t2zadc:hover{color:var(--pri)}",
+  code: ".main-menu.svelte-1ddnztp.svelte-1ddnztp{height:100%;width:13rem;background-color:var(--bg-alt);justify-content:space-between;align-items:center}.main-menu_top.svelte-1ddnztp.svelte-1ddnztp{width:100%;min-height:21rem;background-color:#000}.main-menu_top.svelte-1ddnztp .name.svelte-1ddnztp{font-size:2.7rem;font-weight:900;line-height:2;color:#fff}.main-menu_top.svelte-1ddnztp .job.svelte-1ddnztp{text-align:center;font-family:serif;font-size:1.2rem;padding-top:1rem;color:#a5a5a5}.main-menu_nav.svelte-1ddnztp.svelte-1ddnztp{width:100%;border-top:1px solid #282828}.main-menu_nav.svelte-1ddnztp a.svelte-1ddnztp{text-align:center;justify-self:center;border-bottom:1px solid #282828;color:#909090;line-height:5rem;transition:all 300ms}.main-menu_nav.svelte-1ddnztp a.svelte-1ddnztp:hover{color:var(--pri)}.main-menu_nav.svelte-1ddnztp a.svelte-1ddnztp:last-child{color:var(--pri)}.main-menu_nav.svelte-1ddnztp a.svelte-1ddnztp:last-child:hover{color:#fff}.socials.svelte-1ddnztp.svelte-1ddnztp{display:flex;margin-top:2rem;padding:0;justify-content:space-between;height:20rem;width:56%;list-style:none}.socials.svelte-1ddnztp li.svelte-1ddnztp{width:1.5rem}.socials.svelte-1ddnztp li a.svelte-1ddnztp{transition:all 300ms;color:#909096}.socials.svelte-1ddnztp li a.svelte-1ddnztp:hover{color:var(--pri)}@media(max-width: 600px){.main-menu.svelte-1ddnztp.svelte-1ddnztp{min-height:100%;height:100%;width:100%;display:flex;flex-direction:row}.main-menu_top.svelte-1ddnztp.svelte-1ddnztp{width:max-content;min-height:100%;display:flex;flex-direction:row}.main-menu_top.svelte-1ddnztp .logo.svelte-1ddnztp{margin-left:4rem}.main-menu_top.svelte-1ddnztp span.svelte-1ddnztp{display:flex;flex-direction:column;width:100%}.main-menu_top.svelte-1ddnztp span a .name.svelte-1ddnztp{font-weight:600;font-size:4.5rem;line-height:5rem;margin:0;margin:0 4rem 0 3rem}.main-menu_top.svelte-1ddnztp span .job.svelte-1ddnztp{font-size:2rem;line-height:1rem;align-self:center}.main-menu_nav.svelte-1ddnztp.svelte-1ddnztp{display:grid;grid-template-columns:auto auto;grid-template-rows:auto auto;gap:0.7rem;height:13rem;width:1fr;justify-content:start;align-items:center;border-top:none;margin-left:2rem}.main-menu_nav.svelte-1ddnztp a.svelte-1ddnztp{display:flex;width:12rem;height:5.5rem;justify-content:center;align-items:center;line-height:4rem;font-size:2rem;border:1px solid #282828;border-bottom:2px solid #282828}.main-menu.svelte-1ddnztp .socials.svelte-1ddnztp{height:13rem;align-items:center;justify-content:center;gap:3rem;width:1fr;margin-right:6rem}.main-menu.svelte-1ddnztp .socials li.svelte-1ddnztp{width:3rem}}",
   map: null
 };
 const Sidebar = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css$2);
-  return `<menu class="main-menu column svelte-1t2zadc"><div class="main-menu_top center-parent column svelte-1t2zadc"><a href="#Home" class="logo">${validate_component(Logo, "Logo").$$render($$result, {}, {}, {})}</a>
-    <span><a href="#Home"><span class="name svelte-1t2zadc">Dante</span></a>
-      <p class="job svelte-1t2zadc">Web Developer</p></span></div>
+  return `<menu class="main-menu column svelte-1ddnztp"><div class="main-menu_top center-parent column svelte-1ddnztp"><a href="#Home" class="logo svelte-1ddnztp">${validate_component(Logo, "Logo").$$render($$result, {}, {}, {})}</a>
+    <span class="svelte-1ddnztp"><a href="#Home"><span class="name svelte-1ddnztp">Dante</span></a>
+      <p class="job svelte-1ddnztp">Web Developer</p></span></div>
 
-  <nav class="main-menu_nav column svelte-1t2zadc"><a href="#About" class="svelte-1t2zadc">About</a>
-    <a href="#Work" class="svelte-1t2zadc">Work</a>
-    <a href="#Skills" class="svelte-1t2zadc">Skills</a>
-    <a href="#Contact" class="svelte-1t2zadc">Contact</a></nav>
+  <nav class="main-menu_nav column svelte-1ddnztp"><a href="#About" class="svelte-1ddnztp">About</a>
+    <a href="#Work" class="svelte-1ddnztp">Work</a>
+    <a href="#Skills" class="svelte-1ddnztp">Skills</a>
+    <a href="#Contact" class="svelte-1ddnztp">Contact</a></nav>
 
-  <ul class="socials svelte-1t2zadc"><li class="svelte-1t2zadc"><a href="https://www.linkedin.com/in/dantedurant/" target="_blank" class="svelte-1t2zadc">${validate_component(LinkedIn, "LinkedIn").$$render($$result, {}, {}, {})}</a></li>
-    <li class="svelte-1t2zadc"><a href="https://github.com/DanteDurant?tab=repositories" target="_blank" class="svelte-1t2zadc">${validate_component(Github, "Github").$$render($$result, {}, {}, {})}</a></li>
-    <li class="svelte-1t2zadc"><a href="https://www.youtube.com/@dantedurant3412" target="_blank" class="svelte-1t2zadc">${validate_component(YouTube, "YouTube").$$render($$result, {}, {}, {})}</a></li></ul>
+  <ul class="socials svelte-1ddnztp"><li class="svelte-1ddnztp"><a href="https://www.linkedin.com/in/dantedurant/" target="_blank" class="svelte-1ddnztp">${validate_component(LinkedIn, "LinkedIn").$$render($$result, {}, {}, {})}</a></li>
+    <li class="svelte-1ddnztp"><a href="https://github.com/DanteDurant?tab=repositories" target="_blank" class="svelte-1ddnztp">${validate_component(Github, "Github").$$render($$result, {}, {}, {})}</a></li>
+    <li class="svelte-1ddnztp"><a href="https://www.youtube.com/@dantedurant3412" target="_blank" class="svelte-1ddnztp">${validate_component(YouTube, "YouTube").$$render($$result, {}, {}, {})}</a></li></ul>
 </menu>`;
 });
 const Tendrils_svelte_svelte_type_style_lang = "";
@@ -57,14 +57,14 @@ const Tendrils = create_ssr_component(($$result, $$props, $$bindings, slots) => 
 });
 const _layout_svelte_svelte_type_style_lang = "";
 const css = {
-  code: ".app.svelte-jk0788{background-color:#1d1d1d}aside.svelte-jk0788{position:sticky;top:0;bottom:0;left:0;width:13rem;height:100vh}",
+  code: ".app.svelte-cw8dtv{background-color:#1d1d1d}aside.svelte-cw8dtv{z-index:100;position:sticky;top:0;bottom:0;left:0;width:13rem;height:100vh}",
   map: null
 };
 const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css);
-  return `<div class="app svelte-jk0788">${validate_component(Tendrils, "Tendrils").$$render($$result, {}, {}, {})}
+  return `<div class="app svelte-cw8dtv">${validate_component(Tendrils, "Tendrils").$$render($$result, {}, {}, {})}
 
-  <aside class="svelte-jk0788">${validate_component(Sidebar, "Sidebar").$$render($$result, {}, {}, {})}</aside>
+  <aside class="svelte-cw8dtv">${validate_component(Sidebar, "Sidebar").$$render($$result, {}, {}, {})}</aside>
 
   <main>${slots.default ? slots.default({}) : ``}</main>
 </div>`;

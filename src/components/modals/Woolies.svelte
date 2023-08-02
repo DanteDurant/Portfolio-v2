@@ -1,7 +1,9 @@
 <script>
   import "./ModalStyles.scss";
   import Woolies from "$lib/images/modals/woolies.webp";
+  import WooliesLazy from "$lib/images/modals/lazy/woolies-lazy.webp";
   import Bounce from "../text/Bounce.svelte";
+  import LazyImage from "../../utility/LazyImage.svelte";
 
   const s = "6.5rem";
   const sp = "-0.1rem";
@@ -53,7 +55,11 @@
   <div class="con modal-img">
     <div>
       <a href="https://mtd.woolworths.co.za" target="_blank">
-        <img src={Woolies} alt="Woolworth MTD landing page" />
+        <LazyImage
+          src={Woolies}
+          alt="Woolworths MTD landing page"
+          lazySrc={WooliesLazy}
+        />
       </a>
       <span>
         <a class="link" href="https://mtd.woolworths.co.za" target="_blank"

@@ -1,7 +1,9 @@
 <script>
   import "./ModalStyles.scss";
   import Storybook from "$lib/images/modals/storybook.webp";
+  import StorybookLazy from "$lib/images/modals/lazy/storybook-lazy.jpeg";
   import Bounce from "../text/Bounce.svelte";
+  import LazyImage from "../../utility/LazyImage.svelte";
 
   const s = "7rem";
   const sp = "-0.1rem";
@@ -44,7 +46,11 @@
   </div>
   <div class="modal-img">
     <div>
-      <img src={Storybook} alt="Retail rocket landing page" />
+      <LazyImage
+        src={Storybook}
+        alt="Sanlam Storybook landing page"
+        lazySrc={StorybookLazy}
+      />
       <span>
         <p class="link" style="color: #fd2055;">
           Unfortunately I am unable to provide a link due to the strict

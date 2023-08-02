@@ -1,8 +1,10 @@
 <script>
   import "./ModalStyles.scss";
   import Sanlam from "$lib/images/modals/sanlam.webp";
+  import SanlamLazy from "$lib/images/modals/lazy/sanlam-lazy.webp";
   import Bounce from "../text/Bounce.svelte";
   import Clipboard from "../text/Clipboard.svelte";
+  import LazyImage from "../../utility/LazyImage.svelte";
 
   const s = "7rem";
   const sp = "-0.1rem";
@@ -47,8 +49,12 @@
   </div>
   <div class="modal-img">
     <div>
-      <a href="http://sanlam-dsm.mlab.cx/ " target="_blank">
-        <img src={Sanlam} alt="Sanlam DSM landing page" />
+      <a href="http://sanlam-dsm.mlab.cx/ " target="_blank">
+        <LazyImage
+          src={Sanlam}
+          alt="Sanlam DSM landing page 1"
+          lazySrc={SanlamLazy}
+        />
       </a>
       <span>
         <a class="link" href="http://sanlam-dsm.mlab.cx/ " target="_blank"
