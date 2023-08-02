@@ -15,7 +15,7 @@
     src={lazySrc}
     alt="Lazy Placeholder"
     class="lazy-image"
-    style="width: 100%; height: auto;"
+    style="width: 100%; height: auto; filter:blur(4px)"
   />
 {/if}
 
