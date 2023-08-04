@@ -1,9 +1,6 @@
 <script>
-  import Bounce from "../../components/text/Bounce.svelte";
   import TagCloud from "../../components/features/TagCloud.svelte";
-
-  const s = "6rem";
-  const sp = "-0.2rem";
+  import BounceText from "../../components/text/BounceText.svelte";
 </script>
 
 <main id="About" class="main center-parent about">
@@ -11,25 +8,7 @@
   <div class="container-text">
     <p class="tag" style="margin: 0 0 -0.5rem -1rem;">&lt;h2&gt;</p>
     <span class="head">
-      <Bounce size={s} spacing={sp} text="M" />
-      <Bounce size={s} spacing={sp} text="e" />
-      <Bounce size={s} spacing={sp} text="," />
-      <span>&nbsp</span>
-      <span>&nbsp</span>
-      <Bounce size={s} spacing={sp} text="M" />
-      <Bounce size={s} spacing={sp} text="y" />
-      <Bounce size={s} spacing={sp} text="s" />
-      <Bounce size={s} spacing={sp} text="e" />
-      <Bounce size={s} spacing={sp} text="l" />
-      <Bounce size={s} spacing={sp} text="f" />
-      <span>&nbsp</span>
-      <span>&nbsp</span>
-      <Bounce size={s} spacing={sp} text="a" />
-      <Bounce size={s} spacing={sp} text="n" />
-      <Bounce size={s} spacing={sp} text="d" />
-      <span>&nbsp</span>
-      <span>&nbsp</span>
-      <Bounce size={s} spacing={sp} text="I" />
+      <BounceText text="Me, Myself and I" />
     </span>
     <p class="tag" style="margin: 0 0 0 -1rem;">&lt;h2/&gt;</p>
     <p class="tag" style="margin: -1rem 0 0 -1rem;">&lt;p&gt;</p>

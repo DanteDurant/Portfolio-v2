@@ -1,8 +1,7 @@
 <script>
-  import Bounce from "../../components/text/Bounce.svelte";
+  import BounceText from "../../components/text/BounceText.svelte";
   import Form from "../../components/text/Form.svelte";
-  const s = "8rem";
-  const sp = "-0.2rem";
+  const size = "8rem";
 </script>
 
 <main id="Contact" class="main contact">
@@ -11,17 +10,7 @@
     <div>
       <p class="tag" style="margin: 0 0 -1.5rem -1rem;">&lt;h1&gt;</p>
       <span class="head">
-        <Bounce size={s} spacing={sp} text="C" />
-        <Bounce size={s} spacing={sp} text="o" />
-        <Bounce size={s} spacing={sp} text="n" />
-        <Bounce size={s} spacing={sp} text="t" />
-        <Bounce size={s} spacing={sp} text="a" />
-        <Bounce size={s} spacing={sp} text="c" />
-        <Bounce size={s} spacing={sp} text="t" />
-        <span>&nbsp</span>
-        <span>&nbsp</span>
-        <Bounce size={s} spacing={sp} text="m" />
-        <Bounce size={s} spacing={sp} text="e" />
+        <BounceText {size} text="Contact me" />
       </span>
       <p class="tag" style="margin: 0 0 0 -1rem;">&lt;h1/&gt;</p>
       <p class="tag" style="margin: -1rem 0 0 -1rem;">&lt;p&gt;</p>
@@ -54,11 +43,6 @@
   .main {
     flex-direction: row;
     height: 100vh;
-    // justify-content: start;
-    // align-items: start;
-    // width: 100%;
-    // background-color: var(--bg);
-    // z-index: 1;
   }
 
   .container-text {

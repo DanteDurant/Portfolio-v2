@@ -1,7 +1,8 @@
 <script>
   import PopUpText from "./PopUpText.svelte";
-  export let text = "Bouncing Text";
-  export let customStyles = "";
+  export let text = "";
+  export let styleParent = "";
+  export let styleText = "";
   export let delay = 0;
   export let size = "9.3rem";
   export let spacing = "-0.3rem";
@@ -24,10 +25,11 @@
   class="rubberBand {isHovered ? 'animate' : ''}"
   on:mouseenter={handleMouseEnter}
   on:mouseleave={handleMouseLeave}
+  style={`${styleParent}`}
 >
   <h1
     style={`
-      font-size: ${size}; ${customStyles}; 
+      font-size: ${size}; ${styleText}; 
       letter-spacing: ${spacing}; line-height: ${height}`}
   >
     <PopUpText {delay} content={text} />

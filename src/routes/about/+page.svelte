@@ -4,7 +4,7 @@
 
 <svelte:head>
   <title>About Dante</title>
-  <meta name="Me Myself and I" content="Supplementary information" />
+  <meta name="About" content="Supplementary information" />
 </svelte:head>
 
 <About />

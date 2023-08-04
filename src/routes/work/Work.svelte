@@ -1,8 +1,6 @@
 <script>
-  import Bounce from "../../components/text/Bounce.svelte";
   import ImageGrid from "../../components/features/ImageGrid.svelte";
-  const s = "6rem";
-  const sp = "-0.2rem";
+  import BounceText from "../../components/text/BounceText.svelte";
 </script>
 
 <main id="Work" class="main work center-parent">
@@ -14,19 +12,7 @@
         <p class="tag" style="margin: 0 0 -2rem -1rem;">&lt;h2&gt;</p>
 
         <span class="head work">
-          <Bounce size={s} spacing={sp} text="M" />
-          <Bounce size={s} spacing={sp} text="y" />
-          <span>&nbsp</span>
-          <span>&nbsp</span>
-          <Bounce size={s} spacing={sp} text="P" />
-          <Bounce size={s} spacing={sp} text="o" />
-          <Bounce size={s} spacing={sp} text="r" />
-          <Bounce size={s} spacing={sp} text="t" />
-          <Bounce size={s} spacing={sp} text="f" />
-          <Bounce size={s} spacing={sp} text="o" />
-          <Bounce size={s} spacing={sp} text="l" />
-          <Bounce size={s} spacing={sp} text="i" />
-          <Bounce size={s} spacing={sp} text="o" />
+          <BounceText text="My Portfolio" />
         </span>
 
         <p class="tag" style="margin: -1rem 0 0 -1rem;">&lt;h2/&gt;</p>

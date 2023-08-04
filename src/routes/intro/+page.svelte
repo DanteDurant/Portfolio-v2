@@ -4,7 +4,7 @@
 
 <svelte:head>
   <title>Dante code Durant</title>
-  <meta name="my introduction" content="introductory information" />
+  <meta name="Introduction" content="introductory information" />
 </svelte:head>
 
 <Intro />

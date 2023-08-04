@@ -1,8 +1,6 @@
 <script>
-  import Bounce from "../../components/text/Bounce.svelte";
-  const s = "6rem";
-  const sp = "-0.2rem";
-  const h = "5.5rem";
+  import BounceText from "../../components/text/BounceText.svelte";
+  const height = "5.5rem";
 </script>
 
 <main id="Skills" class="main skills">
@@ -10,28 +8,8 @@
   <div class="container-text">
     <p class="tag" style="margin: 0 0 1rem -1rem;">&lt;h2&gt;</p>
     <span class="head">
-      <Bounce size={s} spacing={sp} height={h} text="S" />
-      <Bounce size={s} spacing={sp} height={h} text="k" />
-      <Bounce size={s} spacing={sp} height={h} text="i" />
-      <Bounce size={s} spacing={sp} height={h} text="l" />
-      <Bounce size={s} spacing={sp} height={h} text="l" />
-      <Bounce size={s} spacing={sp} height={h} text="s" />
-      <span>&nbsp</span>
-      <span>&nbsp</span>
-      <Bounce size={s} spacing={sp} height={h} text="&" />
-      <br />
-      <span style="margin: -10rem 0 0 0;">
-        <Bounce size={s} spacing={sp} height={h} text="E" />
-        <Bounce size={s} spacing={sp} height={h} text="x" />
-        <Bounce size={s} spacing={sp} height={h} text="p" />
-        <Bounce size={s} spacing={sp} height={h} text="e" />
-        <Bounce size={s} spacing={sp} height={h} text="r" />
-        <Bounce size={s} spacing={sp} height={h} text="i" />
-        <Bounce size={s} spacing={sp} height={h} text="e" />
-        <Bounce size={s} spacing={sp} height={h} text="n" />
-        <Bounce size={s} spacing={sp} height={h} text="c" />
-        <Bounce size={s} spacing={sp} height={h} text="e" />
-      </span>
+      <BounceText {height} text="Skills &" />
+      <BounceText {height} text="Experience" />
     </span>
     <p class="tag" style="margin: 1.5rem 0 0 -1rem;">&lt;h2/&gt;</p>
     <p class="tag" style="margin: -1rem 0 0 -1rem;">&lt;p&gt;</p>

@@ -3,20 +3,21 @@
   import { createEventDispatcher } from "svelte";
   import { modalState } from "./store";
 
-  import Sanlam from "../../lib/images/thumbs/sanlam.webp";
+  import Circle from "../../lib/images/logos/circle.png";
   import Design from "../../lib/images/thumbs/design.webp";
+  import Sanlam from "../../lib/images/thumbs/sanlam.webp";
   import Rocket from "../../lib/images/thumbs/rocket.webp";
   import Wine from "../../lib/images/thumbs/wwf-wine.webp";
   import Woolies from "../../lib/images/thumbs/woolies.webp";
-  import Circle from "../../lib/images/logos/circle.png";
 
-  import Modal from "../modals/Modal.svelte";
-  import SanlamStory from "../modals/SanlamStory.svelte";
   import SanlamDS from "../modals/SanlamDS.svelte";
+  import SanlamStory from "../modals/SanlamStory.svelte";
   import RetailRocket from "../modals/RetailRocket.svelte";
   import WineChampion from "../modals/WineChampion.svelte";
   import WooliesMTD from "../modals/Woolies.svelte";
-  import ImageLoader from "$lib/images/ImageLoader.svelte";
+
+  import Modal from "../modals/Modal.svelte";
+  import ImageLoader from "../../utility/ImageLoader.svelte";
 
   let currentModal = null;
 
@@ -139,7 +140,6 @@
     position: relative;
     margin: 0;
     width: 100%;
-    // z-index: 1;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 0;
