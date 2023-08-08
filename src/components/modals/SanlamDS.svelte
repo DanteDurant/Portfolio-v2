@@ -52,7 +52,7 @@
       <a href="http://sanlam-dsm.mlab.cx/ " target="_blank">
         <LazyImage
           src={Sanlam}
-          alt="Sanlam DSM landing page 1"
+          alt="Sanlam DSM landing page"
           lazySrc={SanlamLazy}
         />
       </a>

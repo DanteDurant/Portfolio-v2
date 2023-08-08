@@ -1,4 +1,6 @@
 <script>
+  import { onMount } from "svelte";
+
   let loaded = false;
 
   function handleImageLoad() {
@@ -8,6 +10,13 @@
   export let src;
   export let alt;
   export let lazySrc;
+
+  // Preload the main image when the component mounts
+  onMount(() => {
+    const img = new Image();
+    img.src = src;
+    img.onload = handleImageLoad;
+  });
 </script>
 
 {#if !loaded}
@@ -15,15 +24,13 @@
     src={lazySrc}
     alt="Lazy Placeholder"
     class="lazy-image"
-    style="width: 100%; height: auto; filter:blur(6px)"
+    style="width: 100%; height: auto; filter: blur(6px);"
   />
 {/if}
 
 <img
   {src}
   {alt}
-  loading="eager"
   class={loaded ? "image-real" : "image-real hidden"}
-  on:load={handleImageLoad}
-  style=" width: 100%; height: auto;"
+  style="width: 100%; height: auto;"
 />
