@@ -1,5 +1,5 @@
 import { c as create_ssr_component, v as validate_component } from "./index2.js";
-import { B as Bounce } from "./Bounce.js";
+import { B as BounceText } from "./BounceText.js";
 import { B as Button } from "./Button.js";
 const Form_svelte_svelte_type_style_lang = "";
 const css$1 = {
@@ -23,23 +23,12 @@ const css = {
   code: ".main.svelte-thbbqx.svelte-thbbqx{flex-direction:row;height:100vh}.container-text.svelte-thbbqx.svelte-thbbqx{position:relative;width:150rem;height:100vh;margin-left:0;padding-right:6rem;padding-left:9rem;background-color:var(--bg)}.container-text.svelte-thbbqx div.svelte-thbbqx{margin-top:-7%}.fill_alt.svelte-thbbqx.svelte-thbbqx{position:absolute;bottom:0;right:0;height:2.5rem;width:100%;background-color:var(--bg);z-index:1}.tag-one.svelte-thbbqx.svelte-thbbqx{position:absolute;left:4.5rem;bottom:4rem}.tag-two.svelte-thbbqx.svelte-thbbqx{position:absolute;left:2.5rem;bottom:1rem}.container-map.svelte-thbbqx.svelte-thbbqx{position:relative;height:100%;width:100%;z-index:1}@media(max-width: 600px){.contact.svelte-thbbqx.svelte-thbbqx{flex-direction:column-reverse;overflow:hidden}.contact.svelte-thbbqx .container-text.svelte-thbbqx{width:80%;height:55%}.contact.svelte-thbbqx .container-text .head_alt.svelte-thbbqx{font-size:2.2rem}.contact.svelte-thbbqx .container-map.svelte-thbbqx{width:193vw;height:45%}.contact.svelte-thbbqx .container-map .fill_alt.svelte-thbbqx{position:absolute;bottom:-1.5rem;right:0;height:6.5rem;width:100%;background-color:var(--bg);z-index:1}}",
   map: null
 };
-const s = "8rem";
-const sp = "-0.2rem";
+const size = "8rem";
 const Contact = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css);
   return `<main id="Contact" class="main contact svelte-thbbqx"><span class="aside-back"></span>
   <span class="container-text center-parent svelte-thbbqx"><div class="svelte-thbbqx"><p class="tag" style="margin: 0 0 -1.5rem -1rem;">&lt;h1&gt;</p>
-      <span class="head">${validate_component(Bounce, "Bounce").$$render($$result, { size: s, spacing: sp, text: "C" }, {}, {})}
-        ${validate_component(Bounce, "Bounce").$$render($$result, { size: s, spacing: sp, text: "o" }, {}, {})}
-        ${validate_component(Bounce, "Bounce").$$render($$result, { size: s, spacing: sp, text: "n" }, {}, {})}
-        ${validate_component(Bounce, "Bounce").$$render($$result, { size: s, spacing: sp, text: "t" }, {}, {})}
-        ${validate_component(Bounce, "Bounce").$$render($$result, { size: s, spacing: sp, text: "a" }, {}, {})}
-        ${validate_component(Bounce, "Bounce").$$render($$result, { size: s, spacing: sp, text: "c" }, {}, {})}
-        ${validate_component(Bounce, "Bounce").$$render($$result, { size: s, spacing: sp, text: "t" }, {}, {})}
-        <span> </span>
-        <span> </span>
-        ${validate_component(Bounce, "Bounce").$$render($$result, { size: s, spacing: sp, text: "m" }, {}, {})}
-        ${validate_component(Bounce, "Bounce").$$render($$result, { size: s, spacing: sp, text: "e" }, {}, {})}</span>
+      <span class="head">${validate_component(BounceText, "BounceText").$$render($$result, { size, text: "Contact me" }, {}, {})}</span>
       <p class="tag" style="margin: 0 0 0 -1rem;">&lt;h1/&gt;</p>
       <p class="tag" style="margin: -1rem 0 0 -1rem;">&lt;p&gt;</p>
       <span class="head_alt svelte-thbbqx">I’m interested in working as a front-end developer, especially ambitious

@@ -22,6 +22,7 @@
 <img
   {src}
   {alt}
+  loading="eager"
   class={loaded ? "image-real" : "image-real hidden"}
   on:load={handleImageLoad}
   style=" width: 100%; height: auto;"

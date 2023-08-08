@@ -1,5 +1,5 @@
 import { c as create_ssr_component, v as validate_component } from "./index2.js";
-import { B as Bounce } from "./Bounce.js";
+import { B as BounceText } from "./BounceText.js";
 const TagCloud_svelte_svelte_type_style_lang = "";
 const css$1 = {
   code: ".tagcloud.svelte-6wrla0{color:var(--pri);font-size:2rem;font-weight:400}",
@@ -14,31 +14,11 @@ const css = {
   code: ".container-text.svelte-yc4osl{width:40%}.tagcloud.svelte-yc4osl{width:60%}",
   map: null
 };
-const s = "6rem";
-const sp = "-0.2rem";
 const About = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css);
   return `<main id="About" class="main center-parent about"><span class="aside-back"></span>
   <div class="container-text svelte-yc4osl"><p class="tag" style="margin: 0 0 -0.5rem -1rem;">&lt;h2&gt;</p>
-    <span class="head">${validate_component(Bounce, "Bounce").$$render($$result, { size: s, spacing: sp, text: "M" }, {}, {})}
-      ${validate_component(Bounce, "Bounce").$$render($$result, { size: s, spacing: sp, text: "e" }, {}, {})}
-      ${validate_component(Bounce, "Bounce").$$render($$result, { size: s, spacing: sp, text: "," }, {}, {})}
-      <span> </span>
-      <span> </span>
-      ${validate_component(Bounce, "Bounce").$$render($$result, { size: s, spacing: sp, text: "M" }, {}, {})}
-      ${validate_component(Bounce, "Bounce").$$render($$result, { size: s, spacing: sp, text: "y" }, {}, {})}
-      ${validate_component(Bounce, "Bounce").$$render($$result, { size: s, spacing: sp, text: "s" }, {}, {})}
-      ${validate_component(Bounce, "Bounce").$$render($$result, { size: s, spacing: sp, text: "e" }, {}, {})}
-      ${validate_component(Bounce, "Bounce").$$render($$result, { size: s, spacing: sp, text: "l" }, {}, {})}
-      ${validate_component(Bounce, "Bounce").$$render($$result, { size: s, spacing: sp, text: "f" }, {}, {})}
-      <span> </span>
-      <span> </span>
-      ${validate_component(Bounce, "Bounce").$$render($$result, { size: s, spacing: sp, text: "a" }, {}, {})}
-      ${validate_component(Bounce, "Bounce").$$render($$result, { size: s, spacing: sp, text: "n" }, {}, {})}
-      ${validate_component(Bounce, "Bounce").$$render($$result, { size: s, spacing: sp, text: "d" }, {}, {})}
-      <span> </span>
-      <span> </span>
-      ${validate_component(Bounce, "Bounce").$$render($$result, { size: s, spacing: sp, text: "I" }, {}, {})}</span>
+    <span class="head">${validate_component(BounceText, "BounceText").$$render($$result, { text: "Me, Myself and I" }, {}, {})}</span>
     <p class="tag" style="margin: 0 0 0 -1rem;">&lt;h2/&gt;</p>
     <p class="tag" style="margin: -1rem 0 0 -1rem;">&lt;p&gt;</p>
     <span class="head_alt">Dedicated, disciplined, and dependable professional with an unwavering

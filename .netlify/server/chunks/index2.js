@@ -107,6 +107,13 @@ function escape(value, is_attr = false) {
   }
   return escaped + str.substring(last);
 }
+function each(items, fn) {
+  let str = "";
+  for (let i = 0; i < items.length; i += 1) {
+    str += fn(items[i], i);
+  }
+  return str;
+}
 const missing_component = {
   $$render: () => ""
 };
@@ -170,6 +177,7 @@ export {
   noop as f,
   getContext as g,
   safe_not_equal as h,
+  each as i,
   missing_component as m,
   null_to_empty as n,
   setContext as s,

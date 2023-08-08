@@ -22,6 +22,8 @@
 	"type": "module",
 	"dependencies": {
 		"animate.css": "^4.1.1",
-		"sass": "^1.62.0"
+		"blurhash": "^1.1.5",
+		"sass": "^1.62.0",
+		"svelte-blurhash": "^1.2.1"
 	}
 }

@@ -20,16 +20,19 @@ const css = {
   map: null
 };
 const Bounce = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  let { text = "Bouncing Text" } = $$props;
-  let { customStyles = "" } = $$props;
+  let { text = "" } = $$props;
+  let { styleParent = "" } = $$props;
+  let { styleText = "" } = $$props;
   let { delay = 0 } = $$props;
   let { size = "9.3rem" } = $$props;
   let { spacing = "-0.3rem" } = $$props;
   let { height = "8.6rem" } = $$props;
   if ($$props.text === void 0 && $$bindings.text && text !== void 0)
     $$bindings.text(text);
-  if ($$props.customStyles === void 0 && $$bindings.customStyles && customStyles !== void 0)
-    $$bindings.customStyles(customStyles);
+  if ($$props.styleParent === void 0 && $$bindings.styleParent && styleParent !== void 0)
+    $$bindings.styleParent(styleParent);
+  if ($$props.styleText === void 0 && $$bindings.styleText && styleText !== void 0)
+    $$bindings.styleText(styleText);
   if ($$props.delay === void 0 && $$bindings.delay && delay !== void 0)
     $$bindings.delay(delay);
   if ($$props.size === void 0 && $$bindings.size && size !== void 0)
@@ -39,10 +42,10 @@ const Bounce = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   if ($$props.height === void 0 && $$bindings.height && height !== void 0)
     $$bindings.height(height);
   $$result.css.add(css);
-  return `<span class="${"rubberBand " + escape("", true) + " svelte-1szofb7"}"><h1${add_attribute(
+  return `<span class="${"rubberBand " + escape("", true) + " svelte-1szofb7"}"${add_attribute("style", `${styleParent}`, 0)}><h1${add_attribute(
     "style",
     `
-      font-size: ${size}; ${customStyles}; 
+      font-size: ${size}; ${styleText}; 
       letter-spacing: ${spacing}; line-height: ${height}`,
     0
   )} class="svelte-1szofb7">${validate_component(PopUpText, "PopUpText").$$render($$result, { delay, content: text }, {}, {})}</h1>

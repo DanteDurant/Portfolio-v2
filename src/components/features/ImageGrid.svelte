@@ -18,6 +18,7 @@
 
   import Modal from "../modals/Modal.svelte";
   import ImageLoader from "../../utility/ImageLoader.svelte";
+  // import BlurhashImage from "svelte-blurhash";
 
   let currentModal = null;
 
