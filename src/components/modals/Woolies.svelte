@@ -55,10 +55,15 @@
   <div class="con modal-img">
     <div>
       <a href="https://mtd.woolworths.co.za" target="_blank">
-        <LazyImage
+        <!-- <LazyImage
           src={Woolies}
           alt="Woolworths MTD landing page"
           lazySrc={WooliesLazy}
+        /> -->
+        <img
+          src={Woolies}
+          alt="Woolworths MTD landing page"
+          style="width: 100%; height: auto;"
         />
       </a>
       <span>
