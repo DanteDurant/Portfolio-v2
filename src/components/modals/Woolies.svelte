@@ -9,6 +9,16 @@
   const sp = "-0.1rem";
 </script>
 
+<svelte:head>
+  <link
+    rel="preload"
+    as="image"
+    href={Woolies}
+    type="image/webp"
+    crossorigin="anonymous"
+  />
+</svelte:head>
+
 <section class="modal-inner">
   <div class="con modal-text">
     <p class="tag tag-first" style="margin: 0 0 1rem -3rem;">&lt;section&gt;</p>
@@ -55,15 +65,10 @@
   <div class="con modal-img">
     <div>
       <a href="https://mtd.woolworths.co.za" target="_blank">
-        <!-- <LazyImage
+        <LazyImage
           src={Woolies}
           alt="Woolworths MTD landing page"
           lazySrc={WooliesLazy}
-        /> -->
-        <img
-          src={Woolies}
-          alt="Woolworths MTD landing page"
-          style="width: 100%; height: auto;"
         />
       </a>
       <span>

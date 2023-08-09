@@ -9,6 +9,16 @@
   const sp = "-0.1rem";
 </script>
 
+<svelte:head>
+  <link
+    rel="preload"
+    as="image"
+    href={Rocket}
+    type="image/webp"
+    crossorigin="anonymous"
+  />
+</svelte:head>
+
 <section class="modal-inner">
   <div class="modal-text">
     <p class="tag tag-first" style="margin: 0 0 1rem -3rem;">&lt;section&gt;</p>
