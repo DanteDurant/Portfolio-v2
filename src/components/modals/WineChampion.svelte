@@ -1,11 +1,7 @@
-<script>
+<script lang="ts">
   import "./ModalStyles.scss";
-  import GuideHigh from "$lib/images/modals/wwf-guide.webp";
-  import Farm from "$lib/images/modals/wwf-farm.webp";
-  import Map from "$lib/images/modals/wwf-map.webp";
-  import GuideHighLazy from "$lib/images/modals/lazy/wwf-guide-lazy.webp";
-  import FarmLazy from "$lib/images/modals/lazy/wwf-farm-lazy.webp";
-  import MapLazy from "$lib/images/modals/lazy/wwf-map-lazy.webp";
+
+  import wwfLazy from "$lib/images/modals/lazy/wwf-lazy.webp";
   import Bounce from "../text/Bounce.svelte";
   import LazyImage from "../../utility/LazyImage.svelte";
 
@@ -14,6 +10,8 @@
 
   const s = "7rem";
   const sp = "-0.1rem";
+
+  export let img: String;
 </script>
 
 <section class="modal-inner">
@@ -63,23 +61,9 @@
     <p class="tag tag-last" style="margin: 1rem 0 0 -3rem;">&lt;section/&gt;</p>
   </div>
   <div class="modal-img-alt">
-    <div>
-      <div>
-        <a href={Link} target="_blank">
-          <LazyImage
-            src={GuideHigh}
-            alt="guide screen"
-            lazySrc={GuideHighLazy}
-          />
-        </a>
-        <a href={Link} target="_blank">
-          <LazyImage src={Farm} alt="farm screen" lazySrc={FarmLazy} />
-        </a>
-        <a href={Link} target="_blank">
-          <LazyImage src={Map} alt="map screen" lazySrc={MapLazy} />
-        </a>
-      </div>
-    </div>
+    <a href={Link} target="_blank">
+      <LazyImage src={img} alt="wwf wine app pages" lazySrc={wwfLazy} />
+    </a>
     <span>
       <a class="link" href={Link} target="_blank"
         >https://play.google.com/wwfconservationchampions.com

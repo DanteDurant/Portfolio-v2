@@ -63,6 +63,7 @@
 
   import img1 from "../../lib/images/modals/sanlam.webp";
   import img2 from "../../lib/images/modals/storybook.webp";
+  import img3 from "../../lib/images/modals/wwf.webp";
   import img4 from "../../lib/images/modals/rocket.webp";
   import img5 from "../../lib/images/modals/woolies.webp";
 </script>
@@ -83,7 +84,7 @@
       <SanlamStory img={img2} on:modalclose={handleModalClose} />
     {/if}
     {#if currentModal === WineChampion}
-      <WineChampion on:modalclose={handleModalClose} />
+      <WineChampion img={img3} on:modalclose={handleModalClose} />
     {/if}
     {#if currentModal === RetailRocket}
       <RetailRocket img={img4} on:modalclose={handleModalClose} />
