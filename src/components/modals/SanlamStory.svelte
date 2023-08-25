@@ -9,6 +9,7 @@
   const sp = "-0.1rem";
 
   export let img: String;
+  export let lazy: String;
 </script>
 
 <section class="modal-inner">
@@ -48,11 +49,7 @@
   </div>
   <div class="modal-img">
     <div>
-      <LazyImage
-        src={img}
-        alt="Sanlam Storybook landing page"
-        lazySrc={StorybookLazy}
-      />
+      <LazyImage src={img} alt="Sanlam Storybook landing page" lazySrc={lazy} />
       <span>
         <p class="link" style="color: #fd2055;">
           Unfortunately I am unable to provide a link due to the strict

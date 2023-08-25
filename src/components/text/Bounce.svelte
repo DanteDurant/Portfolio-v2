@@ -8,6 +8,8 @@
   export let spacing = "-0.3rem";
   export let height = "8.6rem";
 
+  import coolvetica from "../../public/fonts/coolvetica-rg.woff2";
+
   let isHovered = false;
 
   function handleMouseEnter() {
@@ -20,6 +22,10 @@
     }, 1000);
   }
 </script>
+
+<svelte:head>
+  <link rel="preload" href={coolvetica} as="font" type="font/woff2" />
+</svelte:head>
 
 <span
   class="rubberBand {isHovered ? 'animate' : ''}"

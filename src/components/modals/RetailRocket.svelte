@@ -9,6 +9,7 @@
   const sp = "-0.1rem";
 
   export let img: String;
+  export let lazy: String;
 </script>
 
 <section class="modal-inner">
@@ -59,11 +60,7 @@
   <div class="modal-img">
     <div>
       <a href="https://retailrockit.co.za/" target="_blank">
-        <LazyImage
-          src={img}
-          alt="retail rocket landing page"
-          lazySrc={RocketLazy}
-        />
+        <LazyImage src={img} alt="retail rocket landing page" lazySrc={lazy} />
       </a>
       <span>
         <a class="link" href="https://retailrockit.co.za/" target="_blank"

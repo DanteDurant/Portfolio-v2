@@ -12,6 +12,7 @@
   const sp = "-0.1rem";
 
   export let img: String;
+  export let lazy: String;
 </script>
 
 <section class="modal-inner">
@@ -60,71 +61,16 @@
     </span>
     <p class="tag tag-last" style="margin: 1rem 0 0 -3rem;">&lt;section/&gt;</p>
   </div>
-  <div class="modal-img-alt">
-    <a href={Link} target="_blank">
-      <LazyImage src={img} alt="wwf wine app pages" lazySrc={wwfLazy} />
-    </a>
-    <span>
-      <a class="link" href={Link} target="_blank"
-        >https://play.google.com/wwfconservationchampions.com
+  <div class="modal-img">
+    <div>
+      <a href={Link} target="_blank">
+        <LazyImage src={img} alt="wwf wine app pages" lazySrc={lazy} />
       </a>
-    </span>
+      <span>
+        <a class="link" href={Link} target="_blank"
+          >https://play.google.com/wwfconservationchampions.com
+        </a>
+      </span>
+    </div>
   </div>
 </section>
-
-<style lang="scss">
-  .modal-img-alt {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-right: 6rem;
-    width: 60%;
-    & div {
-      display: flex;
-      margin-bottom: 0.5rem;
-      & div {
-        gap: 1.2rem;
-        & a {
-          border-radius: 2rem;
-          overflow: hidden;
-          transition: all 300ms ease;
-          filter: brightness(0.8);
-          width: 100%;
-          height: 100%;
-          &:hover {
-            filter: brightness(1);
-          }
-        }
-      }
-    }
-  }
-
-  @media (max-width: 600px) {
-    .modal-inner {
-      height: 100%;
-      width: 100%;
-      flex-direction: column;
-    }
-    .modal-text {
-      width: 85%;
-      margin-bottom: -10rem;
-
-      .head_alt {
-        font-size: 2.2rem;
-      }
-      .tag-last,
-      .tag-first {
-        display: none;
-      }
-    }
-    .modal-img-alt {
-      padding: 0;
-      width: 85%;
-      align-self: center;
-      margin-bottom: 15rem;
-      .link {
-        font-size: 3rem;
-      }
-    }
-  }
-</style>
