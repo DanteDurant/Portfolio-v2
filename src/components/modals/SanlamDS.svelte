@@ -1,7 +1,5 @@
 <script lang="ts">
   import "./ModalStyles.scss";
-  // import Sanlam from "$lib/images/modals/sanlam.webp";
-  import SanlamLazy from "$lib/images/modals/lazy/sanlam-lazy.webp";
   import Bounce from "../text/Bounce.svelte";
   import Clipboard from "../text/Clipboard.svelte";
   import LazyImage from "../../utility/LazyImage.svelte";

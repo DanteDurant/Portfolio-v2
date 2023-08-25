@@ -1,4 +1,4 @@
-import { c as create_ssr_component, e as escape, b as add_attribute, v as validate_component } from "./index2.js";
+import { c as create_ssr_component, b as add_attribute, e as escape, v as validate_component } from "./index2.js";
 const PopUpText_svelte_svelte_type_style_lang = "";
 const css$1 = {
   code: "span.svelte-1uz8lw9{width:100rem;height:100%}",
@@ -14,6 +14,7 @@ const PopUpText = create_ssr_component(($$result, $$props, $$bindings, slots) =>
   $$result.css.add(css$1);
   return `${``}`;
 });
+const coolvetica = "/_app/immutable/assets/coolvetica-rg.ba89c675.woff2";
 const Bounce_svelte_svelte_type_style_lang = "";
 const css = {
   code: '.rubberBand.svelte-1szofb7{display:inline-block;width:max-content}.animate.svelte-1szofb7{animation:rubberBand 1s ease}h1.svelte-1szofb7{font-family:"coolvetica", sans-serif;font-weight:500;transition:all 250ms;margin:0}h1.svelte-1szofb7:hover{color:var(--pri)}',
@@ -42,7 +43,9 @@ const Bounce = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   if ($$props.height === void 0 && $$bindings.height && height !== void 0)
     $$bindings.height(height);
   $$result.css.add(css);
-  return `<span class="${"rubberBand " + escape("", true) + " svelte-1szofb7"}"${add_attribute("style", `${styleParent}`, 0)}><h1${add_attribute(
+  return `${$$result.head += `<!-- HEAD_svelte-bxlwia_START --><link rel="preload"${add_attribute("href", coolvetica, 0)} as="font" type="font/woff2"><!-- HEAD_svelte-bxlwia_END -->`, ""}
+
+<span class="${"rubberBand " + escape("", true) + " svelte-1szofb7"}"${add_attribute("style", `${styleParent}`, 0)}><h1${add_attribute(
     "style",
     `
       font-size: ${size}; ${styleText}; 

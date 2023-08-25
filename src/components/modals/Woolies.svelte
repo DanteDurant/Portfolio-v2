@@ -1,7 +1,5 @@
 <script lang="ts">
   import "./ModalStyles.scss";
-  // import Woolies from "$lib/images/modals/woolies.webp";
-  import WooliesLazy from "$lib/images/modals/lazy/woolies-lazy.webp";
   import Bounce from "../text/Bounce.svelte";
   import LazyImage from "../../utility/LazyImage.svelte";
 

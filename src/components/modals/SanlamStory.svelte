@@ -1,7 +1,5 @@
 <script lang="ts">
   import "./ModalStyles.scss";
-  // import Storybook from "$lib/images/modals/storybook.webp";
-  import StorybookLazy from "$lib/images/modals/lazy/storybook-lazy.jpeg";
   import Bounce from "../text/Bounce.svelte";
   import LazyImage from "../../utility/LazyImage.svelte";
 

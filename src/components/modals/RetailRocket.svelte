@@ -1,7 +1,5 @@
 <script lang="ts">
   import "./ModalStyles.scss";
-  // import Rocket from "$lib/images/modals/rocket.webp";
-  import RocketLazy from "$lib/images/modals/lazy/rocket-lazy.webp";
   import Bounce from "../text/Bounce.svelte";
   import LazyImage from "../../utility/LazyImage.svelte";
 

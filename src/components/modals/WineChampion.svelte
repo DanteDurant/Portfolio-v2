@@ -1,7 +1,5 @@
 <script lang="ts">
   import "./ModalStyles.scss";
-
-  import wwfLazy from "$lib/images/modals/lazy/wwf-lazy.webp";
   import Bounce from "../text/Bounce.svelte";
   import LazyImage from "../../utility/LazyImage.svelte";
 

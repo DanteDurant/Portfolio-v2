@@ -6,7 +6,7 @@ export const handler = init({
 	assets: new Set([".DS_Store","favicon.png"]),
 	mimeTypes: {".png":"image/png"},
 	_: {
-		client: {"start":"_app/immutable/entry/start.f8e8f110.js","app":"_app/immutable/entry/app.af243706.js","imports":["_app/immutable/entry/start.f8e8f110.js","_app/immutable/chunks/index.c9343b21.js","_app/immutable/chunks/singletons.27683f87.js","_app/immutable/chunks/index.6c6c6af6.js","_app/immutable/entry/app.af243706.js","_app/immutable/chunks/index.c9343b21.js"],"stylesheets":[],"fonts":[]},
+		client: {"start":"_app/immutable/entry/start.b77b03b9.js","app":"_app/immutable/entry/app.3c239b5c.js","imports":["_app/immutable/entry/start.b77b03b9.js","_app/immutable/chunks/index.fe495d66.js","_app/immutable/chunks/singletons.560e4b3f.js","_app/immutable/chunks/index.2cf58cf1.js","_app/immutable/entry/app.3c239b5c.js","_app/immutable/chunks/index.fe495d66.js"],"stylesheets":[],"fonts":[]},
 		nodes: [
 			() => import('../server/nodes/0.js'),
 			() => import('../server/nodes/1.js'),
