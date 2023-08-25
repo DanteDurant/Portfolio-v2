@@ -108,18 +108,7 @@ const options = {
   root: Root,
   service_worker: false,
   templates: {
-    app: ({ head, body, assets: assets2, nonce, env }) => '<!DOCTYPE html>\n<html class="snap-scroll" lang="en">\n\n<head>\n  <meta charset="utf-8" />\n  <link rel="icon" href="' + assets2 + '/favicon.png" />\n  <meta name="viewport" content="width=device-width" />\n  ' + head + `
-  <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">
-
-  <meta property="og:title" content="Dante Durant's Portfolio" />
-  <meta property="og:description"
-    content="An unique and innovative portfolio made by Dante Durant to showcase his skills and display his work." />
-  <meta property="og:image" content="./lib/link-preview.jpeg" />
-  <meta property="og:url" content="https://dantecodedurant.netlify.app/" />
-</head>
-
-<body data-sveltekit-preload-data="hover">
-  <div style="display: contents">` + body + "</div>\n</body>\n\n</html>",
+    app: ({ head, body, assets: assets2, nonce, env }) => '<!DOCTYPE html>\n<html class="snap-scroll" lang="en">\n\n<head>\n  <meta charset="utf-8" />\n  <link rel="icon" href="' + assets2 + '/favicon.png" />\n  <meta name="viewport" content="width=device-width" />\n  ' + head + '\n  <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">\n</head>\n\n<body data-sveltekit-preload-data="hover">\n  <div style="display: contents">' + body + "</div>\n</body>\n\n</html>",
     error: ({ status, message }) => '<!DOCTYPE html>\n<html lang="en">\n	<head>\n		<meta charset="utf-8" />\n		<title>' + message + `</title>
 
 		<style>
@@ -180,7 +169,7 @@ const options = {
 		<div class="error">
 			<span class="status">` + status + '</span>\n			<div class="message">\n				<h1>' + message + "</h1>\n			</div>\n		</div>\n	</body>\n</html>\n"
   },
-  version_hash: "1wgx04f"
+  version_hash: "11rzkmx"
 };
 function get_hooks() {
   return {};
