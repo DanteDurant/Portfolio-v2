@@ -1,23 +1,15 @@
-<script>
+<script lang="ts">
   import "./ModalStyles.scss";
-  import Storybook from "$lib/images/modals/storybook.webp";
+  // import Storybook from "$lib/images/modals/storybook.webp";
   import StorybookLazy from "$lib/images/modals/lazy/storybook-lazy.jpeg";
   import Bounce from "../text/Bounce.svelte";
   import LazyImage from "../../utility/LazyImage.svelte";
 
   const s = "7rem";
   const sp = "-0.1rem";
-</script>
 
-<svelte:head>
-  <link
-    rel="preload"
-    as="image"
-    href={Storybook}
-    type="image/webp"
-    crossorigin="anonymous"
-  />
-</svelte:head>
+  export let img: String;
+</script>
 
 <section class="modal-inner">
   <div class="modal-text">
@@ -57,7 +49,7 @@
   <div class="modal-img">
     <div>
       <LazyImage
-        src={Storybook}
+        src={img}
         alt="Sanlam Storybook landing page"
         lazySrc={StorybookLazy}
       />

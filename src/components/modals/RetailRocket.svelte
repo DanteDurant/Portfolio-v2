@@ -1,23 +1,15 @@
-<script>
+<script lang="ts">
   import "./ModalStyles.scss";
-  import Rocket from "$lib/images/modals/rocket.webp";
+  // import Rocket from "$lib/images/modals/rocket.webp";
   import RocketLazy from "$lib/images/modals/lazy/rocket-lazy.webp";
   import Bounce from "../text/Bounce.svelte";
   import LazyImage from "../../utility/LazyImage.svelte";
 
   const s = "7rem";
   const sp = "-0.1rem";
-</script>
 
-<svelte:head>
-  <link
-    rel="preload"
-    as="image"
-    href={Rocket}
-    type="image/webp"
-    crossorigin="anonymous"
-  />
-</svelte:head>
+  export let img: String;
+</script>
 
 <section class="modal-inner">
   <div class="modal-text">
@@ -68,7 +60,7 @@
     <div>
       <a href="https://retailrockit.co.za/" target="_blank">
         <LazyImage
-          src={Rocket}
+          src={img}
           alt="retail rocket landing page"
           lazySrc={RocketLazy}
         />

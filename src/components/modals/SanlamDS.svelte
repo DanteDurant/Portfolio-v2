@@ -1,6 +1,6 @@
-<script>
+<script lang="ts">
   import "./ModalStyles.scss";
-  import Sanlam from "$lib/images/modals/sanlam.webp";
+  // import Sanlam from "$lib/images/modals/sanlam.webp";
   import SanlamLazy from "$lib/images/modals/lazy/sanlam-lazy.webp";
   import Bounce from "../text/Bounce.svelte";
   import Clipboard from "../text/Clipboard.svelte";
@@ -8,17 +8,9 @@
 
   const s = "7rem";
   const sp = "-0.1rem";
-</script>
 
-<svelte:head>
-  <link
-    rel="preload"
-    as="image"
-    href={Sanlam}
-    type="image/webp"
-    crossorigin="anonymous"
-  />
-</svelte:head>
+  export let img: String;
+</script>
 
 <section class="modal-inner">
   <div class="modal-text">
@@ -61,7 +53,7 @@
     <div>
       <a href="http://sanlam-dsm.mlab.cx/ " target="_blank">
         <LazyImage
-          src={Sanlam}
+          src={img}
           alt="Sanlam DSM landing page"
           lazySrc={SanlamLazy}
         />

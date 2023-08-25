@@ -1,23 +1,15 @@
-<script>
+<script lang="ts">
   import "./ModalStyles.scss";
-  import Woolies from "$lib/images/modals/woolies.webp";
+  // import Woolies from "$lib/images/modals/woolies.webp";
   import WooliesLazy from "$lib/images/modals/lazy/woolies-lazy.webp";
   import Bounce from "../text/Bounce.svelte";
   import LazyImage from "../../utility/LazyImage.svelte";
 
   const s = "6.5rem";
   const sp = "-0.1rem";
-</script>
 
-<svelte:head>
-  <link
-    rel="preload"
-    as="image"
-    href={Woolies}
-    type="image/webp"
-    crossorigin="anonymous"
-  />
-</svelte:head>
+  export let img: String;
+</script>
 
 <section class="modal-inner">
   <div class="con modal-text">
@@ -66,7 +58,7 @@
     <div>
       <a href="https://mtd.woolworths.co.za" target="_blank">
         <LazyImage
-          src={Woolies}
+          src={img}
           alt="Woolworths MTD landing page"
           lazySrc={WooliesLazy}
         />

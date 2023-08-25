@@ -1,10 +1,12 @@
-<script>
+<script lang="ts">
   import { onMount } from "svelte";
   import { createEventDispatcher } from "svelte";
   import { modalState } from "./store";
+  import type { Writable } from "svelte/store";
 
   import Circle from "../../lib/images/logos/circle.png";
   import Design from "../../lib/images/thumbs/design.webp";
+
   import Sanlam from "../../lib/images/thumbs/sanlam.webp";
   import Rocket from "../../lib/images/thumbs/rocket.webp";
   import Wine from "../../lib/images/thumbs/wwf-wine.webp";
@@ -18,57 +20,76 @@
 
   import Modal from "../modals/Modal.svelte";
   import ImageLoader from "../../utility/ImageLoader.svelte";
-  // import BlurhashImage from "svelte-blurhash";
 
-  let currentModal = null;
+  let currentModal:
+    | typeof SanlamDS
+    | typeof SanlamStory
+    | typeof RetailRocket
+    | typeof WineChampion
+    | typeof WooliesMTD
+    | null = null;
 
-  const setModalState = (state) => {
-    modalState.set(state);
+  const modalStateWritable: Writable<boolean> = modalState;
+
+  const setModalState = (state: boolean): void => {
+    modalStateWritable.set(state);
   };
 
-  const dispatch = createEventDispatcher();
+  const dispatch = createEventDispatcher<{ modalclose: () => void }>();
 
-  const openModal = (modal) => {
+  const openModal = (modal: typeof currentModal): void => {
     currentModal = modal;
     setModalState(true);
-    let scrollPosition = window.pageYOffset;
+    let scrollPosition: number = window.pageYOffset;
     document.body.style.position = "fixed";
     document.body.style.top = `-${scrollPosition}px`;
   };
 
-  const closeModal = () => {
+  const closeModal = (): void => {
     setModalState(false);
-    const scrollPosition = Math.abs(parseInt(document.body.style.top));
+    const scrollPosition: number = Math.abs(parseInt(document.body.style.top));
     document.body.style.position = "";
     document.body.style.top = "";
     window.scrollTo(0, scrollPosition);
   };
 
-  const handleModalClose = () => {
+  const handleModalClose = (): void => {
     closeModal();
   };
 
-  onMount(() => {
+  onMount((): void => {
     dispatch("modalclose", handleModalClose);
   });
+
+  import img1 from "../../lib/images/modals/sanlam.webp";
+  import img2 from "../../lib/images/modals/storybook.webp";
+  import img4 from "../../lib/images/modals/rocket.webp";
+  import img5 from "../../lib/images/modals/woolies.webp";
 </script>
+
+<svelte:head>
+  <link rel="preload" as="image" href={img1} />
+  <link rel="preload" as="image" href={img2} />
+  <link rel="preload" as="image" href={img4} />
+  <link rel="preload" as="image" href={img5} />
+</svelte:head>
 
 <div class="image-grid">
   <Modal isOpen={$modalState} onClose={closeModal}>
     {#if currentModal === SanlamDS}
-      <SanlamDS on:modalclose={handleModalClose} />
+      <SanlamDS img={img1} on:modalclose={handleModalClose} />
     {/if}
     {#if currentModal === SanlamStory}
-      <SanlamStory on:modalclose={handleModalClose} />
+      <SanlamStory img={img2} on:modalclose={handleModalClose} />
     {/if}
     {#if currentModal === WineChampion}
       <WineChampion on:modalclose={handleModalClose} />
     {/if}
     {#if currentModal === RetailRocket}
-      <RetailRocket on:modalclose={handleModalClose} />
+      <RetailRocket img={img4} on:modalclose={handleModalClose} />
     {/if}
     {#if currentModal === WooliesMTD}
-      <WooliesMTD on:modalclose={handleModalClose} />
+      <WooliesMTD img={img5} on:modalclose={handleModalClose} />
     {/if}
   </Modal>
 
