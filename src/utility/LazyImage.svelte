@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import { onMount } from "svelte";
 
   let loaded = false;
@@ -7,9 +7,9 @@
     loaded = true;
   }
 
-  export let src;
-  export let alt;
-  export let lazySrc;
+  export let src: string;
+  export let alt: string;
+  export let lazySrc: string;
 
   // Preload the main image when the component mounts
   onMount(() => {

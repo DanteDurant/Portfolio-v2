@@ -40,7 +40,7 @@ const IntroHeading = create_ssr_component(($$result, $$props, $$bindings, slots)
     $$result,
     {
       delay: d[10],
-      customStyles: "position: relative; top: -5.7rem;",
+      styleText: "position: relative; top: -5.7rem;",
       text: ","
     },
     {},
@@ -50,7 +50,7 @@ const IntroHeading = create_ssr_component(($$result, $$props, $$bindings, slots)
     $$result,
     {
       delay: d[12],
-      customStyles: "position: relative; left: -0.3rem;",
+      styleText: "position: relative; left: -0.3rem;",
       text: "m"
     },
     {},
@@ -67,7 +67,7 @@ const IntroHeading = create_ssr_component(($$result, $$props, $$bindings, slots)
     $$result,
     {
       delay: d[19],
-      customStyles: "position: relative; top: -0.06rem; left: -0.2rem;",
+      styleText: "position: relative; top: -0.06rem; left: -0.2rem;",
       text: ","
     },
     {},

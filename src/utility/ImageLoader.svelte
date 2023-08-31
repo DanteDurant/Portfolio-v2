@@ -1,6 +1,6 @@
-<script>
-  export let src;
-  export let alt;
+<script lang="ts">
+  export let src: string;
+  export let alt: string;
 
   import IntersectionObserver from "./IntersectionObserver.svelte";
   import Image from "./Image.svelte";

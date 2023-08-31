@@ -11,6 +11,7 @@
 
   const myTags = [
     "JavaScript",
+    "TypeScript",
     "CSS",
     "Sass",
     "HTML",
@@ -23,6 +24,7 @@
     "Git",
     "AJAX",
     "Node.js",
+    "Next.js",
     "Svelte",
     "jQuery",
     "Axios",
@@ -30,6 +32,7 @@
     "BEM",
     "JSON",
     "Tailwind",
+    "MUI",
   ];
 
   onMount(() => {

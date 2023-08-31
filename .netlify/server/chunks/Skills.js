@@ -15,9 +15,10 @@ const Skills = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     <p class="tag" style="margin: 1.5rem 0 0 -1rem;">&lt;h2/&gt;</p>
     <p class="tag" style="margin: -1rem 0 0 -1rem;">&lt;p&gt;</p>
     <span class="head_alt">With expertise in modern programming languages and technologies like
-      JavaScript, HTML5, CSS3, Sass, Axios, jQuery, AJAX, REST, React, React
-      Native, Svelte, Tailwind, Python, C#, C++, and Git, I am able to develop
-      professional web and mobile applications.
+      JavaScript, TypeScript, HTML5, CSS3, SCSS, Node.js, Next.js, Axios,
+      jQuery, AJAX, REST, React, React Native, Svelte, Tailwind, Python, C#,
+      C++, and Git, I am able to develop professional web and mobile
+      applications.
       <br>
       <br>
       In mobile app development, I created the WWF Wine Farm Guide app using React

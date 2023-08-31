@@ -25,12 +25,12 @@
   <Bounce delay={d[9]} text="I" />
   <Bounce
     delay={d[10]}
-    customStyles="position: relative; top: -5.7rem;"
+    styleText="position: relative; top: -5.7rem;"
     text=","
   />
   <Bounce
     delay={d[12]}
-    customStyles="position: relative; left: -0.3rem;"
+    styleText="position: relative; left: -0.3rem;"
     text="m"
   />
   <span>&nbsp</span>
@@ -44,7 +44,7 @@
   <Bounce delay={d[18]} text="e" />
   <Bounce
     delay={d[19]}
-    customStyles="position: relative; top: -0.06rem; left: -0.2rem;"
+    styleText="position: relative; top: -0.06rem; left: -0.2rem;"
     text=","
   />
   <br />

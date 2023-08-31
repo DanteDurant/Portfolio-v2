@@ -1,11 +1,11 @@
-<script>
+<script lang="ts">
   import { onMount, onDestroy } from "svelte";
   import initOciliator from "./Tendrils";
-  import { modalState } from "../../components/features/store";
+  import { modalState } from "./store";
 
   $: modalState;
 
-  let canvas;
+  let canvas: HTMLElement;
 
   onMount(() => {
     initOciliator(false, canvas);

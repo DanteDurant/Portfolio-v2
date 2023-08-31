@@ -6,8 +6,8 @@
   const s = "7rem";
   const sp = "-0.1rem";
 
-  export let img: String;
-  export let lazy: String;
+  export let img: string;
+  export let lazy: string;
 </script>
 
 <section class="modal-inner">

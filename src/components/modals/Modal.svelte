@@ -1,9 +1,9 @@
-<script>
+<script lang="ts">
   import { onMount } from "svelte";
   import Button from "../Button.svelte";
 
-  export let isOpen;
-  export let onClose;
+  export let isOpen: boolean;
+  export let onClose: () => void;
 </script>
 
 <div

@@ -1,10 +1,10 @@
-export default function initOciliator(remove, canvasElement) {
+export default function initOciliator(remove: boolean, canvasElement: HTMLCanvasElement): void {
 
-    let resize;
-    let start;
-    let stop;
-    let mousemove;
-    let touchstart;
+    let resize: () => void;
+    let start: () => void;
+    let stop: () => void;
+    let mousemove: (event: MouseEvent | TouchEvent) => void;
+    let touchstart: (event: TouchEvent) => void;
 
     if (!remove) {
 
