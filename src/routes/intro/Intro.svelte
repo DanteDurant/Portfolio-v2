@@ -38,7 +38,7 @@
         class:slideInFromBottomText={subVisible}
       >
         <p class="tag" style="margin: 0 0 0 -1rem;">&lt;p&gt;</p>
-        <p class="sub-head">Front End Developer / Designer</p>
+        <p class="sub-head">Full Stack Developer / Designer</p>
         <p class="tag" style="margin: 0 0 2.5rem -1rem;">&lt;p/&gt;</p>
       </div>
       <div

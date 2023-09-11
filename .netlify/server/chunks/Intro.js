@@ -118,7 +118,7 @@ const Intro = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     "sub svelte-15ady0d",
     " "
   ].join(" ").trim()}"><p class="tag" style="margin: 0 0 0 -1rem;">&lt;p&gt;</p>
-        <p class="sub-head svelte-15ady0d">Front End Developer / Designer</p>
+        <p class="sub-head svelte-15ady0d">Full Stack Developer / Designer</p>
         <p class="tag" style="margin: 0 0 2.5rem -1rem;">&lt;p/&gt;</p></div>
       <div class="${[
     "button-con svelte-15ady0d",
