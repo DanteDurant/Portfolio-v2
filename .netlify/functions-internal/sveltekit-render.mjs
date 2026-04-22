@@ -3,10 +3,10 @@ import { init } from '../serverless.js';
 export const handler = init({
 	appDir: "_app",
 	appPath: "_app",
-	assets: new Set([".DS_Store","favicon.png"]),
+	assets: new Set(["favicon.png"]),
 	mimeTypes: {".png":"image/png"},
 	_: {
-		client: {"start":"_app/immutable/entry/start.7e544503.js","app":"_app/immutable/entry/app.c6ddf258.js","imports":["_app/immutable/entry/start.7e544503.js","_app/immutable/chunks/index.fe495d66.js","_app/immutable/chunks/singletons.010696f4.js","_app/immutable/chunks/index.2cf58cf1.js","_app/immutable/entry/app.c6ddf258.js","_app/immutable/chunks/index.fe495d66.js"],"stylesheets":[],"fonts":[]},
+		client: {"start":"_app/immutable/entry/start.7369392f.js","app":"_app/immutable/entry/app.b7a8774f.js","imports":["_app/immutable/entry/start.7369392f.js","_app/immutable/chunks/index.fe495d66.js","_app/immutable/chunks/singletons.a96eb499.js","_app/immutable/chunks/index.2cf58cf1.js","_app/immutable/entry/app.b7a8774f.js","_app/immutable/chunks/index.fe495d66.js"],"stylesheets":[],"fonts":[]},
 		nodes: [
 			() => import('../server/nodes/0.js'),
 			() => import('../server/nodes/1.js'),
